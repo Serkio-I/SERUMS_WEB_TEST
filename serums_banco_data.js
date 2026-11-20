@@ -1,0 +1,5611 @@
+// Banco SERUMS Medicina Humana 2025-2026 - preguntas y claves oficiales (MINSA)
+const EXAMES = {
+  "2025-I": [
+    {
+      "n": 1,
+      "stem": "Son comportamientos que pueden o no ser saludables e influir de manera positiva o negativa en la salud del individuo, caracterizan el modo de vida de un individuo y suelen ser permanentes. Esta definición corresponde a:",
+      "opts": [
+        "A. Estilo de vida",
+        "B. Hábito saludable",
+        "C. Autocuidado",
+        "D. Práctica"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Estilo de vida"
+      }
+    },
+    {
+      "n": 2,
+      "stem": "Los medicamentos que han perdido su eficacia y que han llevado a diezmar la efectividad en la lucha contra la tuberculosis, las enfermedades diarreicas y la neumonía debido a la resistencia antimicrobiana, se debe a:",
+      "opts": [
+        "A. Uso irracional de medicamentos",
+        "B. Uso de medicamentos genéricos",
+        "C. Petitorio de los mismos medicamentos",
+        "D. Uso adecuado de medicamentos de marca"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Uso irracional de medicamentos"
+      }
+    },
+    {
+      "n": 3,
+      "stem": "Comprende la sucesión de eventos que ocurren a lo largo de la existencia de las personas y la población, los cuales interactúan para influir en su salud desde la preconcepción hasta la muerte. ¿A qué definición se refiere?",
+      "opts": [
+        "A. Curso de vida",
+        "B. Cuidado integral",
+        "C. Vías de cuidados",
+        "D. Determinante social"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Curso de vida"
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Se labora en un establecimiento de salud donde no hay una visión definida sobre el trabajo que se realiza; y existen muchos problemas interpersonales. Si se desea cambiar esta situación. ¿Qué se debe mejorar?",
+      "opts": [
+        "A. Clima organizacional",
+        "B. Recursos humanos",
+        "C. Plan de acción",
+        "D. Proyecto de mejora"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Clima organizacional"
+      }
+    },
+    {
+      "n": 5,
+      "stem": "Un serumista luego de haber diagnosticado y tratado un caso clínico muy interesante, ha hecho una revisión profunda de la literatura sobre el tema y desea compartirlo con la comunidad científica. ¿Qué tipo de informe de investigación debe preparar?",
+      "opts": [
+        "A. Artículo original",
+        "B. Revisión sistemática",
+        "C. Reporte de caso",
+        "D. Carta al editor"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Revisión sistemática"
+      }
+    },
+    {
+      "n": 6,
+      "stem": "Milena, una obstetra serumista coloca una ampolla intramuscular de metamizol a una gestante que viene con fiebre, minutos después siente mareos, nauseas y se observa en la zona de aplicación un rash; por tanto ella debe consignar en la historia clínica de manera obligatoria las sospechas de reacciones adversas y reportarlas en el formato correspondiente y remitirlo al comité de ...... y tecnovigilancia de la IPRESS en los plazos correspondientes.",
+      "opts": [
+        "A. auditoría interna",
+        "B. auditoría externa",
+        "C. control interno",
+        "D. farmacovigilancia"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "farmacovigilancia"
+      }
+    },
+    {
+      "n": 7,
+      "stem": "Al llegar a su comunidad de SERUMS observa que hay baja adherencia a la lactancia materna por lo cual plantea hacer una investigación sobre factores asociados a lactancia materna. ¿Qué debe realizar en primer lugar para su estudio?",
+      "opts": [
+        "A. Definir sus instrumentos de medición",
+        "B. Revisar literatura científica sobre el tema",
+        "C. Elaborar su pregunta de investigación",
+        "D. Elegir los objetivos de estudio"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Revisar literatura científica sobre el tema"
+      }
+    },
+    {
+      "n": 8,
+      "stem": "Si se orienta la formulación y actualización de las políticas y los planes en todos los niveles del gobierno, se refiere a ...…, a las cuales debe alinear sus objetivos operativos.",
+      "opts": [
+        "A. desarrollos institucionales",
+        "B. estrategias institucionales",
+        "C. acciones institucionales",
+        "D. organizaciones institucionales"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "estrategias institucionales"
+      }
+    },
+    {
+      "n": 9,
+      "stem": "En el manejo integral de una paciente de 50 años con diabetes mellitus tipo II. ¿Qué valor de hemoglobina glicosilada indica un control metabólico óptimo?",
+      "opts": [
+        "A. < 7.5%",
+        "B. < 7%",
+        "C. < 6.5%",
+        "D. < 6%"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "< 7%"
+      }
+    },
+    {
+      "n": 10,
+      "stem": "Llega al centro materno una gestante proveniente del sur de nuestro país, quién solicita tener un parto vertical. Como profesional de la salud. ¿Cómo procedería para atender y responder al requerimiento de la paciente?",
+      "opts": [
+        "A. Persuadir su deseo",
+        "B. Denegarle la atención",
+        "C. Respetar su pedido",
+        "D. Enviarla a otro establecimiento"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Respetar su pedido"
+      }
+    },
+    {
+      "n": 11,
+      "stem": "Se define como transición epidemiológica al proceso de paso del predominio de enfermedades …… a la preponderancia de las enfermedades...",
+      "opts": [
+        "A. degenerativas / infecciosas.",
+        "B. crónicas / infecciosas.",
+        "C. infecciosas / crónicas.",
+        "D. infecciosas / prevalentes."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "infecciosas / crónicas."
+      }
+    },
+    {
+      "n": 12,
+      "stem": "Madre quechua hablante de 30 años, tiene niño de un año con diarrea y deshidratación; ella niega su atención en el establecimiento de salud, porque según su creencia el caso corresponde a “susto” y lo debe atender el curandero. ¿Cómo procedes ante este caso?",
+      "opts": [
+        "A. Solicitar al presidente de la comunidad que intervenga",
+        "B. Llegas a un acuerdo en la terapia del niño, respetando sus creencias",
+        "C. Discrepas con su decisión porque no es correcto",
+        "D. Constatar con la policía y la autoridad comunal"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Llegas a un acuerdo en la terapia del niño, respetando sus creencias"
+      }
+    },
+    {
+      "n": 13,
+      "stem": "¿Cuál es el plazo máximo en días para entregar copia autenticada de la historia clínica y epicrisis, cuando el usuario de salud o su representante legal lo solicite?",
+      "opts": [
+        "A. 5",
+        "B. 7",
+        "C. 10",
+        "D. 3"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "5"
+      }
+    },
+    {
+      "n": 14,
+      "stem": "Dentro del paquete preventivo de salud del adolescente. ¿Cuántas mediciones al año de hemoglobina debe realizarse?",
+      "opts": [
+        "A. 1",
+        "B. 6",
+        "C. 4",
+        "D. 2"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "2"
+      }
+    },
+    {
+      "n": 15,
+      "stem": "El análisis de la situación actual es una fase del planeamiento estratégico. ¿En qué fase del ciclo se encuentra?",
+      "opts": [
+        "A. 4",
+        "B. 3",
+        "C. 2",
+        "D. 1"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "1"
+      }
+    },
+    {
+      "n": 16,
+      "stem": "Un paciente fue referido para evaluación y tratamiento por una probable gastritis a un nivel de atención superior. Se resolvió su problema de salud de manera parcial, continuando su tratamiento en su establecimiento de origen. ¿En qué condición considera fue contrarreferido?",
+      "opts": [
+        "A. Curado",
+        "B. Retiro voluntario",
+        "C. Mejorado",
+        "D. Deserción"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Mejorado"
+      }
+    },
+    {
+      "n": 17,
+      "stem": "Salud Escolar lleva a cabo la vacunación masiva, descarte de anemia, cuidado de la salud bucal, desparasitación a los alumnos de las IE públicas. En cumplimiento al derecho de ......, se hace de conocimiento a los padres de familia quienes firman y el personal interviene atendiendo.",
+      "opts": [
+        "A. beneficencia",
+        "B. justicia",
+        "C. consentimiento informado",
+        "D. autorización"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "consentimiento informado"
+      }
+    },
+    {
+      "n": 18,
+      "stem": "Luego de la recolección y procesamiento de datos de su estudio para investigar si hay asociación entre el alcoholismo y la violencia familiar en adultos varones de su comunidad. ¿Qué análisis estadístico llevará a cabo?",
+      "opts": [
+        "A. Inferencial",
+        "B. Descriptivo",
+        "C. Inductivo",
+        "D. Probabilístico"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Inferencial"
+      }
+    },
+    {
+      "n": 19,
+      "stem": "En una institución educativa primaria de 100 alumnos, se presenta un brote de varicela con 50 casos. ¿Cuál es el indicador y el valor que corresponde para caracterizar el riesgo?",
+      "opts": [
+        "A. Tasa de prevalencia, 500 x 1000 hab",
+        "B. Razón de prevalencia, 50%",
+        "C. Tasa de incidencia, 50%",
+        "D. Tasa de ataque, 50%"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Tasa de incidencia, 50%"
+      }
+    },
+    {
+      "n": 20,
+      "stem": "Cuenta con las herramientas administrativas para garantizar que la profesión se ejerza de manera ética. Este enunciado pertenece a la:",
+      "opts": [
+        "A. Deontología",
+        "B. Responsabilidad",
+        "C. Comisión de ética",
+        "D. Moral"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Deontología"
+      }
+    },
+    {
+      "n": 21,
+      "stem": "¿Cuál es la sospecha diagnóstica de cáncer infantil más probable cuando hay un aumento no controlado de glóbulos blancos en la médula ósea?",
+      "opts": [
+        "A. Neuroblastoma",
+        "B. Linfoma",
+        "C. Leucemia",
+        "D. Tumor de Wilms"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Leucemia"
+      }
+    },
+    {
+      "n": 22,
+      "stem": "Los sistemas de vigilancia en salud (SVES) son la guía para la acción que el personal de salud utiliza para tomar decisiones prácticas frente a los problemas de salud. El tipo tradicional se caracteriza por que se...",
+      "opts": [
+        "A. usan datos específicos de información adicional.",
+        "B. usa mediciones sistemáticas.",
+        "C. incluye los procedimientos del proceso de la práctica «centinela».",
+        "D. basan en los sistemas de declaración de enfermedades transmisibles y morbilidad."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "basan en los sistemas de declaración de enfermedades transmisibles y morbilidad."
+      }
+    },
+    {
+      "n": 23,
+      "stem": "Un profesional de la salud desea realizar una ecografía, pero no cuenta en su centro con ese apoyo diagnóstico. Para realizar una referencia a otro establecimiento de salud. ¿Qué debe evaluar?",
+      "opts": [
+        "A. Categorización",
+        "B. Organigrama",
+        "C. Flujograma",
+        "D. Cartera de servicios"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Cartera de servicios"
+      }
+    },
+    {
+      "n": 24,
+      "stem": "Para investigar la relación entre la anemia y el peso de niños de 6° grado de primaria de un colegio, usted acude un día de la semana para medir la Hb y el peso a todos ellos. ¿Qué método de investigación está realizando?",
+      "opts": [
+        "A. Mixto",
+        "B. Experimental",
+        "C. Observacional",
+        "D. Cuasi experimental"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Observacional"
+      }
+    },
+    {
+      "n": 25,
+      "stem": "El lunes 30 de marzo se apersonan a un puesto de salud de categoría I-3, 15 personas con vómitos y diarrea, quienes participaron en una pollada el día anterior. El caso es identificado como una Enfermedad Transmitida por Alimentos. ¿En qué momento se realiza la notificación epidemiológica del brote al nivel inmediato superior?",
+      "opts": [
+        "A. De manera inmediata",
+        "B. Cuando se reporta el VEA de la semana",
+        "C. Al alta de los pacientes",
+        "D. Hasta las 48 horas"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "De manera inmediata"
+      }
+    },
+    {
+      "n": 26,
+      "stem": "Para elaborar los planos de un futuro establecimiento de salud I-3, se reúne el equipo de salud. ¿Qué ambiente es necesario según normativa?",
+      "opts": [
+        "A. Zona de selección de residuos sólidos",
+        "B. Depósito y lavado de carros",
+        "C. Zona de almacenamiento de residuos contaminados",
+        "D. Área de internamiento"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Zona de selección de residuos sólidos"
+      }
+    },
+    {
+      "n": 27,
+      "stem": "Después de brindar una atención por violencia sexual a una paciente de 13 años, se debe presentar un informe social, requerido por las autoridades del Poder Judicial. Si hay información que faltan a la verdad está cometiendo actos en contra de:",
+      "opts": [
+        "A. Justicia",
+        "B. Ética",
+        "C. Responsabilidad",
+        "D. Beneficencia"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Ética"
+      }
+    },
+    {
+      "n": 28,
+      "stem": "Usted se entera que en un EESS administraron una medicación que produjo un daño discapacitante en un paciente. ¿Qué medida inmediata hubiera tomado para manejar esta situación?",
+      "opts": [
+        "A. Informar a los familiares",
+        "B. Mejorar el proceso de atención sanitaria en EESS",
+        "C. Notificarlo al nivel inmediato superior",
+        "D. Medidas de mejora en el EESS"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Notificarlo al nivel inmediato superior"
+      }
+    },
+    {
+      "n": 29,
+      "stem": "Mujer de 52 años acude al establecimiento refiriendo sequedad vaginal y dispareunia desde hace unos 6 meses, tiene antecedente de menopausia hace un año. ¿Cuál es la conducta más apropiada para esta paciente?",
+      "opts": [
+        "A. Prescribir terapia de reemplazo hormonal",
+        "B. Recomendar uso de lubricante vaginal",
+        "C. Referir a especialista de ginecología",
+        "D. Prescribir estrógeno local vaginal"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Prescribir estrógeno local vaginal"
+      }
+    },
+    {
+      "n": 30,
+      "stem": "¿Cuáles son los medicamentos y productos biológicos que cubren la mayor parte de la morbilidad en el país, que luego de una evaluación técnica especializada multidisciplinaria han demostrado ser seguros, eficaces, costo-efectivos y deben estar disponibles en todo momento?",
+      "opts": [
+        "A. Genéricos",
+        "B. Comunes",
+        "C. Básicos",
+        "D. Esenciales"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Esenciales"
+      }
+    },
+    {
+      "n": 31,
+      "stem": "Usted trabaja en un centro de salud y advierte que la población que acude son personas adultas mayores en un 80%. ¿Qué medida inicial puede tomar para mejorar su atención?",
+      "opts": [
+        "A. Tener un enfoque de derechos",
+        "B. Favorecer la participación de la familia",
+        "C. Promover la educación en la comunidad",
+        "D. Fortalecer su equipo multidisciplinario"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Fortalecer su equipo multidisciplinario"
+      }
+    },
+    {
+      "n": 32,
+      "stem": "¿Quién es el responsable frente a la pérdida de la totalidad o parte de la historia clínica en el proceso de atención de salud?",
+      "opts": [
+        "A. Quien la entregó por última vez",
+        "B. Jefe de archivo de historias clínicas",
+        "C. Jefe del establecimiento de salud",
+        "D. Quien la recibió por última vez"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Quien la recibió por última vez"
+      }
+    },
+    {
+      "n": 33,
+      "stem": "La salud pública está afectada por sobrepoblación mundial, grandes conflictos políticos-sociales y la pobreza creciente; como consecuencia inicial de estos fenómenos. ¿Qué ocurre principalmente?",
+      "opts": [
+        "A. La aparición de enfermedades epidémicas",
+        "B. El surgimiento de nuevas enfermedades",
+        "C. El aumento en la incidencia de enfermedades",
+        "D. Las crisis psicosociales"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "El aumento en la incidencia de enfermedades"
+      }
+    },
+    {
+      "n": 34,
+      "stem": "Para medir el riesgo de una enfermedad en la comunidad, se utilizan medidas de morbilidad como la incidencia que mide la …... y la prevalencia que mide la …… de la enfermedad.",
+      "opts": [
+        "A. virulencia / frecuencia",
+        "B. proporción / frecuencia",
+        "C. velocidad / magnitud",
+        "D. casos antiguos / casos nuevos"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "velocidad / magnitud"
+      }
+    },
+    {
+      "n": 35,
+      "stem": "Debido a que se observaron muchos casos de suicidios en adolescentes en la comunidad donde usted labora, le encargan realizar un estudio descriptivo sobre la depresión en adolescentes en su comunidad ¿Cuál será la principal limitante del estudio?",
+      "opts": [
+        "A. Sus resultados no serán extrapolables",
+        "B. Demandará costos económicos muy elevados",
+        "C. El análisis estadístico será muy complejo",
+        "D. No permitirá hallar asociación de variables"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "No permitirá hallar asociación de variables"
+      }
+    },
+    {
+      "n": 36,
+      "stem": "El Ministerio de Salud a través de ...... es responsable de distribuir, difundir, dirigir, supervisar, monitorear y evaluar los medicamentos en los sectores públicos y privados.",
+      "opts": [
+        "A. DIGEMID",
+        "B. CENARES",
+        "C. DIGESA",
+        "D. CENSOPAS"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "DIGEMID"
+      }
+    },
+    {
+      "n": 37,
+      "stem": "Mujer de 55 años, señala que su esposo se hizo prueba de papilomavirus y salió positiva. Acude a control al centro materno y le realizan tamizaje con PAP que salió positivo. ¿Qué prueba está en el siguiente paso en el flujograma de atención de cáncer de cuello uterino?",
+      "opts": [
+        "A. Curetaje endocervical",
+        "B. Colposcopía",
+        "C. Nuevo PAP",
+        "D. Tomar biopsias"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Colposcopía"
+      }
+    },
+    {
+      "n": 38,
+      "stem": "Un serumista está trabajando en un establecimiento de salud con población asignada, que cuenta con médico cirujano, profesionales de enfermería, obstetricia y personal técnico de enfermería. Según su cartera de servicios. ¿Cuál es el nivel de atención en el que se encuentra?",
+      "opts": [
+        "A. I-3",
+        "B. I-1",
+        "C. I-2",
+        "D. I-4"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "I-2"
+      }
+    },
+    {
+      "n": 39,
+      "stem": "El C.S. Paz, ha sectorizado su jurisdicción para realizar intervenciones de promoción y prevención basados en el Modelo de Cuidado Integral de la Familia y Comunidad por Curso de Vida. En el marco de las Funciones Esenciales de la Salud Pública renovada, esta acción corresponde a la etapa de:",
+      "opts": [
+        "A. Evaluación",
+        "B. Acceso",
+        "C. Asignación de recursos",
+        "D. Desarrollo de políticas"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Acceso"
+      }
+    },
+    {
+      "n": 40,
+      "stem": "En el proceso de redacción del informe final de su estudio transversal analítico sobre la relación entre la ingesta de bebidas gaseosas y sobrepeso; usted desea que todas las secciones tengan coherencia entre sí. ¿Qué herramienta debe usar para verificarla?",
+      "opts": [
+        "A. Matriz de consistencia",
+        "B. Lista de verificación",
+        "C. Revisión de Turniting",
+        "D. Matriz de operacionalización"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Matriz de consistencia"
+      }
+    },
+    {
+      "n": 41,
+      "stem": "La promoción de la salud se define como la acción de ofrecer a los pueblos las vías y los medios suficientes para …… los problemas de salud y autocontrolar el proceso de salud-enfermedad.",
+      "opts": [
+        "A. restringir o acortar",
+        "B. atenuar o eliminar",
+        "C. controlar o mantener",
+        "D. diferir o mitigar"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "atenuar o eliminar"
+      }
+    },
+    {
+      "n": 42,
+      "stem": "El POI Multianual del Ministerio de Salud es ……, en el cual se establece la programación de metas físicas y de costeo que se espera alcanzar en los próximos tres años.",
+      "opts": [
+        "A. herramienta de gestión",
+        "B. instrumento de articulación",
+        "C. herramienta de articulación",
+        "D. instrumento de gestión"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "instrumento de gestión"
+      }
+    },
+    {
+      "n": 43,
+      "stem": "Mujer de 70 años, procedente de Loreto, hace 2 días presentó fiebre de 39°C, dolor de articulaciones y cefalea, el día de hoy acude al establecimiento con vómitos persistentes y sangrado de mucosas. Funciones vitales: T°: 36°C, PA: 100/70 mmHg, FR: 28X'. ¿Qué tipo de dengue es?",
+      "opts": [
+        "A. Hemorrágico con signos de alarma",
+        "B. Grave",
+        "C. Confirmado sin signos de alarma",
+        "D. Probable con signos de alarma"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Probable con signos de alarma"
+      }
+    },
+    {
+      "n": 44,
+      "stem": "Usted va a realizar un estudio sobre la obesidad infantil en un colegio de la pequeña comunidad donde labora, pero el director le pide que los padres autoricen voluntariamente la participación de sus menores hijos. ¿Qué documento debe usar para este cometido?",
+      "opts": [
+        "A. Consentimiento informado",
+        "B. Compromiso paterno",
+        "C. Carta de investigación",
+        "D. Asentimiento informado"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Consentimiento informado"
+      }
+    },
+    {
+      "n": 45,
+      "stem": "¿Cuál es la mejor conducta frente a un personal de salud asistencial que no puede acreditar su vacunación previa contra el virus de Hepatitis B en el primer nivel de atención?",
+      "opts": [
+        "A. Vacunación de una dosis de refuerzo",
+        "B. No es obligatoria su vacunación",
+        "C. Referencia a un hospital",
+        "D. Vacunación desde la primera dosis"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Vacunación desde la primera dosis"
+      }
+    },
+    {
+      "n": 46,
+      "stem": "¿Cuáles son los principales ejes estratégicos que garantizan el éxito de la participación comunitaria en la planeación en salud?",
+      "opts": [
+        "A. El abordaje territorial, espacios participativos y la familia como base",
+        "B. Los cambios en la realidad económico-social y ordenanzas municipales",
+        "C. La actitud política y el esfuerzo de la administración local",
+        "D. La participación comunitaria y escuelas saludables"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "El abordaje territorial, espacios participativos y la familia como base"
+      }
+    },
+    {
+      "n": 47,
+      "stem": "En una farmacia se va a instalar el control termostático de la unidad de refrigeración. ¿Qué se debe tener en cuenta con los sensores?",
+      "opts": [
+        "A. Dependientes del sistema de monitoreo",
+        "B. Con exactitud de aproximadamente 0.3°C",
+        "C. Deben estar calibrados",
+        "D. Áreas con poca variabilidad en temperatura"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Deben estar calibrados"
+      }
+    },
+    {
+      "n": 48,
+      "stem": "La ética en la función pública no se queda en la teoría (reflexión), sino que debe llevarse a la práctica para tener un adecuado desempeño laboral. Como profesional de salud ante un caso de un diagnóstico que es confidencial, por el tipo de enfermedad. ¿Qué principios éticos debe cumplirse?",
+      "opts": [
+        "A. Silencio, manejo de la información",
+        "B. Veracidad, lealtad, eficiencia",
+        "C. Respeto y atención diferenciada",
+        "D. Respeto, probidad y eficiencia"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Respeto, probidad y eficiencia"
+      }
+    },
+    {
+      "n": 49,
+      "stem": "En el análisis FODA, los aspectos positivos de los recursos y actividades internas con que cuenta la institución, se les define cómo:",
+      "opts": [
+        "A. Estrategias",
+        "B. Fortalezas",
+        "C. Oportunidades",
+        "D. Amenazas"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Fortalezas"
+      }
+    },
+    {
+      "n": 50,
+      "stem": "¿Qué grupo de pacientes tienen indicación de terapia preventiva para la tuberculosis?",
+      "opts": [
+        "A. Sin diagnóstico de ITBL que pertenecen a grupos con corticoterapia e inmunosupresores",
+        "B. Adultos que son contactos de caso índice-TB pulmonar y pacientes con VIH",
+        "C. Personas que no tienen diagnóstico de infección tuberculosa latente",
+        "D. Pacientes con tuberculosis sensible"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Adultos que son contactos de caso índice-TB pulmonar y pacientes con VIH"
+      }
+    },
+    {
+      "n": 51,
+      "stem": "¿Qué se define como la forma característica de pensar y hacer las cosas en una entidad, en base a principios, valores, creencias, conductas y normas?",
+      "opts": [
+        "A. Valores institucionales",
+        "B. Cultura organizacional",
+        "C. Principios institucionales",
+        "D. Clima organizacional"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Cultura organizacional"
+      }
+    },
+    {
+      "n": 52,
+      "stem": "Varón de 20 años HSH, que acude a la consulta por presentar erupciones genitales y orales, además dolor ano-rectal y sangrado leve. Ha tenido dolor de cabeza, fiebre, mialgias y adenopatías cervicales hace 2 días. ¿Cuál es el tipo de diagnóstico de viruela del mono?",
+      "opts": [
+        "A. Confirmado",
+        "B. Caso secundario",
+        "C. Sospechoso",
+        "D. Contacto directo"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Sospechoso"
+      }
+    },
+    {
+      "n": 53,
+      "stem": "En adultos de 18 años a más con HTA esencial, sin otras comorbilidades. ¿Qué grupo farmacológico se debe prescribir como primera elección?",
+      "opts": [
+        "A. Inhibidores de aldosterona",
+        "B. Betabloqueadores",
+        "C. Diuréticos de asa",
+        "D. Diuréticos tiazídicos"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Diuréticos tiazídicos"
+      }
+    },
+    {
+      "n": 54,
+      "stem": "La transmisión del dengue a un huésped susceptible se da a través de la picadura de un zancudo hembra infectado (Aedes aegypti), estos zancudos pican preferentemente ...... y transmiten la enfermedad a varias personas durante toda su vida.",
+      "opts": [
+        "A. al amanecer y al atardecer",
+        "B. al atardecer y durante la noche",
+        "C. a medio día y sin lluvia",
+        "D. solo en época de lluvias"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "al amanecer y al atardecer"
+      }
+    },
+    {
+      "n": 55,
+      "stem": "Realizando visita domiciliaria, según el plan del cuidado integral de salud de las personas adultas mayores, se encuentra a un varón de 66 años de edad, vive solo; refiere tener “mal de ojo”, presenta “dolor de cabeza y dolor muscular”, llegará el curandero, realizará una limpia con cuy macho de color negro. Se le muestra interés e integración de los cuidados que requiere. ¿Éste enunciado se denomina?",
+      "opts": [
+        "A. Salud pública",
+        "B. Cultura",
+        "C. Población indígena",
+        "D. Interculturalidad en salud"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Interculturalidad en salud"
+      }
+    },
+    {
+      "n": 56,
+      "stem": "Usted desea motivar a su personal de salud para realizar una investigación científica sobre la anemia infantil en su comunidad, para ello les dice que el principal propósito de la investigación científica es...",
+      "opts": [
+        "A. consolidar el trabajo en equipo.",
+        "B. generar conocimiento científico útil.",
+        "C. mejorar la gestión de la salud.",
+        "D. captar inversiones en salud."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "generar conocimiento científico útil."
+      }
+    },
+    {
+      "n": 57,
+      "stem": "Dentro del modelo de atención integral en la etapa de vida adulto mayor. ¿Qué test de valoración de deterioro cognitivo puede aplicar en el primer nivel de atención?",
+      "opts": [
+        "A. De Pfeiffer",
+        "B. De Yesavage",
+        "C. Del reloj",
+        "D. MOCA"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "De Pfeiffer"
+      }
+    },
+    {
+      "n": 58,
+      "stem": "Dentro de las intervenciones de promoción de la salud. El programa “familia saludable” considera a la a familia como la unidad de ...... de mayor eficacia.",
+      "opts": [
+        "A. análisis",
+        "B. intervención",
+        "C. soporte",
+        "D. riesgo"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "intervención"
+      }
+    },
+    {
+      "n": 59,
+      "stem": "¿Cuál es la medida de tendencia central que se interpreta como el promedio de los datos, y se construye con la suma de todos los datos observados entre el total de observaciones?",
+      "opts": [
+        "A. Rango",
+        "B. Mediana",
+        "C. Media",
+        "D. Moda"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Media"
+      }
+    },
+    {
+      "n": 60,
+      "stem": "Se desea reorganizar el servicio de admisión y para ello es necesario separar las historias clínicas. ¿Cuántos años se debe considerar para el archivo pasivo de historias clínicas que no han sido requeridas?",
+      "opts": [
+        "A. Más de 15",
+        "B. Más de 5",
+        "C. Más de 1",
+        "D. Más de 10"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Más de 5"
+      }
+    },
+    {
+      "n": 61,
+      "stem": "Dentro del petitorio nacional único de medicamentos esenciales para el sector salud existen consideraciones especiales de su uso, por lo cual requieren de un manejo especializado. ¿Qué tipo de medicamentos están en este rubro?",
+      "opts": [
+        "A. Para métodos de planificación familiar",
+        "B. Controlado para infecciones intrahospitalarias",
+        "C. Exclusivo para dolor oncológico",
+        "D. Específico para hepatitis A"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Exclusivo para dolor oncológico"
+      }
+    },
+    {
+      "n": 62,
+      "stem": "En la metodología del análisis FODA, el comportamiento de la población, costumbre y hábitos negativos que son difíciles de cambiar, se identifican como:",
+      "opts": [
+        "A. Negatividad",
+        "B. Oportunidades",
+        "C. Debilidades",
+        "D. Amenazas"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Amenazas"
+      }
+    },
+    {
+      "n": 63,
+      "stem": "Gestante de 36 años de edad, acude con cefalea intensa y visión borrosa; antecedente: HTA. Al examen: REG, BEN, BEH, LOTEP, FC: 70X'; FR: 20X'; T°: 36.8°C; PA: 170/110mmHg; edema en miembros inferiores sin fóvea. Laboratorio: creatinina 1.2 mg/dl, plaquetas: 150.000/mm3. ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Sulfato de magnesio intravenoso",
+        "B. Finalizar el embarazo",
+        "C. Administrar nifedipino vía oral",
+        "D. Transfusión de plaquetas"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Sulfato de magnesio intravenoso"
+      }
+    },
+    {
+      "n": 64,
+      "stem": "Un paciente desea realizar un reclamo por un posible maltrato de un trabajador del establecimiento de salud contra él, al no respetarse el orden de llegada para la atención. ¿Qué procedimiento corresponde?",
+      "opts": [
+        "A. Sugerencia",
+        "B. Consejería",
+        "C. Queja",
+        "D. Consulta"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Queja"
+      }
+    },
+    {
+      "n": 65,
+      "stem": "¿A qué corresponde la siguiente definición?: “Es el conjunto de acciones que desarrolla un profesional de la salud mediante el uso de las TIC, para proporcionar a la persona usuaria de salud, consejería y asesoría con fines de promoción de la salud, prevención, recuperación o rehabilitación de las enfermedades”.",
+      "opts": [
+        "A. Telemonitoreo",
+        "B. Teleconsulta",
+        "C. Teleorientación",
+        "D. Teleinterconsulta"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Teleorientación"
+      }
+    },
+    {
+      "n": 66,
+      "stem": "Según la normativa nacional de salud para la prevención y control de la anemia. ¿Cuál es la dosis oral diaria de hierro elemental y ácido fólico recomendada para tratamiento de una gestante con anemia ferropénica?",
+      "opts": [
+        "A. 120 mg y 800 ug",
+        "B. 80 mg y 600 ug",
+        "C. 60 mg y 400 ug",
+        "D. 200 mg y 1000 ug"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "120 mg y 800 ug"
+      }
+    },
+    {
+      "n": 67,
+      "stem": "En el informe final de su investigación sobre ansiedad en estudiantes de secundaria, requiere compartir la descripción del instrumento de screening de ansiedad utilizado, su validez y confiabilidad. ¿En qué sección de su informe debe incluirla?",
+      "opts": [
+        "A. Marco teórico",
+        "B. Introducción",
+        "C. Metodología",
+        "D. Resultados"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Metodología"
+      }
+    },
+    {
+      "n": 68,
+      "stem": "Al Centro de Salud de Chuquibamba de la provincia de Condesuyos, acude una gestante añosa, en periodo expulsivo, con antecedentes de preeclampsia; el parto se complica y fallecen madre y niño. Ante este evento. ¿Qué Auditoría de la Calidad de la Atención en Salud corresponde seguir?",
+      "opts": [
+        "A. Dirimente",
+        "B. De caso",
+        "C. Externa",
+        "D. Regular"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "De caso"
+      }
+    },
+    {
+      "n": 69,
+      "stem": "En su comunidad observa con mucha frecuencia casos de alcoholismo en varones y también violencia física de ellos contra sus esposas, para investigar en el menor tiempo posible, si hay asociación entre el alcoholismo y la violencia familiar. ¿Qué diseño de estudio elegirá?",
+      "opts": [
+        "A. Cuasi experimental",
+        "B. Descriptivo",
+        "C. Analítico",
+        "D. Cohortes"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Analítico"
+      }
+    },
+    {
+      "n": 70,
+      "stem": "La ética sugiere aquello que es deseable y condena lo que no debe hacerse, mientras que la deontología cuenta con las herramientas administrativas para garantizar que la profesión se ejerza de manera ética. ¿Con qué debe contar un profesional de la salud para su ejercicio profesional?",
+      "opts": [
+        "A. Título profesional, colegiatura",
+        "B. Diplomados",
+        "C. Currículo vitae documentado",
+        "D. Estudios de posgrado"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Título profesional, colegiatura"
+      }
+    },
+    {
+      "n": 71,
+      "stem": "Se desea identificar el ciclo vital familiar para abordar a una familia que tiene un hijo adolescente con riesgo social. ¿Cuál es la idea principal de ciclo vital familiar?",
+      "opts": [
+        "A. Secuencia de fases por las que atraviesa",
+        "B. Herramienta de gestión para los cuidados integrales",
+        "C. Conjunto de prestaciones según necesidades de salud",
+        "D. Sucesión de eventos que ocurren durante su existencia"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Secuencia de fases por las que atraviesa"
+      }
+    },
+    {
+      "n": 72,
+      "stem": "El personal de un establecimiento de salud desea saber lo que debe desarrollar prioritariamente. ¿Qué componente debe conocer para orientar sus objetivos estratégicos?",
+      "opts": [
+        "A. Misión",
+        "B. Visión",
+        "C. Valores",
+        "D. FODA"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Misión"
+      }
+    },
+    {
+      "n": 73,
+      "stem": "En un establecimiento de salud que tiene bajos indicadores de desempeño, se desea realizar un concepto compartido para un futuro mejor, pues cada quien tiene una idea diferente de lo que se quiere lograr. ¿Qué componente estratégico se debe plantear entre todos?",
+      "opts": [
+        "A. Visión",
+        "B. FODA",
+        "C. Misión",
+        "D. Valores"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Visión"
+      }
+    },
+    {
+      "n": 74,
+      "stem": "La sala situacional de salud es una herramienta que ofrece evidencia sobre la eficacia de las intervenciones en salud y sobre la capacidad de los sistemas de salud para responder a las necesidades de salud de la población. ¿Quiénes la deben conocer y analizar prioritariamente?",
+      "opts": [
+        "A. Promotores de salud y responsable de promoción de la salud",
+        "B. Todo el personal de salud y autoridades locales",
+        "C. Coordinadores de red y responsable de epidemiología",
+        "D. El responsable de epidemiologia y jefe de establecimiento"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Todo el personal de salud y autoridades locales"
+      }
+    },
+    {
+      "n": 75,
+      "stem": "Niño de 3 años de edad, no tiene controles en crecimiento y desarrollo, por lo que el personal de salud acude a su casa para evaluarlo. ¿Cómo demostraría que está en riesgo nutricional?",
+      "opts": [
+        "A. Pérdida lenta de peso",
+        "B. Curva Peso/Talla de lento crecimiento",
+        "C. Acercamiento a la mediana",
+        "D. Curva Peso/Talla es plana"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Curva Peso/Talla es plana"
+      }
+    },
+    {
+      "n": 76,
+      "stem": "La pertinencia cultural en los servicios de salud implica que durante todo el proceso de la atención se tome en cuenta las características de la población a la que se atiende, en función a su cultura y contexto social. Evaluando cuatro dimensiones: gestión para la calidad de la atención, revaloración del sistema de salud tradicional, recursos humanos que promueven la salud intercultural y la …",
+      "opts": [
+        "A. participación ciudadana.",
+        "B. interculturalidad en salud.",
+        "C. atención intercultural.",
+        "D. inclusión social."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "participación ciudadana."
+      }
+    },
+    {
+      "n": 77,
+      "stem": "En el centro de salud, el serumista, atiende a varón de 20 años y le brinda consejería sobre salud bucal con la técnica del cepillado e hilo dental. ¿Qué desea implementar en la persona?",
+      "opts": [
+        "A. Cambio de dieta",
+        "B. Destreza",
+        "C. Motivación",
+        "D. Autocuidado"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Autocuidado"
+      }
+    },
+    {
+      "n": 78,
+      "stem": "Mujer de 45 años, presenta desde hace más de dos semanas ánimo bajo, poca energía, disminución de la actividad, anhedonia, sueño alterado, apetito disminuido, baja autoestima, estado de ánimo variable y cefalea intensa. ¿Cuál es el diagnóstico más probable?",
+      "opts": [
+        "A. Trastorno bipolar",
+        "B. Episodio depresivo",
+        "C. Depresión mayor",
+        "D. Distimia"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Episodio depresivo"
+      }
+    },
+    {
+      "n": 79,
+      "stem": "Según la historia natural de la enfermedad, identificar una persona con diabetes en la fase subclínica corresponde al periodo ...... y el nivel de prevención es...",
+      "opts": [
+        "A. patogénico / terciario.",
+        "B. patogénico / secundario.",
+        "C. pre patogénico / secundario.",
+        "D. patogénico / primario."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "patogénico / secundario."
+      }
+    },
+    {
+      "n": 80,
+      "stem": "Ante la presencia de un caso probable de Tos Ferina. ¿Cuáles son las medidas a implementar?",
+      "opts": [
+        "A. Censo de contactos, barrido vacunal, investigación del caso índice",
+        "B. Jornada de vacunación, quimioprofilaxis, búsqueda de contactos indirectos",
+        "C. Seguimiento de contactos, búsqueda activa comunitaria e institucional, bloqueo vacunal",
+        "D. Búsqueda de casos secundarios, barrido vacunal, inamovilidad del caso"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Seguimiento de contactos, búsqueda activa comunitaria e institucional, bloqueo vacunal"
+      }
+    },
+    {
+      "n": 81,
+      "stem": "En el centro de salud de Lamas, reportan que un varón de 30 años, presenta fiebre, malestar general, sangrado y shock. Se informa que han aparecido muchos más casos en estos días y se sospecha de un brote de fiebre amarilla. Siendo Ro: el número promedio de casos nuevos que genera un caso dado a lo largo de un período infeccioso. ¿Cuál es el Ro que se espera tener en brote de fiebre amarilla?",
+      "opts": [
+        "A. Ro > 0.5",
+        "B. Ro > 1",
+        "C. Ro = 0",
+        "D. Ro < 1"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Ro > 1"
+      }
+    },
+    {
+      "n": 82,
+      "stem": "En el centro de salud, al colocar un inyectable intramuscular a un paciente, el personal se pincha el dedo pulgar. El status VIH del paciente es desconocido. ¿Qué acciones debe realizarse inmediatamente?",
+      "opts": [
+        "A. Realizarse serologías para VIH basal, a las 6 semanas y a los 3 meses",
+        "B. Lavarse la herida con agua y tomar los antirretrovirales lo antes posible",
+        "C. Se valora la severidad del accidente ocupacional",
+        "D. Se debe iniciar los ARV a las 72 horas post-exposición"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Lavarse la herida con agua y tomar los antirretrovirales lo antes posible"
+      }
+    },
+    {
+      "n": 83,
+      "stem": "En la enfermedad de la Tuberculosis, la presencia del agente infeccioso (Mycobacterium tuberculosis), corresponde a una causa...",
+      "opts": [
+        "A. no necesaria pero suficiente.",
+        "B. de tipo ambiental.",
+        "C. necesaria y suficiente.",
+        "D. necesaria pero no suficiente."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "necesaria pero no suficiente."
+      }
+    },
+    {
+      "n": 84,
+      "stem": "¿A qué corresponde la siguiente definición?: “Es la condición ideal en la población en la que todos tienen la oportunidad de acceder al cuidado de su salud y acceder a atenciones de salud, en el momento que lo requiera, y que no sea alterada por razones evitables y por tanto injustas”",
+      "opts": [
+        "A. Calidad",
+        "B. Equidad en salud",
+        "C. Integralidad",
+        "D. Universalidad"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Equidad en salud"
+      }
+    },
+    {
+      "n": 85,
+      "stem": "Para investigar la relación entre la anemia y la talla de niños de 5° grado de primaria de un colegio, usted acude un día de la semana para medir la Hb y talla a todos ellos. ¿Qué enfoque de investigación está realizando?",
+      "opts": [
+        "A. Mixto",
+        "B. Observacional",
+        "C. Cualitativo",
+        "D. Cuantitativo"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Cuantitativo"
+      }
+    },
+    {
+      "n": 86,
+      "stem": "Una prueba de screening que tiene muy baja sensibilidad, tiene mayor probabilidad de clasificar a sujetos enfermos como sanos. ¿Qué tipo de resultado es?",
+      "opts": [
+        "A. Sensibilidad ineficiente",
+        "B. Falso positivo",
+        "C. Falso negativo",
+        "D. Valor predictivo positivo"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Falso negativo"
+      }
+    },
+    {
+      "n": 87,
+      "stem": "Las acciones para mejorar la calidad de la atención orientados a mejorar la experiencia y la confianza de las personas, las familias y las comunidades en los servicios de salud, más allá de la optimización de los procesos, se enmarca dentro de las Funciones Esenciales de Salud Pública. ¿A qué función corresponde?",
+      "opts": [
+        "A. Asegurar el acceso y el uso racional de medicamentos",
+        "B. Acceso equitativo a servicios de salud integrales y de calidad",
+        "C. Financiamiento de la salud eficiente y equitativo",
+        "D. Desarrollo de recursos humanos para la salud"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Acceso equitativo a servicios de salud integrales y de calidad"
+      }
+    },
+    {
+      "n": 88,
+      "stem": "Paciente mujer de 50 años, afroamericana, últimamente ha presentado zumbido de oído y visión borrosa, niega antecedentes personales patológicos. Examen: LOTEP, BEG, BEN, BEH; FC: 80X'; FR: 20X'; T°: 37°C; PA: 140/90mmHg, IMC: 32. ¿Cuál es la conducta ideal a seguir?",
+      "opts": [
+        "A. Iniciar tratamiento farmacológico",
+        "B. Realizar una nueva toma de PA",
+        "C. Confirmar presunción diagnóstica con AMPA",
+        "D. Confirmar presunción diagnóstica con MAPA"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Confirmar presunción diagnóstica con MAPA"
+      }
+    },
+    {
+      "n": 89,
+      "stem": "Personal de serenazgo, lleva al centro de salud a un paciente adulto mayor con problemas de salud y sin familiares, presenta indigencia y sin documentos. ¿Qué derecho se le atribuye?",
+      "opts": [
+        "A. Acceso a servicios de salud",
+        "B. Acceso a la información",
+        "C. Recuperación",
+        "D. Consentimiento informado"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Acceso a servicios de salud"
+      }
+    },
+    {
+      "n": 90,
+      "stem": "¿Cuándo indicaría usted iniciar la higiene oral para generar el hábito saludable del cepillado dental?",
+      "opts": [
+        "A. A partir del año de vida",
+        "B. Al completar su dentadura decidua",
+        "C. En cualquier momento de la vida",
+        "D. Durante los primeros seis meses de vida"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Durante los primeros seis meses de vida"
+      }
+    },
+    {
+      "n": 91,
+      "stem": "En un estudio sobre la depresión en adolescentes en su comunidad, aplica un instrumento de detección de depresión en estudiantes de 5° año de secundaria de un colegio cercano al establecimiento. ¿Qué tipo de muestreo está realizando?",
+      "opts": [
+        "A. Estadístico",
+        "B. Censal",
+        "C. Probabilístico",
+        "D. No probabilístico"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "No probabilístico"
+      }
+    },
+    {
+      "n": 92,
+      "stem": "La Ética cultiva y promueve el ejercicio de la moral y los valores para que los actos estén encuadrados en el bien y en el derecho en beneficio de la sociedad. Como profesional de la salud. ¿Qué principios se debe de cumplir en la atención a la población objetivo?",
+      "opts": [
+        "A. Solidaridad, orden, deber y derecho",
+        "B. Orden, moral, deber y derecho",
+        "C. Fraternidad, moral, deber y orden",
+        "D. Orden, fraternidad, moral y derecho"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Orden, moral, deber y derecho"
+      }
+    },
+    {
+      "n": 93,
+      "stem": "Se reportan 2 casos de peste en el hospital y se ha restringido el ingreso. Los casos son de la comunidad y no se sabe si hay más casos. ¿Cuál es la medida inicial a tomar?",
+      "opts": [
+        "A. Control de roedores",
+        "B. Medidas de bioseguridad e identificar las casas de infectados",
+        "C. Medidas de control químico de pulgas",
+        "D. Ordenamiento ambiental"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Medidas de bioseguridad e identificar las casas de infectados"
+      }
+    },
+    {
+      "n": 94,
+      "stem": "En pro de la salud y el desarrollo social entre los diferentes actores, en los distintos niveles de gobierno y de la sociedad, lo primero que se debe fortalecer son las...",
+      "opts": [
+        "A. decisiones multisectoriales.",
+        "B. capacidades de gestión.",
+        "C. coordinaciones intersectoriales.",
+        "D. alianzas estratégicas."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "alianzas estratégicas."
+      }
+    },
+    {
+      "n": 95,
+      "stem": "En relación al almacenamiento de medicamentos: “Las condiciones de almacenamiento deben ser las recomendadas por el …… y autorizadas en el rotulado del producto, pudiendo ser de congelación, temperatura de refrigeración, temperatura ambiente y temperatura ambiente controlada, lo cual debe estar indicado en su procedimiento …… de almacenamiento.”",
+      "opts": [
+        "A. fabricante / operativo",
+        "B. farmacéutico / rutinario",
+        "C. director / organizativo",
+        "D. jefe / establecido"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "fabricante / operativo"
+      }
+    },
+    {
+      "n": 96,
+      "stem": "Un servidor público, brinda información de un diagnóstico médico, a personas de la comunidad. ¿Qué principio ético está vulnerando?",
+      "opts": [
+        "A. Individualidad",
+        "B. Respeto",
+        "C. Seguridad",
+        "D. Confidencialidad"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Confidencialidad"
+      }
+    },
+    {
+      "n": 97,
+      "stem": "Se requiere implementar un plan de cuidado integral de salud del adulto mayor para la prevención de caídas. ¿Qué acción de cuidados será recomendable implementar en adultos mayores frágiles?",
+      "opts": [
+        "A. Completar los esquemas de vacunación",
+        "B. Consejería para realizar ejercicio físico",
+        "C. Descarte de enfermedades crónicas",
+        "D. Implementar visitas domiciliarias periódicas"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Consejería para realizar ejercicio físico"
+      }
+    },
+    {
+      "n": 98,
+      "stem": "Mujer de 22 años víctima de violencia física, es derivada por la fiscalía para su atención integral en el establecimiento de salud. El área de psicología luego de la evaluación, inicia su plan de atención integral que constará de 10 sesiones. ¿Qué tipo de determinante social de la salud se está abordando?",
+      "opts": [
+        "A. Estructural",
+        "B. Intermedio",
+        "C. Comercial",
+        "D. Económico"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Estructural"
+      }
+    },
+    {
+      "n": 99,
+      "stem": "Varón de 20 años, señala haber tenido RS con pareja desconocida hace un mes y no acude al EESS para ser evaluado. Trae resultado de VDRL: 16 diluciones. FTA- ABS (+). Examen Físico: PA: 110/70 mmHg, FC: 85 X', FR: 14X', afebril; en REG, con úlcera genital, no presenta ronchas en manos y plantas de pies. ¿Cuál es el diagnóstico más probable?",
+      "opts": [
+        "A. Gonorrea",
+        "B. Sífilis primaria",
+        "C. Herpes genital",
+        "D. Infección por clamydia"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Sífilis primaria"
+      }
+    },
+    {
+      "n": 100,
+      "stem": "¿Cuál es el tipo de prevención cuyo objetivo es disminuir el avance y las complicaciones de la enfermedad establecida, mediante acciones orientadas a disminuir las secuelas y la discapacidad?",
+      "opts": [
+        "A. Secundaria",
+        "B. Terciaria",
+        "C. Cuaternaria",
+        "D. Primaria"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Terciaria"
+      }
+    }
+  ],
+  "2025-II": [
+    {
+      "n": 1,
+      "stem": "Usted se encuentra como serumista en Iñapari donde realiza visita domiciliaria a una adulta mayor de 82 años y que presenta lumbalgia, al indicarle medicamentos se niega refiriendo que en la zona existen plantas medicinales. ¿Cuál le indicarías?",
+      "opts": [
+        "A. Perejil",
+        "B. Tuna",
+        "C. Albahaca",
+        "D. Congona"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Congona"
+      }
+    },
+    {
+      "n": 2,
+      "stem": "En la atención de una paciente de 50 años con diabetes mellitus tipo 2, usted le explica que el perímetro de cintura refleja la presencia de obesidad abdominal e indirectamente el nivel de riesgo cardiovascular. En mujeres con diabetes. ¿Cuál es límite en cm del perímetro de cintura?",
+      "opts": [
+        "A. 99",
+        "B. 78",
+        "C. 87",
+        "D. 94"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "87"
+      }
+    },
+    {
+      "n": 3,
+      "stem": "En la comunidad donde realiza su SERUMS usted observa un alta frecuencia de personas adultas mayores, según informan las autoridades desde hace una década se viene observando este hecho. Para comprender este envejecimiento poblacional y estimar su posible evolución. ¿Cuál es el mejor indicador de salud pública que debe conocer en dicha comunidad?",
+      "opts": [
+        "A. Tasa de migración",
+        "B. Índice de longevidad",
+        "C. Esperanza de vida",
+        "D. Tasa de fertilidad"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Tasa de fertilidad"
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Paciente joven de 30 años con tratamiento anti-TB, que no mejora al tratamiento al tercer mes, no presenta deterioro clínico-radiológico. Ampliando la historia tiene antecedente de padre con diagnóstico de TBC-DR. ¿Cuál debe ser la conducta inicial del personal de salud?",
+      "opts": [
+        "A. Tomar una muestra de esputo para prueba de sensibilidad rápida",
+        "B. Debe hacerse la historia al padre",
+        "C. Debe iniciar tratamiento anti-TBC DR en este momento",
+        "D. Debe referirse al médico consultor"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Tomar una muestra de esputo para prueba de sensibilidad rápida"
+      }
+    },
+    {
+      "n": 5,
+      "stem": "En un establecimiento de la comunidad andina acude una gestante de 39.3 semanas con antecedentes de HTA crónica y diabetes gestacional que no cuenta con todos sus controles prenatales y solicita parto vertical. Usted como médico. ¿Qué conducta debe seguir?",
+      "opts": [
+        "A. Se niega a prestar atención",
+        "B. Retorna al domicilio a la gestante",
+        "C. Atiende el parto vertical",
+        "D. Referir a centro de mayor complejidad"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Referir a centro de mayor complejidad"
+      }
+    },
+    {
+      "n": 6,
+      "stem": "Todo servidor público debe ...… y ...… los bienes del Estado, debiendo utilizar los que le fueran asignados para el desempeño de sus funciones de manera racional, evitando su abuso, derroche o desaprovechamiento, sin emplear o permitir que otros empleen los bienes del Estado para fines particulares o propósitos que no sean aquellos para los cuales hubieran sido específicamente destinados.",
+      "opts": [
+        "A. ejecutar / depositar",
+        "B. usar / cuidar",
+        "C. atesorar / utilizar",
+        "D. proteger / conservar"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "proteger / conservar"
+      }
+    },
+    {
+      "n": 7,
+      "stem": "Acude a consulta de atención prenatal gestante de 19 años con 34 semanas. Examen: FC: 60 X', FR: 22 X', Tº: 36.6 ºC; AU: 31 cm, LCD, FCF: 125 X', DU: ausente; mucosas pálidas y húmedas, piel pálida, Hb: 9 g/dL, Fe sérico: 30. ¿Qué tipo de anemia tendrá el recién nacido?",
+      "opts": [
+        "A. Megaloblástica",
+        "B. Ferropénica",
+        "C. Por déficit de ácido fólico",
+        "D. Fisiológica"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Ferropénica"
+      }
+    },
+    {
+      "n": 8,
+      "stem": "Paciente mujer de 85 años hipertensa, antecedente de caída. Ha estado hospitalizada por insuficiencia respiratoria tipo 2 por EPOC y ha recibido antibióticos por neumonía e ITU por E coli resistente. Tiene glaucoma y tolera la VO. Examen: PA: 120/80, FC: 74 X', FR:16 X', T°: 37 °C; estable, despierta y afebril. Respecto a los cuidados del adulto mayor. ¿Cuál es la conducta inmediata a seguir?",
+      "opts": [
+        "A. Solo valoración nutricional antropométrica",
+        "B. Tamizaje de enfermedades no transmisibles",
+        "C. Buenas prácticas de higiene y sanitaria",
+        "D. Inmunizaciones para influenza y neumonía"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Inmunizaciones para influenza y neumonía"
+      }
+    },
+    {
+      "n": 9,
+      "stem": "¿Cómo se denomina a los eventos adversos severos que provocan alteraciones intensas en las personas, economía, sistemas sociales y el medio ambiente, causadas por sucesos naturales o generadas por la actividad humana o por la combinación de ambos que exige la ayuda externa?",
+      "opts": [
+        "A. Catástrofes",
+        "B. Desastres",
+        "C. Cataclismos",
+        "D. Emergencias"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Desastres"
+      }
+    },
+    {
+      "n": 10,
+      "stem": "El responsable del establecimiento de salud, está recibiendo la relación y stock de materiales e insumos para la atención de la gestante y se percata que hay productos vencidos (hace un mes), que ya no pueden ser consumidos para la atención. ¿Cuál es el procedimiento a seguir?",
+      "opts": [
+        "A. Solicitar a farmacia la rotación a otro establecimiento de salud",
+        "B. Mantenerlo en su stock hasta nuevo requerimiento",
+        "C. Devolver a farmacias con informe",
+        "D. Eliminar el producto"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Devolver a farmacias con informe"
+      }
+    },
+    {
+      "n": 11,
+      "stem": "En su comunidad de Huancavelica tiene un paciente masculino de 45 años sedentario, obeso, con malos hábitos dietéticos, consumidor frecuente de alcohol que lo lleva a la violencia familiar. ¿Qué determinante de salud evaluado es el más importante?",
+      "opts": [
+        "A. Estilos de vida",
+        "B. Sistema sanitario",
+        "C. Medio ambiente",
+        "D. Biología humana"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Estilos de vida"
+      }
+    },
+    {
+      "n": 12,
+      "stem": "Durante una campaña de salud sobre prevención del cáncer, se identifica a un adulto de 40 años completamente asintomático, pero con antecedente familiar del padre con cáncer colorrectal. ¿Cuál es la recomendación más adecuada en este caso?",
+      "opts": [
+        "A. Colonoscopía a partir de los 60 años",
+        "B. Colonoscopía cada 5 años",
+        "C. Prueba de sangre oculta en heces cada 5 años",
+        "D. Observación clínica para decidir colonoscopía"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Colonoscopía cada 5 años"
+      }
+    },
+    {
+      "n": 13,
+      "stem": "Los niveles de categorización de los establecimientos de salud lo asigna…",
+      "opts": [
+        "A. la Dirección de Servicios de Salud.",
+        "B. la Dirección de Gestión de Establecimientos.",
+        "C. el Comité Técnico de Categorización.",
+        "D. el Comité de Médicos Auditores."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "el Comité Técnico de Categorización."
+      }
+    },
+    {
+      "n": 14,
+      "stem": "Varón de 4 años procedente de Ucayali traído a su control de crecimiento y desarrollo. Examen: FC: 105 X', FR: 23 X', Tº: 37 °C; mucosas pálidas, astenia marcada, abdomen globuloso doloroso a la palpación. ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Referir al establecimiento con la capacidad resolutiva correspondiente para tratamiento médico",
+        "B. Dosaje de hemoglobina o hematocrito sin examen seriado de heces, para descartar anemia",
+        "C. Valoración por pediatría",
+        "D. Medicar con antiparasitarios y sales de hierro polimaltosado"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Medicar con antiparasitarios y sales de hierro polimaltosado"
+      }
+    },
+    {
+      "n": 15,
+      "stem": "En su establecimiento de salud de primer nivel acude la madre con su niño de 8 años quien presenta fiebre persistente de varios días, al examen se le observa decaído, con palidez marcada y algunos equimosis y petequias. ¿Cuál es la conducta más adecuada a seguir?",
+      "opts": [
+        "A. Administrar sintomáticos y reevaluar en una semana",
+        "B. Administrar suplementos de hierro y ácido fólico",
+        "C. Monitorear evolución clíníca para definir conducta a seguir",
+        "D. Referir de inmediato a un establecimiento especializado"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Referir de inmediato a un establecimiento especializado"
+      }
+    },
+    {
+      "n": 16,
+      "stem": "Paciente varón de 70 años, es traído al centro de salud por presentar disnea y alza térmica desde hace 2 días; refiere hospitalización previa por IRA hace 7 días en otro establecimiento. Examen: FC: 110 X', FR: 30 X', T°: 38.5 °C, PA: 120/70 mmHg, SatO2: 80%; luce decaído y agitado; presenta crepitantes húmedos en la base derecha. Se le coloca una cánula binasal a 4 litros por minuto y la SatO2 sube a 84% y se agregan tirajes respiratorios. ¿Cuál es la conducta a seguir en este caso?",
+      "opts": [
+        "A. Observación y monitoreo cercano",
+        "B. Referir al paciente a un centro de mayor nivel",
+        "C. Tomar exámenes de laboratorio",
+        "D. Colocar una máscara de venturi"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Referir al paciente a un centro de mayor nivel"
+      }
+    },
+    {
+      "n": 17,
+      "stem": "Como médico serumista atiende a una paciente mujer de 40 años, quien refiere que desde hace un mes, la mayor parte del tiempo presenta: anhedonia, fatigabilidad, insomnio, baja autoestima y no desea ir a trabajar. Refiere haber tenido un cuadro similar en su adolescencia. ¿Cuál es su diagnóstico más probable?",
+      "opts": [
+        "A. Trastorno bipolar",
+        "B. Trastorno de somatización",
+        "C. Episodio depresivo",
+        "D. Trastorno adaptativo"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Episodio depresivo"
+      }
+    },
+    {
+      "n": 18,
+      "stem": "En la comunidad Aymara donde estás como serumista, presentas dificultades para comunicarte con los pacientes; la acción de buscar un traductor para facilitar la atención médica. ¿Qué principio intercultural se cumple en este caso?",
+      "opts": [
+        "A. Diversidad cultural",
+        "B. Equidad",
+        "C. Promoción de la inclusión",
+        "D. Creatividad cultural"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Diversidad cultural"
+      }
+    },
+    {
+      "n": 19,
+      "stem": "En el establecimiento de salud I-1 se programó una visita de salud familiar por el equipo multidisciplinario a fin de desarrollar intervenciones de promoción y prevención en la familia de una gestante de 42 años, G5P4004; EG: 36 semanas; identificándose riesgos. ¿Qué instrumento es el adecuado a utilizar para este fin?",
+      "opts": [
+        "A. Historia clínica",
+        "B. ECOMAPA",
+        "C. Familiograma",
+        "D. Ficha familiar"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Ficha familiar"
+      }
+    },
+    {
+      "n": 20,
+      "stem": "Es un instrumento de gestión, que comprende la programación de las actividades operativas e inversiones de todas las dependencias del Ministerio, con sus respectivas metas físicas y financieras que esperan alcanzar en el año fiscal, las cuales deben estar alineadas con los objetivos y acciones estratégicas institucionales del Plan Estratégico Institucional (PEI) y permiten al Ministerio el ejercicio de sus competencias y su rol rector.",
+      "opts": [
+        "A. ROF",
+        "B. MOP",
+        "C. ASIS",
+        "D. POI"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "POI"
+      }
+    },
+    {
+      "n": 21,
+      "stem": "¿Cuál es el ámbito donde se desarrollan procesos de integración de la información de vigilancia de las situaciones de salud en periodos normales y de emergencia para la toma decisiones en salud pública?",
+      "opts": [
+        "A. Sala de situación de salud",
+        "B. Comité de inteligencia sanitaria",
+        "C. Análisis de situación de salud",
+        "D. Vigilancia epidemiológica"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Sala de situación de salud"
+      }
+    },
+    {
+      "n": 22,
+      "stem": "Paciente de 45 años viene a la consulta en centro de salud de Huamanga- Ayacucho por presentar ictericia, fiebre y decaimiento. Señala que tiene resultado de HBSAg reactivo hace un año, señala que viene de Huamanguilla a 3 horas de camino y que varios vecinos con ictericia leve y síntomas parecidos. Ante la sospecha de un brote. ¿Cuál es la primera etapa de la investigación epidemiológíca a realizar?",
+      "opts": [
+        "A. Identificación de los casos",
+        "B. Hacer vigilancia epidemiológica",
+        "C. Intervención del brote",
+        "D. Investigación preliminar"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Investigación preliminar"
+      }
+    },
+    {
+      "n": 23,
+      "stem": "¿Qué actividades de vigilancia entomológica realizarías en tu comunidad asignada conociendo que no existe el vector ni casos pero tiene las condiciones ambientales para la infestación?",
+      "opts": [
+        "A. A través de las inspecciones de las viviendas de acuerdo del tipo del muestreo aleatorio sistemático",
+        "B. Post control por muestreo aleatorio sistemático dependiendo el tipo de larvicida en uso",
+        "C. Semanales en un punto crítico con ovitrampas",
+        "D. Quincenales con ovitrampa en localidades seleccionadas con bajos niveles de infestación"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Semanales en un punto crítico con ovitrampas"
+      }
+    },
+    {
+      "n": 24,
+      "stem": "En su condición de médico jefe de establecimiento de salud del primer nivel de atención recibe la solicitud formal del ministerio público para la entrega de una copia de la historia clínica de un paciente atendido. ¿Cuál es el plazo máximo que tiene usted para hacer entrega de lo solicitado?",
+      "opts": [
+        "A. 3 días",
+        "B. 10 días",
+        "C. 7 días",
+        "D. 5 días"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "5 días"
+      }
+    },
+    {
+      "n": 25,
+      "stem": "Como médico serumista jefe del establecimiento de primer nivel de atención (I-2), le informan sobre una señora de 80 años que vive en la comunidad, que tiene demencia en fase avanzada y dismovilidad crónica severa, desde hace 1 semana presenta tos y mayor somnolencia ¿Cuál es la medida a tomar dentro del paquete del cuidado integral de salud del adulto mayor?",
+      "opts": [
+        "A. Referir a un nivel de salud superior para ser evaluada",
+        "B. Ordenar su ingreso hospitalario por el área de emergencia",
+        "C. Programar con el equipo de salud una atención domiciliaria",
+        "D. Brindar una evaluación integral inmediata en el establecimiento"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Programar con el equipo de salud una atención domiciliaria"
+      }
+    },
+    {
+      "n": 26,
+      "stem": "Se le encarga implementar los servicios de salud con pertinencia cultural, en ese contexto. ¿Qué líneas de acción debe considerar?",
+      "opts": [
+        "A. Infraestructura adecuada",
+        "B. Recursos humanos especializados",
+        "C. Inclusión social",
+        "D. Revaloración del sistema de salud tradicional"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Revaloración del sistema de salud tradicional"
+      }
+    },
+    {
+      "n": 27,
+      "stem": "Como médico serumista ha observado varios casos de violencia familiar, por tal motivo decide investigar el tema y para ello visita los hogares de los casos detectados y entrevista a los afectados y a sus familiares luego analiza la información obtenida y plantea explicaciones del problema. ¿Cuál es el enfoque de investigación usado?",
+      "opts": [
+        "A. Cuantitativo",
+        "B. Cualitativo",
+        "C. Científico",
+        "D. Mixto"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Cualitativo"
+      }
+    },
+    {
+      "n": 28,
+      "stem": "Una localidad de su establecimiento de salud frente a riesgo de brote de dengue se reúne con alcalde y presidente de la comunidad, para evaluar factores condicionantes; toman decisiones y logran acuerdos para reducir y eliminar dicho factor con el fin de evitar brote. ¿Qué tipo de acción se ha realizado?",
+      "opts": [
+        "A. Multidisciplinaria",
+        "B. Transdisciplinaria",
+        "C. Intersectorial",
+        "D. Promocional"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Intersectorial"
+      }
+    },
+    {
+      "n": 29,
+      "stem": "En el marco del ciclo de planeamiento estratégico la fase ...... es la encargada del diseño de objetivos y acciones estratégicas sectoriales en consistencia, alineamiento y coherencia con la definición de objetivos.",
+      "opts": [
+        "A. 2",
+        "B. 4",
+        "C. 3",
+        "D. 1"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "3"
+      }
+    },
+    {
+      "n": 30,
+      "stem": "Paciente que acude a su área de salud con lesiones en piel, secreción verde grisácea después de estar hospitalizado 21 días, en el examen físico debes usar las medidas de protección adecuadas, lentes protectores, mascarillas, batas y guantes para evitar o disminuir tanto el riesgo de contaminación del paciente como del operador. ¿Qué tipo de guantes debes usar?",
+      "opts": [
+        "A. Amianto",
+        "B. Caucho natural",
+        "C. Algodón",
+        "D. Látex"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Látex"
+      }
+    },
+    {
+      "n": 31,
+      "stem": "Mujer de 45 años que acude al centro de salud de Jesús María con vida sedentaria y con malos hábitos dietéticos. Examen: sobre peso, FC: 89 X', FR: 18 X', PA: 130/95 mmHg; IMC: 26.2, perímetro abdominal: 108 cm. ¿Qué medidas de prevención debes tomar?",
+      "opts": [
+        "A. Tratamiento con antihipertensivos",
+        "B. Charlas educativas sobre modo, condiciones, estilo de vida y trabajo con factores de riesgo",
+        "C. Trabajar con factores de riego no modificables",
+        "D. Consulta a cardiología para consejería nutricional"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Charlas educativas sobre modo, condiciones, estilo de vida y trabajo con factores de riesgo"
+      }
+    },
+    {
+      "n": 32,
+      "stem": "El proceso que conduce a la clasificación de los establecimientos de salud según sus niveles de complejidad y características funcionales se denomina:",
+      "opts": [
+        "A. Categoría",
+        "B. Acreditación",
+        "C. Habilitación",
+        "D. Categorización"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Categorización"
+      }
+    },
+    {
+      "n": 33,
+      "stem": "En la atención de un paciente varón de 50 años con diabetes mellitus tipo 2 usted le explica que el perímetro de cintura refleja la presencia de obesidad abdominal e indirectamente el nivel de riesgo cardiovascular. En varones con diabetes. ¿Cuál es el valor límite en cm del perímetro de cintura?",
+      "opts": [
+        "A. 78",
+        "B. 87",
+        "C. 99",
+        "D. 93"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "93"
+      }
+    },
+    {
+      "n": 34,
+      "stem": "En su establecimiento de salud, se vienen realizando de forma intensiva actividades de promoción de conductas sexuales saludables en los jóvenes de su comunidad, observándose gran participación tanto de hombres como mujeres. ¿Qué enfoque transversal de promoción de la salud se ha logrado en esta comunidad?",
+      "opts": [
+        "A. Equidad de género",
+        "B. Interculturidad",
+        "C. Accesibilidad",
+        "D. Derecho a la salud"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Equidad de género"
+      }
+    },
+    {
+      "n": 35,
+      "stem": "En una comunidad en la selva han aparecido nuevos casos de malaria por Plasmodium vívax. La aparición de un nuevo caso depende de las características biológicas del ......, del ...... y ambiente que facilitan la aparición del mosquito Anopheles.",
+      "opts": [
+        "A. vector / agente",
+        "B. equilibrio ecológico / huésped",
+        "C. agente / vector",
+        "D. parásito / huésped"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "parásito / huésped"
+      }
+    },
+    {
+      "n": 36,
+      "stem": "Usted se encuentra en Belempampa- Cusco donde acude un escolar de 7 años con su mamá por presentar herida en antebrazo derecho de 2 cm, usted indica sutura y su mamá se niega indicando que se le recomiende una planta de la zona. ¿Qué alternativa indicas?",
+      "opts": [
+        "A. Toronjil",
+        "B. Ruda",
+        "C. Orégano",
+        "D. Matico"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Matico"
+      }
+    },
+    {
+      "n": 37,
+      "stem": "Como médico serumista y jefe de establecimiento de salud usted propone a la jefa del comedor popular una serie de charlas y talleres para las madres en el tema: cocinas libre de humo. ¿Qué programa de intervención en promoción de la salud está implementando?",
+      "opts": [
+        "A. Familias saludables",
+        "B. Viviendas saludables",
+        "C. Comedores saludables",
+        "D. Programa libre de cáncer"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Viviendas saludables"
+      }
+    },
+    {
+      "n": 38,
+      "stem": "A Ud. le han asignado para trabajar un EESS de salud Nivel I en Amazonas y le informan que en su jurisdicción hay pacientes con fiebre e ictericia; también le dicen que hay muchos poblados que están muy alejados y que no les gusta ir al centro de salud. ¿Qué acciones inicialmente debe tomar cuando llegue al EESS?",
+      "opts": [
+        "A. Identificar las causas de morbimortalidad de la población atendida y diagnosticar la situación de",
+        "B. La información obtenida de la comunidad debe estar orientada a apoyar el proceso de toma de",
+        "C. El serumista y su equipo deben participar en las etapas de los procesos de planeación y",
+        "D. Desarrollar diferentes actividades que se llevan a cabo en el centro de salud"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Identificar las causas de morbimortalidad de la población atendida y diagnosticar la situación de"
+      }
+    },
+    {
+      "n": 39,
+      "stem": "Como médico serumista, jefe de establecimiento de salud, debe participar en el fortalecimiento de la dimensión de prestación del modelo de redes integradas de salud. ¿Qué atributo debe fortalecer en esta dimensión?",
+      "opts": [
+        "A. Participación ciudadana",
+        "B. Primer nivel como puerta de entrada",
+        "C. Financiamiento alineado a objetivos",
+        "D. Gestión de recursos humanos"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Primer nivel como puerta de entrada"
+      }
+    },
+    {
+      "n": 40,
+      "stem": "En la atención de un paciente de 80 años con cáncer de próstata confirmado, luego de informarle claramente los beneficios y riesgos del tratamiento quirúrgico y quimioterapia propuestos en junta médica el paciente en pleno uso de su capacidad de toma de decisiones, decide no aceptar dichos tratamientos. En este caso usted respeta y acepta la decisión informada del paciente. ¿Qué principio ético está cumpliendo en este acto médico?",
+      "opts": [
+        "A. Autonomía",
+        "B. No maleficiencia",
+        "C. Beneficiencia",
+        "D. Justicia"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Autonomía"
+      }
+    },
+    {
+      "n": 41,
+      "stem": "Usted es médico serumista encargado del sistema de vigilancia epidemiológica de su establecimiento de salud. De acuerdo a la directiva sanitaria para la vigilancia epidemiológica de enfermedades zoonóticas, accidentes por animales ponzoñosos y epizootias ¿Cuál es la periodicidad de notificación que debe cumplir para un caso de loxoscelismo probable?",
+      "opts": [
+        "A. 7 días",
+        "B. De inmediato",
+        "C. 5 días",
+        "D. 10 días"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "7 días"
+      }
+    },
+    {
+      "n": 42,
+      "stem": "Al llegar al establecimiento de salud asignado como médico serumista encuentra que se brinda servicios solamente en la UPSS (Unidad Productora de Servicios de Salud) consulta externa por profesional médico y la UPSS patología clínica. ¿Cuál es la categoría de este establecimiento?",
+      "opts": [
+        "A. II-2",
+        "B. I-3",
+        "C. II-1",
+        "D. I-2"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "I-3"
+      }
+    },
+    {
+      "n": 43,
+      "stem": "En su establecimiento de salud usted como médico serumista atiende a un recién nacido de 5 días y le indica la prueba de fenilcetonuria para diagnosticar enfermedades congénitas dentro del MCI. ¿Qué principio básico se esta realizando en esta atención?",
+      "opts": [
+        "A. Promoción",
+        "B. Prevención",
+        "C. Eficiencia",
+        "D. Equidad"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Prevención"
+      }
+    },
+    {
+      "n": 44,
+      "stem": "Gestante andina de 38.5 semanas que se encuentra en trabajo de parto, indicando que necesita música durante su parto. ¿Usted como médico qué haría?",
+      "opts": [
+        "A. No estar de acuerdo",
+        "B. Respetar su decisión",
+        "C. Ignorar su petición",
+        "D. Tratar de convencerla para no cumplir petición"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Respetar su decisión"
+      }
+    },
+    {
+      "n": 45,
+      "stem": "Paciente que fue evaluado por su médico tratante, quien le realiza una buena evaluación clínica y conoce sus diagnósticos y se los explica al paciente y a sus familiares dentro de parámetros de disposición de servicio y de buena voluntad. Ésto se llama:",
+      "opts": [
+        "A. Ética médica",
+        "B. Moral",
+        "C. Empatía",
+        "D. Deontología"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Ética médica"
+      }
+    },
+    {
+      "n": 46,
+      "stem": "¿Qué acción es una prioridad de la intervención inicial durante la ocurrencia de un desastre?",
+      "opts": [
+        "A. Rescate de heridos",
+        "B. Atención médica a los afectados",
+        "C. Suministro de agua",
+        "D. Suministro de alimentos"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Rescate de heridos"
+      }
+    },
+    {
+      "n": 47,
+      "stem": "En el marco de la interculturalidad de salud en una comunidad Aymara un ejemplo de atención con pertinencia cultural sería:",
+      "opts": [
+        "A. Entrega de material escrito en español",
+        "B. Atención del parto vertical",
+        "C. Atender al paciente sin traductor",
+        "D. Difusión de material audiovisual nacional"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Atención del parto vertical"
+      }
+    },
+    {
+      "n": 48,
+      "stem": "A su establecimiento de salud en Loreto llega mujer de 45 años con fiebre de 39 ºC, escalofríos, ictericia, orina de color rojizo, se realiza gota gruesa siendo positiva a Plasmodium. ¿Cuál es el tipo con mayor frecuencia en la zona?",
+      "opts": [
+        "A. P. ovale",
+        "B. P. malariae",
+        "C. P. vívax",
+        "D. P. falciparum"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "P. falciparum"
+      }
+    },
+    {
+      "n": 49,
+      "stem": "Una de las etapas que se identifican en la auditoría de la calidad define los objetivos y la auditoría. ¿Qué etapa es?",
+      "opts": [
+        "A. Implementación de las recomendaciones final",
+        "B. Ejecución",
+        "C. Elaboración de informe",
+        "D. Planeamiento"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Planeamiento"
+      }
+    },
+    {
+      "n": 50,
+      "stem": "La episiotomía es un procedimiento a realizar en algunos partos fisiológico. Según la indicación, la más utilizada es medio es la medio–lateral, siendo una característica:",
+      "opts": [
+        "A. Aumentan los niveles de desgarros",
+        "B. Reduce el nivel de dolor posparto",
+        "C. Reduce el sangrado y complicaciones",
+        "D. Incisión de menos de 45 grados desde la línea media"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Incisión de menos de 45 grados desde la línea media"
+      }
+    },
+    {
+      "n": 51,
+      "stem": "Gestante 26 semanas G2P1001, que acude a su establecimiento de salud por presentar sangrado vaginal, indoloro, rojo rutilante; niega contracciones uterinas. ¿Cuál es el diagnóstico?",
+      "opts": [
+        "A. Rotura de seno marginal",
+        "B. Desprendimiento prematuro de placenta",
+        "C. Placenta previa",
+        "D. Rotura uterina"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Placenta previa"
+      }
+    },
+    {
+      "n": 52,
+      "stem": "Es un documento de gestión institucional, donde se establece la declaración de la política institucional, la misión los objetivos y las acciones estratégicas institucionales, los indicadores, metas y rutas estratégicas y responsable para el plazo de tres años concordando con las estratégicas establecidas por la alta dirección, plan estratégico multisectorial y política general de gobierno:",
+      "opts": [
+        "A. Plan operativo institucional",
+        "B. Plan estratégico institucional",
+        "C. Plan de desarrollo regional",
+        "D. Plan de salud local"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Plan estratégico institucional"
+      }
+    },
+    {
+      "n": 53,
+      "stem": "Como medico serumista usted ha sido designado como jefe del establecimiento, usted considera necesario el contrato CAS de una enfermera para fortalecer las estrategias de vacunación, por lo cual hace el requerimiento correspondiente. ¿Qué debe tenerse en cuenta para proseguir este proceso?",
+      "opts": [
+        "A. Plan Operativo Institucional (POI) aprobado",
+        "B. Plaza incluida en el Manual de Organización de Funciones (MOF)",
+        "C. Necesidad de servicio demostrada",
+        "D. Plaza dentro del Cuadro de Asignación de Personal (CAP)"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Plaza dentro del Cuadro de Asignación de Personal (CAP)"
+      }
+    },
+    {
+      "n": 54,
+      "stem": "El programa de mejora continua es un proceso ...... y sistemático dirigido a obtener un rendimiento mayor de un proceso, aumentar la ...… de un servicio o disminuir el costo de obtención de actividades que ya se desarrollan de forma habitual.",
+      "opts": [
+        "A. proyectado / demanda",
+        "B. continuo / producción",
+        "C. planificado / oferta",
+        "D. estructurado / calidad"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "estructurado / calidad"
+      }
+    },
+    {
+      "n": 55,
+      "stem": "Gestante de 27 semanas, G3P2002, acude al establecimiento de salud refiriendo pérdida de líquido hace 12 horas acompañado de dolor tipo contracciones. Examen: FC: 112 X', FR: 24 X', T°: 38.6 ºC, PA: 100/60 mmHg; útero doloroso a la palpación, AU: 24 cm. FCF: 180 X', DU: 2/10/++/15\"; TV: D: cuello dehiscente 2 cm largo posterior, I: 50%, AP-3M; LA purulento con mal olor. ¿Cuál es el diagnóstico más probable?",
+      "opts": [
+        "A. Endometritis",
+        "B. Infección vaginal",
+        "C. Pielonefritis",
+        "D. Corioamnionitis"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Corioamnionitis"
+      }
+    },
+    {
+      "n": 56,
+      "stem": "Usted está encargado del centro de salud nivel I y tiene que revisar documentos técnicos y de gestión del MINSA y encuentra que el Ministerio de Salud dentro del ROF, tiene las siguientes funciones rectoras:",
+      "opts": [
+        "A. Fortalecer las capacidades y competencias de los recursos humanos en salud",
+        "B. Dictar normas y lineamientos técnicos para la adecuada ejecución y supervisión de las políticas",
+        "C. Coordinar con organismos multilaterales y bilaterales de la cooperación internacional",
+        "D. Regular la organización y prestación de servicios de salud"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Dictar normas y lineamientos técnicos para la adecuada ejecución y supervisión de las políticas"
+      }
+    },
+    {
+      "n": 57,
+      "stem": "Adolescente de 16 años, pálida, usa anteojos por miopía, acude al colegio y se interrelaciona con sus compañeros de estudio. No sabe nada sobre sus vacunaciones. ¿Cuáles son las intervenciones y cuidados del adolescente que se debe realizar al inicio?",
+      "opts": [
+        "A. Evaluación del desarrollo sexual, salud bucal y consejería salud sexual",
+        "B. Tamizaje de anemia, parásitos y enfermedades transmisibles y suplemento de hierro y ácido fólico",
+        "C. Evaluación antropométrica, de agudeza visual e inmunizaciones y tamizaje de anemia, parásitos y",
+        "D. Solo evaluación de la agudeza visual"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Evaluación antropométrica, de agudeza visual e inmunizaciones y tamizaje de anemia, parásitos y"
+      }
+    },
+    {
+      "n": 58,
+      "stem": "En su establecimiento de salud. ¿Cuál es el criterio más importante para diferenciar la cultura organizacional del clima organizacional?",
+      "opts": [
+        "A. Conflicto y cooperación",
+        "B. Comunicación organizacional",
+        "C. Tiene carácter duradero",
+        "D. Las normas y los patrones de comportamiento"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Tiene carácter duradero"
+      }
+    },
+    {
+      "n": 59,
+      "stem": "Con motivo de desarrollar una investigación sobre conocimientos de alimentación saludable en madres de la comunidad usted elabora un cuestionario para tal fin, el cual recibe la opinión favorable de expertos en nutrición y metodólogos en investigación. En este caso el instrumento es más probable que tenga...",
+      "opts": [
+        "A. predictibilidad.",
+        "B. precisión.",
+        "C. confiabilidad.",
+        "D. validez."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "validez."
+      }
+    },
+    {
+      "n": 60,
+      "stem": "Paciente mujer de 80 años fue hospitalizada por neumonía, al momento del alta, debido a su condición de fragilidad, se decide programarle seguimiento telefónico a cargo de su médico tratante dentro de su turno de telemedicina. ¿Cómo se denomina esta prestación?",
+      "opts": [
+        "A. Telecapacitación",
+        "B. Telemonitoreo",
+        "C. Teleorientación",
+        "D. Telegestión"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Telemonitoreo"
+      }
+    },
+    {
+      "n": 61,
+      "stem": "Paciente de 30 años señala presentar fiebre, escalofríos, secreción nasal abundante y tos hace 4 días y se ha empeorado y señala que en su pueblo que está a 4 horas, hay varias personas afectadas y otras con sospecha de neumonía. ¿Qué medidas de protección se debe implementar para los trabajadores del establecimiento?",
+      "opts": [
+        "A. Llamar a la DIRIS",
+        "B. Aislamiento de cohorte de personas de la comunidad y llamar a DIRIS",
+        "C. Evitar exposición de personas susceptibles y usas batas de protección",
+        "D. Uso de EPP"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Uso de EPP"
+      }
+    },
+    {
+      "n": 62,
+      "stem": "Usted es médico serumista y ha sucedido un terremoto en su jurisdicción, por ello se requiere entre otras medidas urgentes establecer una sala de situación en desastres a la cual usted ha sido convocado. ¿Cuál es la finalidad más importante que tiene esta sala de situación?",
+      "opts": [
+        "A. Conformar equipos técnicos en desastres",
+        "B. Informar sobre la nueva situación de salud",
+        "C. Permitir la toma de decisiones en desastres",
+        "D. Actualizar la información oficial sobre los daños"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Permitir la toma de decisiones en desastres"
+      }
+    },
+    {
+      "n": 63,
+      "stem": "En su centro de salud usted se encuentra realizando un procedimiento a paciente con VIH donde su objetivo es: evitar riesgo de accidentes, protección y seguridad al personal y al paciente. ¿A qué definición corresponde?",
+      "opts": [
+        "A. Desinfección",
+        "B. Bioseguridad",
+        "C. Contaminación",
+        "D. Medidas de bioseguridad"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Bioseguridad"
+      }
+    },
+    {
+      "n": 64,
+      "stem": "“El paciente es algo más que órganos y tejidos, es un ser humano, con ilusiones, aspiraciones, metas, obligaciones propias, familiares, laborales y sociales, que en ese momento se ven frustradas por la enfermedad”. El trato en este paciente debe ser con:",
+      "opts": [
+        "A. Ética médica",
+        "B. Integridad",
+        "C. Humanitarismo",
+        "D. Respeto"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Humanitarismo"
+      }
+    },
+    {
+      "n": 65,
+      "stem": "Como médico serumista ha realizado en un paciente adulto el diagnóstico de una enfermedad incluida en el listado de Enfermedades Raras o Huérfanas (ERH). ¿En qué caso se requiere que la IPRESS solicite opinión de la Comisión Consultiva Institucional (CCI)?",
+      "opts": [
+        "A. El paciente presenta criterios dudosos de ERH",
+        "B. La ERH acaba de ser diagnosticada",
+        "C. La ERH requiere un producto farmacéutico por más de un año",
+        "D. El costo anual de tratamiento de la ERH no tiene umbral MAC calculado"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "La ERH requiere un producto farmacéutico por más de un año"
+      }
+    },
+    {
+      "n": 66,
+      "stem": "Nos reportan un primer caso de leishmaniasis en una zona determinada de la sierra; sin reporte de presencia de Lutzomya. ¿Qué recomienda para control vectorial?",
+      "opts": [
+        "A. Si la investigación de foco es negativa, control en un mes",
+        "B. Orientar acciones de control vectorial",
+        "C. Identificar la presencia de vectores de leishmaniasis en los sitios probables de infección",
+        "D. Uso de control químico"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Identificar la presencia de vectores de leishmaniasis en los sitios probables de infección"
+      }
+    },
+    {
+      "n": 67,
+      "stem": "Uno de los principios del equipo de auditores que se rigen para ejercer sus responsabilidades es:",
+      "opts": [
+        "A. Confidalidad",
+        "B. Objetividad",
+        "C. Veracidad",
+        "D. Conducta ética"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Conducta ética"
+      }
+    },
+    {
+      "n": 68,
+      "stem": "En una campaña de salud comunitaria se detectó un joven de 17 años con sospecha de consumo de alcohol, por lo que se le aplicó el test AUDIT (Alcohol Use Disorders Identification Test) con un puntaje de 30 puntos. ¿Cuál es la interpretación de este resultado obtenido?",
+      "opts": [
+        "A. No problemas de consumo",
+        "B. Bebedor de riesgo",
+        "C. Probable dependencia alcohólica",
+        "D. Bebedor social"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Probable dependencia alcohólica"
+      }
+    },
+    {
+      "n": 69,
+      "stem": "En su establecimiento de salud ubicado en una comunidad alto andina se realiza una charla educativa en quechua sobre la diversidad étnica. Esta actividad se enmarca en …",
+      "opts": [
+        "A. principio de justicia.",
+        "B. prevención del estigma social.",
+        "C. promoción de la equidad de género.",
+        "D. prevención de la discriminación."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "prevención de la discriminación."
+      }
+    },
+    {
+      "n": 70,
+      "stem": "Guardar ......, inspira mayor confianza del paciente hacia el médico, generalmente protege los intereses del enfermo y beneficia el prestigio del médico.",
+      "opts": [
+        "A. el secreto profesional",
+        "B. deberes y derechos",
+        "C. consentimiento informado",
+        "D. la ética médica"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "el secreto profesional"
+      }
+    },
+    {
+      "n": 71,
+      "stem": "Paciente de 30 años que viene de SJL y tiene varias parejas sexuales, con antecedente de familiar con TBDR. Luce en buena condición clínica. No se ha hecho baciloscopias y Rx de tórax ni Elisa VIH. ¿Puede iniciarle terapia preventiva contra la tuberculosis a este paciente, fundamente?",
+      "opts": [
+        "A. Si, personas con diagnóstico de infección por VIH independiente del resultado del PPD o IGRA",
+        "B. Si, pero habría que hacerle en ese momento una prueba sensibilidad rápida",
+        "C. No, porque no se ha descartado enfermedad tuberculosa activa ni inmunosupresión",
+        "D. Si, en adultos y adultos mayores que son contactos de caso índice de TB pulmonar"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "No, porque no se ha descartado enfermedad tuberculosa activa ni inmunosupresión"
+      }
+    },
+    {
+      "n": 72,
+      "stem": "Los residuos comunes tipo madera, placas radiológicas, frascos de sueros sin equipo de venoclisis y los que no tengan contacto directo con pacientes y que no se encuentren contaminados se clasifican en:",
+      "opts": [
+        "A. Tipo C1",
+        "B. Tipo C2",
+        "C. Tipo C3",
+        "D. Tipo C4"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Tipo C2"
+      }
+    },
+    {
+      "n": 73,
+      "stem": "En un establecimiento de salud de Surco, el director realiza desplazamiento del personal a otro centro, sustentando la disminución de atenciones de parto, la obstetra que labora más de 10 años, manifiesta su descontento presentando una queja a recursos humanos. ¿Qué aspecto de la gestión de recursos humanos se ve afectado?",
+      "opts": [
+        "A. Salud mental",
+        "B. Ley del CAS",
+        "C. Clima organizacional",
+        "D. Trabajo social"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Clima organizacional"
+      }
+    },
+    {
+      "n": 74,
+      "stem": "En el 2005 se creó el programa JUNTOS cuya cobertura fue ampliada con el decreto supremo DS N° 009-2012- MIDIS, con el apoyo del gobierno local a través del Ministerio de Desarrollo e Inclusión Social, con el objeto de romper el círculo vicioso de la pobreza y restituir los derechos básicos de los hogares (acceso a servicios básicos en salud, nutrición y educación). Con respecto al abordaje de determinantes sociales. ¿Qué tipo de determinantes son?",
+      "opts": [
+        "A. Intermedios (factores conductuales)",
+        "B. Estructurales (según clase social)",
+        "C. Circunstancias materiales",
+        "D. Estructurales (factores psicosociales)"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Estructurales (según clase social)"
+      }
+    },
+    {
+      "n": 75,
+      "stem": "¿Por qué se caracteriza el modelo de salud mental comunitario?",
+      "opts": [
+        "A. Garantiza la inclusión social de las personas con problemas de salud mental",
+        "B. Promueve la participación de la comunidad",
+        "C. Se implementa continuamente, según las necesidades de una población determinada, organizada y",
+        "D. Satisface las necesidades de una población determinada en varias redes de servicios de salud"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Se implementa continuamente, según las necesidades de una población determinada, organizada"
+      }
+    },
+    {
+      "n": 76,
+      "stem": "Acude mujer de 25 años, refiriendo estar gestando con 10 semanas y haber presentado sangrado vaginal y dolor leve en bajo vientre hace 2 días. Examen: FC: 89 X', FR: 20 X', Tº: 36.8 ºC, PA:100/70mmHg. Ecografía: útero y anexos normales. ¿Cuál es el diagnóstico?",
+      "opts": [
+        "A. Aborto completo",
+        "B. Aborto subclínico",
+        "C. Embarazo ectópico",
+        "D. Enfermedad trofoblástica gestacional"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Aborto completo"
+      }
+    },
+    {
+      "n": 77,
+      "stem": "El …... de los equipos es uno de los factores que influyen decisivamente en la mejora de la calidad asistencial y en los resultados sobre la salud de la población.",
+      "opts": [
+        "A. liderazgo",
+        "B. jefe",
+        "C. coordinador",
+        "D. responsable"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "liderazgo"
+      }
+    },
+    {
+      "n": 78,
+      "stem": "Varón acude al establecimiento I–2 y solicita al jefe del PS información acerca del tratamiento que su señora esposa se realiza en Planificación Familiar todos los meses, está muy alterado. El jefe del establecimiento informa que debe guardar reserva respecto a la información referente a su esposa. ¿Qué deber del servidor público se está aplicando en este caso?",
+      "opts": [
+        "A. Discreción",
+        "B. Neutralidad",
+        "C. Responsabilidad",
+        "D. Transparencia"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Discreción"
+      }
+    },
+    {
+      "n": 79,
+      "stem": "Gestante de 32 semanas, acude a su establecimiento de salud con cefalea frontal, epigastralgia, visión borrosa, fotofobia y alteración del estado de conciencia. Examen: FC: 108 X', FR: 20 X', Tº: 36 ºC, PA: 170/110 mmHg. ¿Cuál es el diagnóstico?",
+      "opts": [
+        "A. Emergencia hipertensiva",
+        "B. Eclampsia",
+        "C. Preeclampsia",
+        "D. Hipertensión crónica"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Eclampsia"
+      }
+    },
+    {
+      "n": 80,
+      "stem": "Como médico serumista de un EESS del primer nivel, recibe a una paciente mujer de 70 años quien acude por primera vez refiriendo que desde hace un mes nota una disminución de su fortaleza y velocidad para realizar actividades agrícolas habituales. ¿Cuál formato de evaluación inicial debe aplicar en este caso?",
+      "opts": [
+        "A. VACAM corta",
+        "B. VACAM breve",
+        "C. VACAM completa",
+        "D. VGI breve"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "VACAM corta"
+      }
+    },
+    {
+      "n": 81,
+      "stem": "Mujer de 45 años acude al EE.SS. muy preocupada pidiendo una orden de mamografía pues en tiktok dicen que todas las mujeres deben realizársela para detectar el cáncer de mama y nunca se la ha realizado. Usted la evalúa encontrándola asintomática y con bajo riesgo de cáncer de mama. De acuerdo a la evidencia actual ¿Cuál es la mejor recomendación para ella respecto a su deseo de realizarse la mamografía?",
+      "opts": [
+        "A. Debe esperar 2 años para realizarla",
+        "B. No hacerla por riesgo de radiación",
+        "C. Sí desea puede hacerla",
+        "D. No debe hacerla"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Sí desea puede hacerla"
+      }
+    },
+    {
+      "n": 82,
+      "stem": "Como médico serumista usted ha sido asignado a un establecimiento de salud que cuenta únicamente con la UPSS (Unidad Prestadora de Servicios de Salud) consulta externa por profesional médico, pudiendo brindar atención tanto en modalidad intramural como extramural. ¿Cuál es la categoría de este establecimiento?",
+      "opts": [
+        "A. I-1",
+        "B. I-2",
+        "C. II-2",
+        "D. II-1"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "I-2"
+      }
+    },
+    {
+      "n": 83,
+      "stem": "Usted se encuentra en los barracones del Callao como serumista, donde realiza sutura a paciente con herida en antebrazo. Al descartar los cortopunzantes, sufre accidente con material quirúrgico contaminado. ¿Qué acción inmediata debes realizar ante esta situación?",
+      "opts": [
+        "A. No desechar el cortopunzante",
+        "B. No lavar con jabón antiséptico",
+        "C. Notificar el caso",
+        "D. Administrarse vacuna toxoide tetánico"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Notificar el caso"
+      }
+    },
+    {
+      "n": 84,
+      "stem": "Hoy se celebra el día mundial de lucha contra el SIDA, entonces el equipo del centro de salud nivel I coordina con la municipalidad, para colocar carpas; colocando carpas en el parque ofreciendo y realizando actividades de prevención sobre ITS y VIH al vecindario. Esto facilita la escucha activa por el vecindario y el establecimiento de salud, generando vínculos con el equipo de salud. ¿A qué corresponde esta acción?",
+      "opts": [
+        "A. Participación como movilización",
+        "B. Participación vecinal",
+        "C. Participación política",
+        "D. Participación por delegación"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Participación como movilización"
+      }
+    },
+    {
+      "n": 85,
+      "stem": "La Obstetra del establecimiento de salud de Cutervo, recibe a una mujer de 28 años quechua hablante en trabajo de parto; se presenta, la saluda y le brinda atención del parto con adecuación intercultural. ¿A qué principio ético como servidor público alude su actuar?",
+      "opts": [
+        "A. Responsabilidad",
+        "B. Eficiencia",
+        "C. Justicia y equidad",
+        "D. Lealtad y obediencia"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Justicia y equidad"
+      }
+    },
+    {
+      "n": 86,
+      "stem": "En un establecimiento de salud de primer nivel recibes un escolar de 4 años en consulta. ¿Cuáles son las vacunas que previenen la tos ferina en este escolar?",
+      "opts": [
+        "A. DPT 3 dosis, pentavalente 2 dosis",
+        "B. DPT 2 dosis, SPR 1 dosis",
+        "C. DPT 2 dosis, pentavalente 3 dosis",
+        "D. DPT 1 dosis, SPR 2 dosis"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "DPT 2 dosis, pentavalente 3 dosis"
+      }
+    },
+    {
+      "n": 87,
+      "stem": "Al fortalecer el trabajo de los promotores de salud/agentes comunitarios de salud, generando mecanismos de participación activa en las estrategias de salud locales; se debe realizar:",
+      "opts": [
+        "A. Reorientar los servicios de salud con enfoque de promoción de la salud",
+        "B. Reorientación de la inversión hacia la promoción de la salud y el desarrollo local",
+        "C. Mejorar las condiciones del medio ambiente",
+        "D. Promover la participación comunitaria conducente al ejercicio de la ciudadanía"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Reorientar los servicios de salud con enfoque de promoción de la salud"
+      }
+    },
+    {
+      "n": 88,
+      "stem": "Los cuidados vinculados a la promoción, prevención, recuperación y rehabilitación es un principio básico de la Atención Primaria de Salud. ¿A qué principio se refiere?",
+      "opts": [
+        "A. Universalidad",
+        "B. Equidad en salud",
+        "C. Calidad",
+        "D. Integralidad"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Integralidad"
+      }
+    },
+    {
+      "n": 89,
+      "stem": "Varón de 50 años obeso acude refiriendo decaimiento general y mayor somnolencia por lo que no puede desempeñarse bien en el trabajo. Examen: PA: 130/70 mmHg, FC: 72 X'; IMC: 32. Glicemia plasmática en ayunas: 120 mg/dL. ¿Cuál es el siguiente paso más adecuado para el diagnóstico en este caso?",
+      "opts": [
+        "A. Realizar un dosaje de hemoglogina glicosialda",
+        "B. Realizar un test de tolerancia a la glucosa",
+        "C. Repetir el examen de glicemia plasmática",
+        "D. Realizar un dosaje de insulina plasmática"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Realizar un test de tolerancia a la glucosa"
+      }
+    },
+    {
+      "n": 90,
+      "stem": "Paciente de 68 años hipertenso mal controlado, presenta cefalea progresiva, es llevado al centro de salud por deterioro del estado de conciencia progresivo. Tiene antecedentes de cefaleas vasculares hace 2 semanas. Examen: PA: 180/95 mmHg, FC: 90 X', FR: 22 X', T°: 37 °C; sonmoliento con hemiparesia en hemicuerpo derecho, Glasgow: 9. ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Realizar pruebas de laboratorio",
+        "B. Observación y monitoreo",
+        "C. Referir a centro hospitalario",
+        "D. Control gasométrico"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Referir a centro hospitalario"
+      }
+    },
+    {
+      "n": 91,
+      "stem": "Luego de evaluar la situación de salud en la comunidad adscrita a su establecimiento de salud, encuentra que hay enfermedades de alta prevalencia y otras de alta incidencia. ¿Qué enfermedad cumple la condición de alta incidencia y baja prevalencia a la vez?",
+      "opts": [
+        "A. Crisis de ansiedad",
+        "B. Resfriado común",
+        "C. Diabetes mellitus",
+        "D. Hipertensión arterial"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Resfriado común"
+      }
+    },
+    {
+      "n": 92,
+      "stem": "Como médico usted atiende a un paciente de 20 años con diagnóstico de VIH hace 07 días, asintomático. Tiene 2 Gene X expert en esputo negativos y Rx de tórax: normal, CD4 sérico: 450 cel/ml. Serología: HBsAg negativo VDRL negativo. Ha pasado evaluación por la psicóloga. ¿Cuál es la conducta terapéutica a seguir?",
+      "opts": [
+        "A. Evaluación por oftalmología",
+        "B. Iniciar terapia antirretroviral+ iniciar terapia de prevención de TB",
+        "C. Consejería de soporte sobre el VIH",
+        "D. Iniciar profilaxis con cotrimoxazol"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Iniciar terapia antirretroviral+ iniciar terapia de prevención de TB"
+      }
+    },
+    {
+      "n": 93,
+      "stem": "Para abordar la alta prevalencia de violencia física familiar en su comunidad usted realiza reuniones con el director del colegio, el teniente alcalde, el comisario y el párroco para acordar acciones para mitigar este problema. ¿Qué estrategia de promoción de la salud se está cumpliendo?",
+      "opts": [
+        "A. Comunicación social",
+        "B. Participación ciudadana",
+        "C. Intersectorialidad",
+        "D. Empoderamiento social"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Intersectorialidad"
+      }
+    },
+    {
+      "n": 94,
+      "stem": "Los usuarios de una comunidad quieren mejoras para su centro de salud nivel I en Pichanaqui y quieren involucrarse en los espacios de control social en salud. ¿Cómo mejorar el involucramiento de la participación de la comunidad?",
+      "opts": [
+        "A. Mejorando los instrumentos jurídicos",
+        "B. Dar opinión sobre el trabajo de los serumistas del centro de salud",
+        "C. Procesos de capacitación para personas que pertenecen a la comunidad",
+        "D. Participación de la comunidad para ejercer vigilancia sobre la gestión"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Participación de la comunidad para ejercer vigilancia sobre la gestión"
+      }
+    },
+    {
+      "n": 95,
+      "stem": "“Es un proceso sistemático, cíclico y continuo, de naturaleza política, técnica y participativa; por lo que, involucra múltiples actores de un sector o de diversos sectores e instancias gubernamentales. Se basa en un análisis riguroso, basado en evidencias de la situación actual y futura, a través del cual se implementan los objetivos del Plan Estratégico de Desarrollo Nacional”. Estamos hablando de:",
+      "opts": [
+        "A. Planeamiento estratégico",
+        "B. Identificación de indicadores",
+        "C. Plan de salud",
+        "D. Análisis de la situación actual"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Planeamiento estratégico"
+      }
+    },
+    {
+      "n": 96,
+      "stem": "Es el documento de gestión participativa y concertada de vigencia anual, su proceso de elaboración es conducido por la CLAS y los jefes de sus establecimientos de salud, de conformidad con las normas técnicas del MINSA; orienta las intervenciones sanitarias hacia la solución de las necesidades de salud locales priorizadas. Nos estamos refiriendo a:",
+      "opts": [
+        "A. Análisis situacional en salud",
+        "B. Plan de salud local",
+        "C. Promoción de la salud",
+        "D. Sistema de vigilancia"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Plan de salud local"
+      }
+    },
+    {
+      "n": 97,
+      "stem": "Lactante masculino de 6 meses de edad, eutrófico, con esquema de vacunación actualizado que se le orienta a su mamá, acude a vacunatorio para recibir su próxima inmunización, correspondiéndole…",
+      "opts": [
+        "A. 2da dosis de influenza.",
+        "B. 1ra dosis de influenza.",
+        "C. 1ra dosis de vacuna sarampión, paperas, rubéola (SPR).",
+        "D. dosis única vacuna antiamarílica (AMA)."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "2da dosis de influenza."
+      }
+    },
+    {
+      "n": 98,
+      "stem": "Un serumista muestra en una reunión técnica con la municipalidad, comunidad y DIRIS, los datos de los casos de jóvenes recién diagnosticados de VIH que han aumentado en la comunidad, que acuden a su centro de salud en un pueblo en la Selva de Amazonas y señala que se necesita apoyo para construir una área de atención médica en el centro para dichos pacientes. ¿Para qué me sirve la información epidemiológica recogida?",
+      "opts": [
+        "A. Consolidar el compromiso de la lucha contra el VIH",
+        "B. Movilizar a la comunidad y pedir recursos",
+        "C. Identificar los factores causales",
+        "D. Saber la magnitud de la epidemia del VIH"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Movilizar a la comunidad y pedir recursos"
+      }
+    },
+    {
+      "n": 99,
+      "stem": "Niño de 10 años, llevado al centro de salud de La Victoria por presentar astenia. Examen: FR: 18 X', FC: 89 X', Tº: 36.5 Cº; piel, escleras y mucosas con tinte ictérico y acolia. ¿Cuál es su diagnóstico?",
+      "opts": [
+        "A. Paludismo",
+        "B. Dengue con signos de alarma",
+        "C. Hepatitis A",
+        "D. Hepatitis B"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Hepatitis A"
+      }
+    },
+    {
+      "n": 100,
+      "stem": "En su establecimiento de salud acude mujer andina quechua hablante de 39.4 semanas para realizar su parto con todos sus controles prenatales sin alteración. ¿Qué parto usted promueve para realizar interculturalidad?",
+      "opts": [
+        "A. Cesárea",
+        "B. Parto domiciliario",
+        "C. Parto horizontal",
+        "D. Parto vertical"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Parto vertical"
+      }
+    }
+  ],
+  "2026-I": [
+    {
+      "n": 1,
+      "stem": "Gestante multípara a término, que acude a puesto de salud con contracciones uterinas cada 30 minutos. Al tacto vaginal se identifica dilatación de cuello uterino de 3 cm, sin signos de alarma. Ud. procede referir a:",
+      "opts": [
+        "A. Centro de salud I-3",
+        "B. Hospital III",
+        "C. Centro de salud I-4",
+        "D. Hospital II"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Centro de salud I-4"
+      }
+    },
+    {
+      "n": 2,
+      "stem": "Al consultorio de medicina acude María de 55 años, con 10 años de diabetes, actualmente controlada, en tratamiento con Metformina, con estilos de vida saludables, se realiza el seguimiento periódico ¿Cuál de los siguientes se considera como meta en el manejo integral del paciente con diabetes?",
+      "opts": [
+        "A. Glicemia en ayunas de 80 a 126 mg/dl",
+        "B. Hemoglobina glucosilada < 7.5%",
+        "C. Glicemia postprandial de 2 h <140 mg/dl",
+        "D. Perímetro de cintura < 94 cm"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Glicemia postprandial de 2 h <140 mg/dl"
+      }
+    },
+    {
+      "n": 3,
+      "stem": "En un establecimiento de salud I-4 el personal de salud recoge los datos en el escenario donde se presentó la enfermedad para su control, incluyendo a las personas que no acudieron al servicio de salud. ¿A qué tipo de vigilancia corresponde?",
+      "opts": [
+        "A. Centinela",
+        "B. Especializada",
+        "C. Pasiva",
+        "D. Activa"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Activa"
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Mujer de 52 años, natural de región selva, trabaja en prostitución, refiere a profesional de salud que el día anterior fue dopada y sufrió agresión sexual, tiene dolor pélvico y moretones en el cuerpo. ¿Qué debe hacer el profesional de salud?",
+      "opts": [
+        "A. Aplicar kit completo de emergencia, previo consentimiento",
+        "B. Derivar a paciente para que se le brinde atención en salud mental",
+        "C. Aplicar kit de descarte sin consentimiento para que no se asuste",
+        "D. Hacer denuncia a las autoridades sin autorización de paciente"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Aplicar kit completo de emergencia, previo consentimiento"
+      }
+    },
+    {
+      "n": 5,
+      "stem": "Ud. como médico acude a una visita domiciliaria en el sector sanitario asignado, identificando a una pareja con unión de 4 meses y cursando el primer embarazo. ¿Cómo la clasificaría según su ciclo vital familiar?",
+      "opts": [
+        "A. Expansión",
+        "B. Dispersión",
+        "C. Contracción",
+        "D. Formación"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Expansión"
+      }
+    },
+    {
+      "n": 6,
+      "stem": "Gestante de 23 años, migrante, con primaria incompleta, control prenatal esporádico de su tercer embarazo, manifiesta a un profesional que le quiere regalar a su hijo porque tiene problemas económicos, y su pareja la ha abandonado. Esta persona se encuentra sola y no tiene testigos. ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Comunicar a la policía, la intención de la gestante",
+        "B. Aceptar por el bienestar y bien superior del recién nacido",
+        "C. Referir a paciente a salud mental o servicio social",
+        "D. Rechazar porque es un acto en contra de la ética profesional"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Rechazar porque es un acto en contra de la ética profesional"
+      }
+    },
+    {
+      "n": 7,
+      "stem": "¿Cuál es el rango de T° en °C, necesario para la conservación de las vacunas?",
+      "opts": [
+        "A. 1 a 8",
+        "B. 4 a 10",
+        "C. 2 a 8",
+        "D. -1 a -8"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "2 a 8"
+      }
+    },
+    {
+      "n": 8,
+      "stem": "En un pueblo amazónico se está implementando una RIS de manera ordenada, siguiendo la normativa del MINSA, considerando su realidad local. ¿Qué característica del proceso se está cumpliendo?",
+      "opts": [
+        "A. Sistemático",
+        "B. Sostenible",
+        "C. Progresivo",
+        "D. Planificado"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Sistemático"
+      }
+    },
+    {
+      "n": 9,
+      "stem": "La evaluación continua del recién nacido hospitalizado cuya madre tuvo ITU o ITS antes del parto, corresponde a una vigilancia epidemiológica de las IAAS de tipo ...",
+      "opts": [
+        "A. pasiva.",
+        "B. focalizada.",
+        "C. activa.",
+        "D. selectiva."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "selectiva."
+      }
+    },
+    {
+      "n": 10,
+      "stem": "En un establecimiento de salud I-4, mujer de 25 años, recibió esquema de tratamiento para TB, pero indica que los síntomas continúan, y que su hija menor de 5 años, también fue diagnosticada de lo mismo. ¿Qué principio del uso de medicamentos antimicrobianos NO se aplicó?",
+      "opts": [
+        "A. Calidad",
+        "B. Concentración",
+        "C. Resistencia",
+        "D. Biodisponibilidad"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Resistencia"
+      }
+    },
+    {
+      "n": 11,
+      "stem": "El fortalecimiento de capacidades del personal de salud para mejorar la calidad en un servicio específico de atención primaria de salud, es una actividad acorde al objetivo de planeamiento estratégico relacionado a …",
+      "opts": [
+        "A. fortalecer el ejercicio de la rectoría de la autoridad nacional de salud.",
+        "B. incrementar el acceso a atención integral de salud.",
+        "C. mejorar asignación de presupuesto para atención integral.",
+        "D. difundir la importancia de la salud como derecho."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "incrementar el acceso a atención integral de salud."
+      }
+    },
+    {
+      "n": 12,
+      "stem": "En un establecimiento de salud I-4, ingresa paciente con parto inminente, no controlada. ¿ Cuál de las siguientes pruebas de tamizaje rápido se utiliza para detectar anticuerpos contra VIH y treponema pallidum o anticuerpos treponémicos totales?",
+      "opts": [
+        "A. FTA-Abs",
+        "B. PM (pruebas moleculares)",
+        "C. PRT (pruebas rápidas triples)",
+        "D. PRD (pruebas rápidas duales)"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "PRD (pruebas rápidas duales)"
+      }
+    },
+    {
+      "n": 13,
+      "stem": "Durante la visita a un niño con anemia, se le orienta a la madre darle alimentos ricos en hierro como la sangrecita, sin embargo, la madre señal que su religión no se lo permite. ¿Cuál es la conducta más adecuada para mejorar el estado de salud del menor?",
+      "opts": [
+        "A. Llamarle la atención por negligencia y desidia",
+        "B. Obligar a que la madre lo alimente con la sangrecita",
+        "C. Respetar la decisión y creencia de la familia",
+        "D. Fortalecer el consumo de hierro intradomiciliario"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Fortalecer el consumo de hierro intradomiciliario"
+      }
+    },
+    {
+      "n": 14,
+      "stem": "El tabaco es un factor de riesgo para cáncer pulmonar y EPOC, una intervención efectiva para disminuir la exposición es la implementación de medidas correctivas que favorezcan espacios libres de humo, siendo una función de salud...",
+      "opts": [
+        "A. individual.",
+        "B. pública.",
+        "C. familiar.",
+        "D. participativa."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "pública."
+      }
+    },
+    {
+      "n": 15,
+      "stem": "Durante la consulta de curso de vida de un adulto mayor, identifica que hace varios años no se ha aplicado vacunas, por lo que lo sensibiliza informándole sobre los beneficios. De acuerdo al curso de vida, le corresponde:",
+      "opts": [
+        "A. Hepatitis B y antiamarílica",
+        "B. Antiamarílica e influenza adulto",
+        "C. Influenza adulto y neumococo",
+        "D. VPH, SPR y neumococo"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Influenza adulto y neumococo"
+      }
+    },
+    {
+      "n": 16,
+      "stem": "Frente a un paciente con sospecha de neumotórax y/o atrapamiento aéreo; para un adecuado diagnóstico, se debe tomar una radiografía en:",
+      "opts": [
+        "A. Decúbito supino",
+        "B. Inspiración",
+        "C. Decúbito prono",
+        "D. Espiración"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Espiración"
+      }
+    },
+    {
+      "n": 17,
+      "stem": "Un médico serumista se encuentra trabajando en un centro de salud de 12 horas, al cual acude una gestante de bajo riesgo obstétrico con contracciones. ¿A qué establecimiento de salud le corresponde referir?",
+      "opts": [
+        "A. I - 3",
+        "B. I - 4",
+        "C. II - 1",
+        "D. III - 1"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "I - 4"
+      }
+    },
+    {
+      "n": 18,
+      "stem": "En el proceso de atención de Juan en consulta externa, el médico asume un rol \"Consejero - consultor\", buscando la autocomprensión de sus valores en salud del paciente. ¿Cómo se denomina a esta modelo de relación profesional de salud - paciente?",
+      "opts": [
+        "A. Deliberativo",
+        "B. Informativo",
+        "C. Paternalista",
+        "D. Interpretativo"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Interpretativo"
+      }
+    },
+    {
+      "n": 19,
+      "stem": "Las condiciones en que viven las personas y sus experiencias de convivencia que condicionan su salud, son determinantes de tipo:",
+      "opts": [
+        "A. Pobreza",
+        "B. Ambiental",
+        "C. Económico",
+        "D. Social"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Social"
+      }
+    },
+    {
+      "n": 20,
+      "stem": "¿Cuál es una vacuna multidosis, indicada a partir de los 15 meses hasta los 59 años?",
+      "opts": [
+        "A. Tétano y Difteria (DT)",
+        "B. Antiamarílica (AMA)",
+        "C. BCG",
+        "D. Sarampión, Papera y Rubeola (SPR)"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Antiamarílica (AMA)"
+      }
+    },
+    {
+      "n": 21,
+      "stem": "Para garantizar el adecuado desempeño de los recursos humanos de su establecimiento de salud. ¿Qué se debe considerar?",
+      "opts": [
+        "A. Virtudes",
+        "B. Competencias",
+        "C. Valores",
+        "D. Caracteres"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Competencias"
+      }
+    },
+    {
+      "n": 22,
+      "stem": "Se considera posible cáncer o enfermedad muy grave a todo niño o adolescente que presente:",
+      "opts": [
+        "A. Ganglios mayores de 5 cm de cualquier localización",
+        "B. Inicio progresivo de visión borrosa, doble o ceguera",
+        "C. Cefalea con pred, diurno, persistente y progresivo",
+        "D. Fiebre de duración mayor a 7 días sin causa conocida"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Fiebre de duración mayor a 7 días sin causa conocida"
+      }
+    },
+    {
+      "n": 23,
+      "stem": "Se identifica un caso índice de tuberculosis en su comunidad, en población semicerrada, por lo que, de acuerdo con la normativa, inicia estudio de contactos. ¿Cuál es el plazo límite para el estudio de contactos?",
+      "opts": [
+        "A. ≤7 días calendario",
+        "B. >7 días calendario",
+        "C. <48 horas",
+        "D. ≥48 horas"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "≤7 días calendario"
+      }
+    },
+    {
+      "n": 24,
+      "stem": "Se desea ordenar el servicio de Admisión en un establecimiento de salud. ¿Hasta cuántos años de la última consulta se pueden tener las historias clínicas en el archivo activo?",
+      "opts": [
+        "A. 2",
+        "B. 3",
+        "C. 5",
+        "D. 10"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "5"
+      }
+    },
+    {
+      "n": 25,
+      "stem": "Durante las campañas de vacunación se intervienen a las instituciones educativas a fin de vacunar a los niños y niñas con la vacuna de VPH para protegerlos y prevenir el cáncer cervical. ¿Desde qué edad se puede vacunar y cuantas dosis se debe aplicar?",
+      "opts": [
+        "A. 9 años y dosis única",
+        "B. 11 años y dosis única",
+        "C. 9 años y dos dosis",
+        "D. 13 años y dosis única"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "9 años y dosis única"
+      }
+    },
+    {
+      "n": 26,
+      "stem": "Tras administrar un medicamento \"x\" a un paciente, este reporta nauseas. Esta reacción a pesar de solo ser una sospecha de haber sido generada por el medicamento \"x\", sin necesidad de confirmar la relación causal, debe reportarse en la historia clínica del paciente; porque corresponde a:",
+      "opts": [
+        "A. Reacción bien caracterizada",
+        "B. Evento centinela",
+        "C. ESAVI",
+        "D. Sospecha de reacción adversa"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Sospecha de reacción adversa"
+      }
+    },
+    {
+      "n": 27,
+      "stem": "En una actividad de prevención de cáncer en su comunidad, Ud. acude con su equipo multidisciplinario en salud para la captación de personas en riesgo, según la normatividad vigente sobre el acceso a la cobertura oncológica ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Citología cervical a mujeres de cualquier edad",
+        "B. Tamizaje de piel a varones mayores de 50 años",
+        "C. Dosaje de PSA a partir de los 40 años",
+        "D. Aplicar IVAA a mujeres de 30 a 49 años"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Aplicar IVAA a mujeres de 30 a 49 años"
+      }
+    },
+    {
+      "n": 28,
+      "stem": "Varón de 18 años le comenta a usted que tuvo su primera relación sexual sin protección para lo cual pide una prueba de descarte de VIH. Al regresar a consulta para su resultado se da con la noticia que es positivo ¿Qué responsabilidades tiene usted como médico?",
+      "opts": [
+        "A. Movilizar redes de soporte social para el paciente",
+        "B. Coordinar con el servicio de inmunizaciones",
+        "C. Confirmar el diagnóstico",
+        "D. Identificar al agente de soporte"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Confirmar el diagnóstico"
+      }
+    },
+    {
+      "n": 29,
+      "stem": "La organización mundial de la salud ratifica la importancia de la actividad física y la considera como el factor que interviene en el estado de salud de las personas y la define como la principal estrategia en prevención de la ...",
+      "opts": [
+        "A. morbilidad.",
+        "B. letalidad.",
+        "C. mortalidad.",
+        "D. obesidad."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "obesidad."
+      }
+    },
+    {
+      "n": 30,
+      "stem": "Mariela de 25 años acude por segunda vez en un mes al servicio de medicina por problemas personales no físicos, con insomnio y preocupación. Ante esta situación el médico SERUMS aplica el Cuestionario Symptoms Report Questionnaire - SRQ; luego de responder las primeras 18 preguntas obtiene un puntaje de 09, esto significa:",
+      "opts": [
+        "A. Alta probabilidad de sufrir enfermedad mental",
+        "B. Joven con personalidad normal",
+        "C. Probabilidad baja de sufrir ansiedad",
+        "D. Alta probabilidad de sufrir adicción"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Alta probabilidad de sufrir enfermedad mental"
+      }
+    },
+    {
+      "n": 31,
+      "stem": "En el PS I-2 de la región central se ha detectado un caso de fiebre amarilla selvática, en este caso la notificación es:",
+      "opts": [
+        "A. Mensual",
+        "B. Inmediata",
+        "C. Quincenal",
+        "D. Semanal"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Inmediata"
+      }
+    },
+    {
+      "n": 32,
+      "stem": "Mujer de 30 años con 9 meses de gestación refiere que empezó a tener contracciones hace más de dos horas y se encuentra pronta a dar a luz. ¿Qué criterios debe cumplir para parto vertical?",
+      "opts": [
+        "A. Presentación cefálica del feto",
+        "B. Incompatibilidad feto pélvica",
+        "C. Embarazo gemelar",
+        "D. Cirugía uterina previa"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Presentación cefálica del feto"
+      }
+    },
+    {
+      "n": 33,
+      "stem": "Alfonso de 62 años, agricultor, acude a su control anual por medicina en la posta de San Marcos. A la evaluación integral se obtiene una PA: 142/90 mmHg, FR: 20X’, FC: 80X’ y un IMC: 31 Kg/m2, sin daño a órgano blanco. ¿Qué riesgo cardiovascular le corresponde?",
+      "opts": [
+        "A. Alto",
+        "B. Moderado",
+        "C. Bajo a moderado",
+        "D. Moderado a alto"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Moderado a alto"
+      }
+    },
+    {
+      "n": 34,
+      "stem": "Cuando el personal de salud reconoce a las enfermedades transmisibles a través de la ruta del agente infeccioso desde la fuente de infección hasta el susceptible. Está aplicando la definición de:",
+      "opts": [
+        "A. Epidemiología de las enfermedades",
+        "B. Cadena de vigilancia y recuperación",
+        "C. Triada epidemiológica",
+        "D. Cadena epidemiológica"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Cadena epidemiológica"
+      }
+    },
+    {
+      "n": 35,
+      "stem": "Para prevenir las muertes neonatales se impulsa el parto institucional, sin embargo, la población de las zonas rurales, por costumbre y cultura, prefieren los partos domiciliarios. ¿Qué acciones se deben de tomar en cuenta para cumplir con los objetivos del sector?",
+      "opts": [
+        "A. Informar a las gestantes que la atención es gratuita",
+        "B. Prometerles la entrega de canastas de víveres",
+        "C. Educar e impulsar la participación comunitaria",
+        "D. Atender los partos intradomiciliarios"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Educar e impulsar la participación comunitaria"
+      }
+    },
+    {
+      "n": 36,
+      "stem": "Se encuentra en un centro de salud I-4, el equipo de vigilancia está realizando la revisión de historias clínicas de las mujeres post parto eutócico, para identificar casos de endometritis puerperal. En el proceso de la vigilancia epidemiológica de las IAAS corresponde a:",
+      "opts": [
+        "A. Recolección de datos",
+        "B. Análisis e interpretación de los datos",
+        "C. Evaluación de la vigilancia",
+        "D. Plan de vigilancia epidemiológica"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Recolección de datos"
+      }
+    },
+    {
+      "n": 37,
+      "stem": "Se encuentra atendiendo el serumista profesional de salud no médico en un establecimiento de salud nivel I-1. ¿Cuál es la atención de salud de urgencia que puede realizar según su categoría y su referencia correspondiente?",
+      "opts": [
+        "A. Hemorragia leve",
+        "B. Síndrome febril",
+        "C. Asma no complicada",
+        "D. Parasitosis intestinal"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Síndrome febril"
+      }
+    },
+    {
+      "n": 38,
+      "stem": "La farmacovigilancia es una actividad de la ...... que se encarga de evaluar la efectividad del medicamento y dispone un sistema rápido de alerta a…",
+      "opts": [
+        "A. salud pública / vigilancia epidemiológica.",
+        "B. vigilancia / reacciones adversas.",
+        "C. epidemiología / farmacovigilancia.",
+        "D. salud pública / reacciones adversas."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "salud pública / reacciones adversas."
+      }
+    },
+    {
+      "n": 39,
+      "stem": "Como integrante de un equipo multidisciplinario del adolescente en su IPRESS, realiza el cuidado integral a María de 15 años, buscando prevenir el riesgo y conductas problemáticas, desarrollando competencias necesarias para la consecución de logros, ¿Qué enfoque está abordando Ud.?",
+      "opts": [
+        "A. Desarrollo positivo",
+        "B. Diversidad",
+        "C. Derechos y ciudadanía",
+        "D. Inclusión social"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Desarrollo positivo"
+      }
+    },
+    {
+      "n": 40,
+      "stem": "El conjunto de procedimientos asistenciales a través del cual se asegura la continuidad de la atención de las necesidades de salud de los usuarios, transfiriéndolo del establecimiento de menor a mayor capacidad resolutiva corresponde a:",
+      "opts": [
+        "A. Referencia",
+        "B. Contrarreferencia",
+        "C. Atención primaria",
+        "D. Atención compartida"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Referencia"
+      }
+    },
+    {
+      "n": 41,
+      "stem": "En la evaluación de una gestante se evidencia úlcera indurada e indolora (chancro) localizada en mucosa genital. ¿En qué fase de la historia natural de la enfermedad se encuentra?",
+      "opts": [
+        "A. Clínica",
+        "B. Subclínica",
+        "C. Inducción",
+        "D. Resolutiva"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Clínica"
+      }
+    },
+    {
+      "n": 42,
+      "stem": "En una comunidad con escenario de intervención III para Aedes aegypti se realizaron actividades de vigilancia mediante ovitrampas, obteniendo un índice IPO/IDH de 70. ¿Qué medidas se debe adoptar, considerando la estratificación del riesgo entomológico?",
+      "opts": [
+        "A. Aplicar larvicidas y adulticidas",
+        "B. Realizar inspecciones adicionales",
+        "C. Identificar criaderos para eliminar",
+        "D. Seguir con el monitoreo"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Aplicar larvicidas y adulticidas"
+      }
+    },
+    {
+      "n": 43,
+      "stem": "Un centro de salud I-3 que no genera más de 10 litros al día de residuos sólidos biocontaminados y cuenta con autoclave para el tratamiento. ¿Cuál es el tiempo máximo que puede almacenarlos antes de su disposición final?",
+      "opts": [
+        "A. Un mes",
+        "B. Tres días",
+        "C. 48 horas",
+        "D. Siete días"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Siete días"
+      }
+    },
+    {
+      "n": 44,
+      "stem": "En un caserío de Pasco, se presentan 5 casos de la enfermedad de pertussis durante los meses de enero y febrero. Como jefe de establecimiento, ¿Qué actividades dispone realizar?",
+      "opts": [
+        "A. Complementarias de vacunación",
+        "B. Desinfección en comunidad",
+        "C. Regulares de vacunación",
+        "D. Control de vectores"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Complementarias de vacunación"
+      }
+    },
+    {
+      "n": 45,
+      "stem": "Un establecimiento de salud con población asignada que cuenta con médico cirujano, profesionales de enfermería y obstetricia, y personal técnico de enfermería; si recibe una gestante en periodo expulsivo. ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Referirlo a un hospital",
+        "B. Atender el parto",
+        "C. Referirlo a un EESS I-3",
+        "D. Referirlo a un EESS I-4"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Atender el parto"
+      }
+    },
+    {
+      "n": 46,
+      "stem": "A una RIS se le asigna las siguientes acciones: conformar el equipo implementador del modelo de cuidado integral (MCI), su plan y fortalecimiento de capacidades a su equipo de gestión. ¿Cuál es el componente del MCI aplicado?",
+      "opts": [
+        "A. Provisión",
+        "B. Financiamiento",
+        "C. Gestión",
+        "D. Organización"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Organización"
+      }
+    },
+    {
+      "n": 47,
+      "stem": "Recientemente usted fue asignado a un C.S. y quiere conocer cómo se transmite una enfermedad de una persona a otra o de un reservorio no humano a una población humana, además de las razones por las que los comportamientos de riesgo causan enfermedades. ¿En qué se basa para realizar este estudio?",
+      "opts": [
+        "A. Tanatología",
+        "B. Estadística",
+        "C. Salud pública",
+        "D. Epidemiología"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Epidemiología"
+      }
+    },
+    {
+      "n": 48,
+      "stem": "Adolescente de 13 años, con 38 semanas de gestación, procedente de los andes, sin control, indica que relaciones sexuales han sido voluntarias con ex pareja de 35 años, viene acompañada por la madre al establecimiento I-3 ¿Cuál es la conducta a seguir?",
+      "opts": [
+        "A. Aplicar kits completos de emergencia para descarte de ITS, VIH, Hepatitis B",
+        "B. Comunicar a las autoridades, activar código violeta y referencia hospitalaria",
+        "C. Brindar actividades socio educativas a fin de que paciente identifique riesgos",
+        "D. Responsabilizar a sus progenitores por negligencia hacia la paciente"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Comunicar a las autoridades, activar código violeta y referencia hospitalaria"
+      }
+    },
+    {
+      "n": 49,
+      "stem": "El jefe del puesto de salud acudió a la reunión convocada por el municipio para empadronamiento y evaluación sanitaria de los drogadictos que pernoctan a las afueras de la ciudad y que han ido en aumento. Este hábito negativo para la salud, está dentro del grupo de determinantes:",
+      "opts": [
+        "A. Biológicos",
+        "B. Genéticos",
+        "C. Ambientales",
+        "D. Asistenciales"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Ambientales"
+      }
+    },
+    {
+      "n": 50,
+      "stem": "La inducción inicial, así como los cursos recibidos durante su SERUMS en el marco del \"desarrollo y capacitación de recursos humanos\" organizada por la Gerencia Regional de Salud. ¿A qué aspecto de la salud pública corresponde?",
+      "opts": [
+        "A. Función esencial",
+        "B. Desarrollo de políticas",
+        "C. Transición epidemiológica",
+        "D. Rendimiento de personal"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Función esencial"
+      }
+    },
+    {
+      "n": 51,
+      "stem": "Conjunto de actividades periódicas y sistemáticas realizadas por el profesional de la salud de enfermería y/o médico, con el objetivo de vigilar de manera adecuada, oportuna e individual, a fin de detectar de forma precoz los riesgos, las deficiencias y discapacidades e incremento de las oportunidades y factores protectores. Es individual, integral, oportuno, periódico y secuencial. ¿Cómo se denomina a estas actividades?",
+      "opts": [
+        "A. Control de signos de alarma del niño y niña",
+        "B. Control de crecimiento y desarrollo del niño y niña",
+        "C. Control parcial de crecimiento del niño y niña",
+        "D. Evaluación global del niño y niña"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Control de crecimiento y desarrollo del niño y niña"
+      }
+    },
+    {
+      "n": 52,
+      "stem": "Si la interacción entre un paciente y el personal sanitario tratante, se da mediante uso de las TICs, ¿Qué concepto de salud se está aplicando?",
+      "opts": [
+        "A. Cuidado integral",
+        "B. Salud intercultural",
+        "C. Promoviendo salud",
+        "D. Telesalud"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Telesalud"
+      }
+    },
+    {
+      "n": 53,
+      "stem": "Mujer no gestante de 30 años, que se atiende en un establecimiento de salud I-2 a 3200 msnm; presenta hemoglobina de 11.9 g por hemoglobinómetro. ¿Cuál es el tipo de anemia y la conducta a seguir?",
+      "opts": [
+        "A. Leve e inicia tratamiento farmacológico",
+        "B. Moderada e inicia tratamiento farmacológico",
+        "C. Leve y solicita ferritina en el C.S. más cercano",
+        "D. Severa y refiere para manejo en siguiente nivel"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Moderada e inicia tratamiento farmacológico"
+      }
+    },
+    {
+      "n": 54,
+      "stem": "Como parte del cuidado integral del niño de 2 años y 3 meses de edad, corresponde realizar la vigilancia del neurodesarrollo. ¿Qué test se aplica considerando la edad del paciente?",
+      "opts": [
+        "A. Escala de salud del paciente",
+        "B. Lista de verificación de síntomas pediátricos",
+        "C. Lista de habilidades y conductas esperadas por edad",
+        "D. Huanca test"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Huanca test"
+      }
+    },
+    {
+      "n": 55,
+      "stem": "Los pobladores de una comunidad ashaninka llegan al centro de salud preocupados debido a que sus niños presentan dolor y diarrea con mucha frecuencia. Además, refieren que tomaron preparados de hierbas y posteriormente algunos fallecieron. ¿Cuál es la función de salud pública que debe fortalecer el personal de salud?",
+      "opts": [
+        "A. Vigilancia y valoración del estado de salud",
+        "B. Valoración clínica y laboratorio",
+        "C. Vigilancia y valoración por el laboratorio",
+        "D. Valoración del estado de salud"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Vigilancia y valoración del estado de salud"
+      }
+    },
+    {
+      "n": 56,
+      "stem": "Lactante de 4 meses con SIS, procedente de otra jurisdicción, acude al establecimiento de salud para su control e inicio de tratamiento preventivo de anemia. ¿Cuál es el procedimiento que se debe realizar para respetar su derecho al acceso a la salud?",
+      "opts": [
+        "A. Solicitar su referencia del lugar de procedencia",
+        "B. Referir al hospital de mayor complejidad",
+        "C. Apertura de la HC y brindar la atención requerida",
+        "D. Enviarle al SIS central para su inscripción"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Apertura de la HC y brindar la atención requerida"
+      }
+    },
+    {
+      "n": 57,
+      "stem": "Adela es una adulta mayor viviendo con diabetes mellitus, la cual tiene dificultad para movilizarse. Refiere que vive con su hija que trabaja todo el día y no puede acompañarla siempre al establecimiento de salud. Está estable, pero necesita su medicación de manera oportuna. ¿Qué tipo de intervención de Telesalud requiere?",
+      "opts": [
+        "A. Teleorientación",
+        "B. Telecapacitación",
+        "C. Telemonitoreo",
+        "D. Teleconsulta"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Telemonitoreo"
+      }
+    },
+    {
+      "n": 58,
+      "stem": "El modelo actual de salud en el Perú busca mejorar su calidad, atender a toda persona bajo su contexto cultural, comunitario y familiar, brindando un amplio rango de servicios. ¿Cuál es el atributo de la APS aplicado para este fin?",
+      "opts": [
+        "A. Coordinación de la atención",
+        "B. Accesibilidad del primer contacto",
+        "C. Participación activa",
+        "D. Integralidad de los servicios"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Integralidad de los servicios"
+      }
+    },
+    {
+      "n": 59,
+      "stem": "Varón de 36 años viviendo con VIH, percibe que el profesional médico en consulta lo atiende con una gran indiferencia y poca comunicación. Para que él usuario no se sienta afectado se debe ...",
+      "opts": [
+        "A. aceptar la condición del paciente.",
+        "B. indicar donde debe tomar asiento.",
+        "C. disimular el rechazo al paciente.",
+        "D. brindar un trato digno y humanizado."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "brindar un trato digno y humanizado."
+      }
+    },
+    {
+      "n": 60,
+      "stem": "Gestante migrante quechua hablante, que acude para atención a su establecimiento de salud tiene derecho a ...",
+      "opts": [
+        "A. servicios de salud con adecuación cultural.",
+        "B. presencia solo de pareja.",
+        "C. acompañamiento de familia.",
+        "D. traductor de idioma original."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "servicios de salud con adecuación cultural."
+      }
+    },
+    {
+      "n": 61,
+      "stem": "Durante la atención integral de la gestante, los controles prenatales buscan detectar riesgos para eliminarlos o minimizarlos. ¿Qué tipo de prevención es?",
+      "opts": [
+        "A. Cuaternaria",
+        "B. Primaria",
+        "C. Secundaria",
+        "D. Terciaria"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Primaria"
+      }
+    },
+    {
+      "n": 62,
+      "stem": "El responsable de la RIS desea saber la cantidad de atenciones realizadas por el médico serumista en consulta externa. ¿Qué indicador de gestión debe utilizar?",
+      "opts": [
+        "A. Rendimiento",
+        "B. Concentración",
+        "C. Productividad",
+        "D. Permanencia"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Productividad"
+      }
+    },
+    {
+      "n": 63,
+      "stem": "Varón de 35 años acude al establecimiento de salud para evaluación médica. Durante la consulta refiere que presenta tos y flema desde hace 15 días. Según la Norma Técnica de Salud para la prevención y control de tuberculosis. ¿Cómo se denomina a un paciente con este cuadro clínico?",
+      "opts": [
+        "A. Sintomático respiratorio examinado",
+        "B. Paciente con infección latente",
+        "C. Sintomático respiratorio",
+        "D. Paciente con tuberculosis sensible"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Sintomático respiratorio"
+      }
+    },
+    {
+      "n": 64,
+      "stem": "En un establecimiento de salud I-4 el médico jefe debe elaborar el ...... que es una herramienta de gestión que considera las actividades para la implementación del plan operativo institucional.",
+      "opts": [
+        "A. cuadro multianual de necesidades",
+        "B. plan de abastecimiento e inversiones",
+        "C. plan estratégico institucional",
+        "D. plan de salud local"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "plan de salud local"
+      }
+    },
+    {
+      "n": 65,
+      "stem": "El enfoque intercultural implica que el Estado valore e incorpore las diferentes visiones de los grupos étnicos y culturales para la generación de los servicios con pertinencia cultural, promoviendo el reconocimiento de la ciudadanía intercultural basada en el diálogo y la atención diferenciada. Este enfoque debería ser diferenciado de manera especial en la población:",
+      "opts": [
+        "A. Aymara e indígena",
+        "B. Latina y europea",
+        "C. En general",
+        "D. Indígena y afroperuana"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Indígena y afroperuana"
+      }
+    },
+    {
+      "n": 66,
+      "stem": "Una persona después de haberse vacunado contra el dengue. ¿Cuánto tiempo debe permanecer en el área de reposo?",
+      "opts": [
+        "A. Una hora",
+        "B. 45 minutos",
+        "C. 30 minutos",
+        "D. 2 horas"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "30 minutos"
+      }
+    },
+    {
+      "n": 67,
+      "stem": "Acude a su consulta una paciente mujer de 60 años con resultado de RPR positivo 8 dils, asintomática, cuya única pareja sexual es su esposo. ¿Cuál sería el esquema a seguir?",
+      "opts": [
+        "A. Penicilina benzatínica 2 400 000 UI 1 ampolla IM c/semana por 3 semanas",
+        "B. Bencilpenicilina sódica 1 000 000 UI 4 ampollas EV c/4 horas por 2 semanas",
+        "C. Doxiciclina 100 mg 1 tableta VO c/12 horas por 2 semanas",
+        "D. Penicilina benzatínica 2 400 000 UI 1 ampolla IM dosis única"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Penicilina benzatínica 2 400 000 UI 1 ampolla IM c/semana por 3 semanas"
+      }
+    },
+    {
+      "n": 68,
+      "stem": "¿Con qué se determina el número de la historia clínica de una persona de nacionalidad peruana?",
+      "opts": [
+        "A. Carnet de extranjería",
+        "B. Documento Nacional de Identidad",
+        "C. Pasaporte",
+        "D. Según número de ingreso"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Documento Nacional de Identidad"
+      }
+    },
+    {
+      "n": 69,
+      "stem": "El equipo multidisciplinario de salud acude a una visita domiciliaria para aplicar el test de PAIFAM. La familia refiere que Roberto, padre de familia de 48 años, está consumiendo alcohol algunos días a la semana, por no conseguir trabajo, por lo que, Ud. como médico aplica el cuestionario de:",
+      "opts": [
+        "A. Hamilton",
+        "B. Zung",
+        "C. AUDIT C",
+        "D. SRQ"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "AUDIT C"
+      }
+    },
+    {
+      "n": 70,
+      "stem": "En la comunidad de un PS I-2 se identifica que existe un número elevado de adolescentes entre 13 y 15 años que se encuentran laborando pasteando ganado y pernoctando en el campo y que no han sido matriculados en la escuela. ¿A qué determinantes corresponde esta situación?",
+      "opts": [
+        "A. Estilo de vida",
+        "B. Ambientales",
+        "C. Intermedios",
+        "D. Estructurales"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Intermedios"
+      }
+    },
+    {
+      "n": 71,
+      "stem": "Para realizar un trabajo de investigación y obtener información de las exposiciones anteriores y actuales. ¿Qué tipo de recolección de debe realizar?",
+      "opts": [
+        "A. Observación familiar",
+        "B. Observación",
+        "C. Entrevista",
+        "D. Informante indirecto"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Entrevista"
+      }
+    },
+    {
+      "n": 72,
+      "stem": "A un establecimiento de salud, llegan 25 niños beneficiarios del programa de alimentación escolar, por presentar cuadro de intoxicación alimentaria, luego del consumir el desayuno escolar. Este tipo de evento debe ser notificado y corresponde a:",
+      "opts": [
+        "A. Epizootia",
+        "B. Endemia",
+        "C. Brote",
+        "D. Pandemia"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Brote"
+      }
+    },
+    {
+      "n": 73,
+      "stem": "Mujer de 28 años con sospecha de TB es atendida en el CS y luego de concluir con la consejería es derivada al servicio de salud mental; esta indicación se tomó debido a que el tamizaje salió...",
+      "opts": [
+        "A. negativo.",
+        "B. positivo.",
+        "C. con riesgo bajo.",
+        "D. con riesgo alto."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "positivo."
+      }
+    },
+    {
+      "n": 74,
+      "stem": "Acude a la consulta externa, de un centro de salud I-3, una persona adulta mayor de 75 años acompañada con hija, la cual refiere que acude para iniciar chequeos por su edad, por lo que Ud. indica la siguiente valoración clínica:",
+      "opts": [
+        "A. Corta",
+        "B. Complejo",
+        "C. Breve",
+        "D. Completa"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Corta"
+      }
+    },
+    {
+      "n": 75,
+      "stem": "En estudios clínicos y epidemiológicos, la medición de variables que incluyen la perspectiva del paciente con referencia a resultados relacionados a su calidad de vida. ¿Cuáles son los instrumentos de recolección de datos más indicados?",
+      "opts": [
+        "A. Registro por el paciente y familiar",
+        "B. Entrevistas y cuestionarios",
+        "C. Registros y documentos ya existentes",
+        "D. Observación directa e indirecta"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Entrevistas y cuestionarios"
+      }
+    },
+    {
+      "n": 76,
+      "stem": "Ud. es jefe de un establecimiento I-4 en la región norte del país y los boletines informativos de epidemiología indican un aumento de casos de melanomas por exposición a rayos UV en el último año. ¿A qué tipo de casos corresponden?",
+      "opts": [
+        "A. Reincidentes",
+        "B. Prevalentes",
+        "C. Probables",
+        "D. Incidentes"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Incidentes"
+      }
+    },
+    {
+      "n": 77,
+      "stem": "Jorge de 38 años, acude a la IPRESS puerta de entrada de su zona sanitaria en Piura, con fiebre, cefalea, mialgias y dolor retro ocular de 2 días de evolución, sin factor de riesgo. Médico serumista lo considera como un dengue probable y lo clasifica como grupo ...… para iniciar tratamiento.",
+      "opts": [
+        "A. A",
+        "B. B2",
+        "C. B1",
+        "D. C"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "A"
+      }
+    },
+    {
+      "n": 78,
+      "stem": "Mujer parturienta de 37 años, solicito dar a luz en posición de rodillas ¿Qué ubicación toma usted para proteger el periné en todo momento y evitar desgarre?",
+      "opts": [
+        "A. arrodillado",
+        "B. Delante o detrás",
+        "C. sentado en un banco",
+        "D. costado izquierdo o derecho"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Delante o detrás"
+      }
+    },
+    {
+      "n": 79,
+      "stem": "En una comunidad amazónica se registra un brote de malaria por Plasmodium falciparum, donde dos niños fallecieron de un total de 50 pacientes (4%) confirmados con gota gruesa y PCR. ¿Cuál es la medida epidemiológica de frecuencia referida?",
+      "opts": [
+        "A. Tasa de ataque",
+        "B. Tasa de letalidad",
+        "C. Tasa de mortalidad general",
+        "D. Incidencia acumulada"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Tasa de letalidad"
+      }
+    },
+    {
+      "n": 80,
+      "stem": "Se observa que hay migrantes de la selva que viven en un asentamiento humano de un distrito de Lima, que son discriminados y rechazados por los pobladores del distrito donde pernoctan. ¿Qué acciones debe realizar como personal de salud?",
+      "opts": [
+        "A. Reforzar la interacción cultural",
+        "B. Normalizar el comportamiento de la comunidad",
+        "C. Imponer acciones socio educativas",
+        "D. Cambiar hábitos, costumbres y creencias"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Reforzar la interacción cultural"
+      }
+    },
+    {
+      "n": 81,
+      "stem": "El jefe del establecimiento de salud nivel I-2 ha identificado que existe necesidad de otro personal técnico para las visitas domiciliarias, porque no se logran las metas programadas. ¿En qué instrumento de gestión se debe programar este recurso?",
+      "opts": [
+        "A. Plan estratégico",
+        "B. Presupuesto por resultados",
+        "C. Plan operativo",
+        "D. Plan de salud local"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Plan operativo"
+      }
+    },
+    {
+      "n": 82,
+      "stem": "Ud. desea definir las líneas de mejora continua de su centro de salud para lo cual es necesario conocer sus fortalezas. ¿Qué pregunta debe realizar?",
+      "opts": [
+        "A. ¿Qué facilidades se presentan?",
+        "B. ¿Qué se está haciendo bien?",
+        "C. ¿Qué nos falta para mejorar?",
+        "D. ¿Qué riesgos externos existen?"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "¿Qué se está haciendo bien?"
+      }
+    },
+    {
+      "n": 83,
+      "stem": "La búsqueda intencionada y sistemática de casos de dislipidemia y obesidad infantil en las historias clínicas y archivos estadísticos del centro de salud. ¿A qué tipo de vigilancia corresponde?",
+      "opts": [
+        "A. Centinela",
+        "B. Retrospectiva",
+        "C. Pasiva",
+        "D. Activa"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Pasiva"
+      }
+    },
+    {
+      "n": 84,
+      "stem": "Neonato de 8 horas de parto domiciliario, en zona rural. Deben recibir BCG y HvB. ¿Cuál es el tiempo ideal para recibirlas?",
+      "opts": [
+        "A. Hasta un año",
+        "B. Dentro de las 24 horas",
+        "C. Hasta un mes",
+        "D. Dentro de una semana"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Dentro de las 24 horas"
+      }
+    },
+    {
+      "n": 85,
+      "stem": "Se apersona una mujer de 25 años, con 20 semanas de gestación, sin controles previos, sin antecedentes patológicos previos de acuerdo a protocolo le realizan el tamizaje de VIH, con resultado positivo. ¿Qué acciones se realizan desde el centro de salud nivel I-3?",
+      "opts": [
+        "A. Ubicación de familiares para soporte socio familiar",
+        "B. Derivación a centro hospitalario para confirmación",
+        "C. Control de gestación y psicoprofilaxis",
+        "D. Gestionar apoyo con programa social del MIDIS"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Derivación a centro hospitalario para confirmación"
+      }
+    },
+    {
+      "n": 86,
+      "stem": "¿Cuál es la función esencial de la salud pública que ha sido identificada como critica para la práctica de la salud publica relacionada a la colaboración activa del personal de los servicios de salud en el desarrollo de programas educativos en la comunidad?",
+      "opts": [
+        "A. Promoción del acceso equitativo",
+        "B. Participación social",
+        "C. Regulación y fiscalización",
+        "D. Promoción de la salud"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Promoción de la salud"
+      }
+    },
+    {
+      "n": 87,
+      "stem": "Niña de 4 meses de parto institucional con peso de 5 kg debe recibir sus vacunas de acuerdo a calendario de vacunación para su edad. ¿Cuál de las siguientes vacunas le corresponde?",
+      "opts": [
+        "A. BCG",
+        "B. Pentavalente",
+        "C. Hexavalente",
+        "D. HvB"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Pentavalente"
+      }
+    },
+    {
+      "n": 88,
+      "stem": "En un centro de salud I-4, el nuevo médico jefe ha reestructurado el rol central de esta institución, la población objetivo asignada y los atributos de la entidad. Esta construcción de elementos se denomina:",
+      "opts": [
+        "A. Indicador",
+        "B. Objetivo",
+        "C. Misión",
+        "D. Visión"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Misión"
+      }
+    },
+    {
+      "n": 89,
+      "stem": "En un establecimiento de salud I-4 el personal de salud está organizado para identificar problemas de salud, facilitando el control y resolución de los mismos en su comunidad. ¿Qué estrategia han implementado?",
+      "opts": [
+        "A. Presupuesto por resultados",
+        "B. Gestión por procesos",
+        "C. Vigilancia epidemiológica",
+        "D. Oferta de servicios"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Vigilancia epidemiológica"
+      }
+    },
+    {
+      "n": 90,
+      "stem": "Varón de 63 años, con diagnóstico HIV, en tratamiento desde que estuvo en prisión, actualmente en libertad, acude por retrovirales al establecimiento I-3. ¿Qué debe hacer el proveedor de salud que atiende?",
+      "opts": [
+        "A. Custodiar sus cosas personales e institucionales y mantener distancias",
+        "B. Brindar confidencialidad, indicar hospital de derivación para recibir retrovirales",
+        "C. Constatar si tiene SIS, para entregarle retrovirales correspondientes",
+        "D. Indicarle que debe apersonarse con algún familiar para darle información"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Brindar confidencialidad, indicar hospital de derivación para recibir retrovirales"
+      }
+    },
+    {
+      "n": 91,
+      "stem": "En la comunidad rural donde realiza su SERUMS varios moradores reportan el hallazgo de muerte y enfermedad inusuales en cuyes y ratas de campo, por lo que debe proceder a la notificación respectiva. ¿Cuál es el acontecimiento epidemiológico presentado?",
+      "opts": [
+        "A. Brote infeccioso",
+        "B. Zoonosis",
+        "C. Epizootia",
+        "D. Endemia animal"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Epizootia"
+      }
+    },
+    {
+      "n": 92,
+      "stem": "Usted acaba de ganar su plaza SERUMS, y en su primer día de trabajo, su jefatura le indica que se encuentran en el proceso de búsqueda de información a fin de elaborar el documento que oriente una gestión eficiente en salud acorde con los procesos de planificación. ¿Cuál es el documento?",
+      "opts": [
+        "A. Análisis de la Vulnerabilidad territorial",
+        "B. Análisis Global del Estado de la Salud",
+        "C. Análisis Global de los Determinantes de la Salud",
+        "D. Análisis de Situación de Salud"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Análisis de Situación de Salud"
+      }
+    },
+    {
+      "n": 93,
+      "stem": "La autoridad regional de salud está implementando la estrategia de Salud Familiar para que se pueda desarrollar efectivamente en el siguiente año. ¿En qué plan institucional se debe programar?",
+      "opts": [
+        "A. Continuidad",
+        "B. Contingencia",
+        "C. Estratégico",
+        "D. Operativo"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Operativo"
+      }
+    },
+    {
+      "n": 94,
+      "stem": "Un grupo de migrantes de la selva que viven en comunidad en Lima, mantienen sus estilos de vida donde prevalece el trabajo informal, la deserción escolar y el ausentismo en servicios de salud. ¿Qué acciones deben realizar las autoridades locales?",
+      "opts": [
+        "A. Brindar solamente acceso a los diversos programas sociales",
+        "B. Gestionar políticas públicas que brinden recursos en la comunidad",
+        "C. Censo a fin de conocer las personas que se encuentran en riesgo de salud",
+        "D. Visitas domiciliarias a fin de integrarlos a los servicios de salud"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Gestionar políticas públicas que brinden recursos en la comunidad"
+      }
+    },
+    {
+      "n": 95,
+      "stem": "Rosa acude a la IPRESS de su jurisdicción, con su hijo Iván nacido a término, quien ha cumplido 4 meses, aparentemente normal. Como médico preocupado por la lucha contra la anemia, Ud. decide lo siguiente, de acuerdo a normatividad vigente:",
+      "opts": [
+        "A. Iniciar con suplementación preventiva a 2 mg/kg/día de hierro elemental",
+        "B. Dosaje de hemoglobina urgente e iniciar tratamiento con hierro polimaltosado",
+        "C. Tratamiento con hierro elemental a 3mg/Kg/día para prevenir la anemia",
+        "D. Esperar hasta los 6 meses para dosaje de hemoglobina y suplementación"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Iniciar con suplementación preventiva a 2 mg/kg/día de hierro elemental"
+      }
+    },
+    {
+      "n": 96,
+      "stem": "En un establecimiento de salud I-4, un ejemplo de UPSS podría considerarse al servicio de …",
+      "opts": [
+        "A. epidemiología.",
+        "B. pediatría.",
+        "C. gestión de investigación.",
+        "D. docencia."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "pediatría."
+      }
+    },
+    {
+      "n": 97,
+      "stem": "Durante la visita del equipo multidisciplinario a la comunidad de un sector sanitario, se brindan actividades incluidas en el paquete de cuidado integral. Se sabe que en la localidad visitada consume agua no potable por lo cual se solicita el test de Graham. ¿Qué probable enfermedad se pretende descartar?",
+      "opts": [
+        "A. Amebiasis",
+        "B. Salmonelosis",
+        "C. Disentería",
+        "D. Oxiuriasis"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Oxiuriasis"
+      }
+    },
+    {
+      "n": 98,
+      "stem": "Un estudio de investigación realizado en una población aledaña a su centro de salud, reporta que los niños cuya familia es monoparental tiene el doble de riesgo de presentar anemia (RR=2.0), respecto a aquellos con familia biparental. ¿Cuál es el tipo de medida epidemiológica a la que se hace referencia?",
+      "opts": [
+        "A. Impacto",
+        "B. Asociación",
+        "C. Mortalidad",
+        "D. Frecuencia"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Asociación"
+      }
+    },
+    {
+      "n": 99,
+      "stem": "En una comunidad se reportan dos o más casos de una misma enfermedad y están relacionados entre sí, el personal de salud según criterio epidemiológico identifica que es:",
+      "opts": [
+        "A. Endemia",
+        "B. Epidemia",
+        "C. Pandemia",
+        "D. Brote"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Brote"
+      }
+    },
+    {
+      "n": 100,
+      "stem": "Durante la evaluación de los cuidados integrales de un adolescente varón de 16 años, que vive solo con su hermana mayor de 20 años, identifica que ha iniciado relaciones sexuales hace 1 año, con 3 parejas sexuales de su misma edad, sin uso de preservativo, por lo que Ud. prescribe:",
+      "opts": [
+        "A. Consejería de salud sexual y reproductiva",
+        "B. Prueba rápida de VIH, sífilis y hepatitis B",
+        "C. Consejería en estilos de vida saludables",
+        "D. Educación en I.E. sobre sexualidad saludable"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Prueba rápida de VIH, sífilis y hepatitis B"
+      }
+    }
+  ],
+  "2026-II": [
+    {
+      "n": 1,
+      "stem": "En actividad extramuros de vacunación del adolescente en su jurisdicción, usted acude a centro educativo identificando en un adolescente tatuajes extensos en antebrazo izquierdo. Fundamentalmente. ¿Qué área de la salud integral del adolescente está en riesgo?",
+      "opts": [
+        "A. Psicosocial",
+        "B. Sexual",
+        "C. Nutricional",
+        "D. Física"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Psicosocial"
+      }
+    },
+    {
+      "n": 2,
+      "stem": "El modelo de la Red Integrada de Salud (RIS) tiene 4 dimensiones para su funcionamiento. ¿A qué dimensión corresponde el atributo del primer nivel de atención en salud como puerta de entrada al sistema nacional de salud?",
+      "opts": [
+        "A. Gobernanza",
+        "B. Gestión",
+        "C. Prestación",
+        "D. Financiamiento"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Prestación"
+      }
+    },
+    {
+      "n": 3,
+      "stem": "La programación del Plan Operativo Institucional, le corresponde a:",
+      "opts": [
+        "A. Establecimiento de salud",
+        "B. Zona sanitaria",
+        "C. Unidad ejecutora",
+        "D. Área sanitaria"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Unidad ejecutora"
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Varón de 12 meses quien en cita de inmunizaciones solo recibió SPR. Usted es consultado para indicación de vacuna de varicela. ¿Cuál es el intervalo mínimo entre dosis?",
+      "opts": [
+        "A. Un mes",
+        "B. 1 semana",
+        "C. 2 meses",
+        "D. 2 semanas"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Un mes"
+      }
+    },
+    {
+      "n": 5,
+      "stem": "El sarampión es una enfermedad que se está incrementando en los diversos países de la región, incluido el Perú. En el primer semestre 2026 se produjeron 22 mil casos y 39 muertes en 17 países. Como medida de contención la OMS recomienda realizar el bloqueo vacunal al menos ...... manzanas alrededor de la vivienda.",
+      "opts": [
+        "A. 15",
+        "B. 12",
+        "C. 25",
+        "D. 10"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "25"
+      }
+    },
+    {
+      "n": 6,
+      "stem": "En el centro poblado El Milagro durante el mes de junio se presenta un brote de dengue con presencia de casos importados y presencia del vector, posteriormente en el mes de junio se realiza la vigilancia entomológica, en el mes de julio se reporta un índice aédico 3% y presencia de casos autóctonos; por lo que se decide realizar control entomológico. Al respecto marque la afirmación correcta:",
+      "opts": [
+        "A. Control larvario químico con pyriproxyfen al 100% de viviendas",
+        "B. Nebulización espacial con malathion en el 40% de viviendas",
+        "C. Control adulticida al 50% del área de intervención",
+        "D. Uso de permetrina en el 30% de las viviendas"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Control larvario químico con pyriproxyfen al 100% de viviendas"
+      }
+    },
+    {
+      "n": 7,
+      "stem": "Una de las tareas relevantes de la epidemiología es la organización y descripción de los datos colectados, para lo cual se utilizan las variables epidemiológicas de:",
+      "opts": [
+        "A. Endemia, epidemia y pandemia",
+        "B. Incidencia, prevalencia y natalidad",
+        "C. Morbilidad, mortalidad y letalidad",
+        "D. Tiempo, lugar y persona"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Tiempo, lugar y persona"
+      }
+    },
+    {
+      "n": 8,
+      "stem": "En un EESS, el personal responsable de salud ambiental realiza supervisión inopinada a las áreas asistenciales; evaluando de manera especial la correcta segregación de residuos sólidos. Se identifica la presencia de tres contenedores medianos con bolsa de color rojo, amarillo y negro; según el orden mencionado. ¿Qué residuos descarta en cada contenedor?",
+      "opts": [
+        "A. Hemoderivados - comunes - especiales",
+        "B. Radioactivos - farmacéuticos - alimentos",
+        "C. Biocontaminados - especiales - comunes",
+        "D. Químicos - hemoderivados - corrosivos"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Biocontaminados - especiales - comunes"
+      }
+    },
+    {
+      "n": 9,
+      "stem": "Con el propósito de llegar a conclusiones más favorables en un estudio, el investigador a cargo de la edición y análisis de los datos suprimió casos, modificó medidas y alteró parámetros estadísticos. ¿Qué falta ética a la publicación científica cometió?",
+      "opts": [
+        "A. Fraude científico",
+        "B. Publicación redundante",
+        "C. Autoría fantasma",
+        "D. Conflicto de intereses"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Fraude científico"
+      }
+    },
+    {
+      "n": 10,
+      "stem": "El médico jefe de un establecimiento I-2 luego de reunirse con su equipo de gestión y el comité distrital de salud determina que es necesario ampliar su cartera de servicios y horario de atención; y considera en su visión convertirse en un establecimiento de salud categoría I-3. ¿Qué tipo de profesionales y/o personal técnico necesita incorporar?",
+      "opts": [
+        "A. Odontología y laboratorio",
+        "B. Ingeniero químico e ingeniero sanitario",
+        "C. Pediatría y ginecología",
+        "D. Nutrición y terapia física"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Odontología y laboratorio"
+      }
+    },
+    {
+      "n": 11,
+      "stem": "El establecimiento de salud “La Esperanza” ha logrado bajas coberturas en todos los indicadores de salud mental; el personal de Psicología solicita una reunión con todo el personal para generar estrategias conjuntas y mejorar los resultados; sin embargo, el médico jefe no lo autoriza. ¿Qué dimensión que puede contribuir a la mejora del clima organizacional se está afectando?",
+      "opts": [
+        "A. Recompensa",
+        "B. Toma de decisiones",
+        "C. Identidad",
+        "D. Estructura"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Toma de decisiones"
+      }
+    },
+    {
+      "n": 12,
+      "stem": "El psicólogo del centro de salud mental comunitario recibe una referencia de su colega de la zona sanitaria, mediante el cual, después de su valoración clínica, difiere con el diagnóstico inicial de la referencia. Después de la atención, el psicólogo de la zona sanitaria empieza a recibir burlas de parte del personal del centro de salud mental comunitario, a partir del comentario del colega. ¿Qué falta ética se está cometiendo?",
+      "opts": [
+        "A. Críticas entre colegas",
+        "B. Trato entre colegas",
+        "C. Competencia desleal",
+        "D. Imparcialidad del trato"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Críticas entre colegas"
+      }
+    },
+    {
+      "n": 13,
+      "stem": "Dentro del marco de la salud pública, una de las fuentes de datos para la información en salud basada en la población es el registro de...",
+      "opts": [
+        "A. actividades administrativas.",
+        "B. estado de salud.",
+        "C. hechos vitales.",
+        "D. servicios prestados."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "hechos vitales."
+      }
+    },
+    {
+      "n": 14,
+      "stem": "Varón de 25 años acude al establecimiento por mordedura superficial de perro en el antebrazo izquierdo, siendo atendido por el profesional de la salud realizando el lavado de la herida por 10 minutos con abundante agua y jabón, para determinar el riesgo de la rabia. ¿Cómo clasifica la exposición de la mordedura?",
+      "opts": [
+        "A. Sin riesgo",
+        "B. Leve",
+        "C. Moderada",
+        "D. Grave"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Leve"
+      }
+    },
+    {
+      "n": 15,
+      "stem": "En el centro de salud Corazón de María se recibe a un niño de 3 años de edad, quien es traído por su madre, se le diagnostica enfermedad diarreica con deshidratación y se decide hidratarlo vía parenteral, sin embargo la madre se niega a que inicie el tratamiento, y por el contrario solicita el formato de retiro voluntario. ¿Qué debe contener este documento?",
+      "opts": [
+        "A. El texto a redactar en el formato debe consignar solo el diagnóstico y el tratamiento indicado",
+        "B. No se necesita consignar los datos del personal de salud que indicó el tratamiento porque no se",
+        "C. Se necesita la autorización del jefe del establecimiento para poder efectuar el retiro voluntario",
+        "D. Datos de identificación de la persona legalmente responsable que solicita el alta en caso que no"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Datos de identificación de la persona legalmente responsable que solicita el alta en caso que no"
+      }
+    },
+    {
+      "n": 16,
+      "stem": "En la Resolución Ministerial de Julio 2026, se clasificaron las emergencias según el grado de prioridad de atención y se establecieron intervalos de tiempos para la atención. El tiempo a considerar en Prioridad II es no mayor de:",
+      "opts": [
+        "A. 60'",
+        "B. 30'",
+        "C. 20'",
+        "D. 10'"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "10'"
+      }
+    },
+    {
+      "n": 17,
+      "stem": "El profesional de la salud que trabaja en el primer nivel de atención, para prevenir las enfermedades no trasmisibles, identifica a las familias priorizadas brindando información en un componente del paquete básico como …… y en un componente del paquete completo como…",
+      "opts": [
+        "A. detección de diabetes / evaluación de la diabetes.",
+        "B. alimentación saludable / salud ocular.",
+        "C. tamizaje ocular / control de errores refractivos.",
+        "D. despistaje de catarata / diagnóstico de ceguera."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "alimentación saludable / salud ocular."
+      }
+    },
+    {
+      "n": 18,
+      "stem": "Se desea realizar un estudio de indicadores de salud en inmigrantes ilegales asentados en una comunidad fronteriza; pero, al desconocerse su número y localización, se dificulta un muestreo representativo. En su defecto. ¿Qué tipo de muestreo no probabilístico utilizaría?",
+      "opts": [
+        "A. Por conglomerados",
+        "B. En bola de nieve",
+        "C. Por cuotas",
+        "D. Según criterio de experto"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "En bola de nieve"
+      }
+    },
+    {
+      "n": 19,
+      "stem": "El médico y el equipo de gestión del centro de salud Arena Blanca, categoría I-4, ubicado en la zona altoandina del sur del país, luego del análisis FODA de su jurisdicción logra determinar que la participación de agentes comunitarios en las actividades de control de vectores constituye una de sus...",
+      "opts": [
+        "A. ventajas.",
+        "B. alianzas.",
+        "C. fortalezas.",
+        "D. oportunidades."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "fortalezas."
+      }
+    },
+    {
+      "n": 20,
+      "stem": "El uso de mascarilla N95, antisepsia con alcohol gel, uso de guantes desechables, de EPP; según grupo de exposición. Son recomendaciones para contactos con riesgo de contraer:",
+      "opts": [
+        "A. Influenza A (H1N1)",
+        "B. Gardnerella sp",
+        "C. Escherichia coli",
+        "D. Clostridium tetani"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Influenza A (H1N1)"
+      }
+    },
+    {
+      "n": 21,
+      "stem": "¿Ante qué tipo de problema estamos, si se recoge información que nos permite saber cómo están los problemas en términos de frecuencia, características, condiciones y prevalencia?",
+      "opts": [
+        "A. Causal",
+        "B. Descriptivo",
+        "C. Explicativo",
+        "D. Predictivo"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Descriptivo"
+      }
+    },
+    {
+      "n": 22,
+      "stem": "Gestante de 32 semanas no controlada, es captada por el profesional de la salud en las actividades extramurales, recomienda iniciar el control prenatal y completar el esquema de vacunación. ¿Cuál es la primera vacuna a indicar?",
+      "opts": [
+        "A. Sarampión y rubeola",
+        "B. Neumococo y hepatitis A",
+        "C. Virus del papiloma humano",
+        "D. Virus respiratorio sincitial"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Virus respiratorio sincitial"
+      }
+    },
+    {
+      "n": 23,
+      "stem": "El profesional de la salud antes de realizar las actividades de vacunación debe contar con el kit de ESAVI para situaciones de emergencia: ampollas de epinefrina, frasco de Hidrocortisona y ampollas de clorfenamina. La epinefrina 1:1000 se aplica vía intramuscular. ¿Cuál es la dosis indicada en mg/Kg de peso?",
+      "opts": [
+        "A. 0.01",
+        "B. 0.001",
+        "C. 0.02",
+        "D. 1"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "0.01"
+      }
+    },
+    {
+      "n": 24,
+      "stem": "Lactante de 3 meses, desde hace tres días presenta rinorrea, tos y alza térmica, fue diagnosticada de rinofaringitis viral, madre lo trae a urgencias por dificultad para lactar. Examen: FC:140X'; FR: 70X'; T°: 37.8 °C; tórax: retracción subcostal, crepitantes, sibilancias espiratorias; APCV: RCR no soplos; abdomen: no visceromegalia; neurológico: sensorio alerta. Usted diagnostica bronquiolitis aguda. Según ESBA (Score Escala de Severidad de la Bronquiolitis Aguda). ¿Cuál es la indicación médica más adecuada?",
+      "opts": [
+        "A. Manejo ambulatorio",
+        "B. Monitoreo domiciliario",
+        "C. Iniciar antibióticos",
+        "D. Referir a hospital"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Referir a hospital"
+      }
+    },
+    {
+      "n": 25,
+      "stem": "En una comunidad altoandina, se presentan varios casos de rubéola; una gestante de 7 semanas expuesta, acude al establecimiento de salud sin síntomas. Según la historia natural de la enfermedad. ¿En qué momento del proceso se encuentra?",
+      "opts": [
+        "A. Clínico",
+        "B. Resolutivo",
+        "C. Subclínico",
+        "D. Inducción"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Subclínico"
+      }
+    },
+    {
+      "n": 26,
+      "stem": "En un EESS, un personal de salud ha sido diagnosticado con TB; por tanto, tiene derecho a una licencia ...",
+      "opts": [
+        "A. con goce de remuneraciones.",
+        "B. sin goce de remuneraciones.",
+        "C. a cuenta de periodo vacacional.",
+        "D. las fechas de su cita médica."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "con goce de remuneraciones."
+      }
+    },
+    {
+      "n": 27,
+      "stem": "Mujer de 13 años traída por madre a centro de salud solicitando examen médico rutinario por estar en crecimiento, usted realiza las prestaciones para identificar factores de riesgo del adolescente. ¿Qué actividad fortalece los factores protectores de los adolescentes?",
+      "opts": [
+        "A. Consejería",
+        "B. Evaluación Tanner",
+        "C. Examen de agudeza visual",
+        "D. Evaluación postural"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Consejería"
+      }
+    },
+    {
+      "n": 28,
+      "stem": "El jefe de una zona sanitaria, en reunión con sus coordinadores de estrategias y el comité multisectorial, definen las condiciones futuras que esperan lograr, enunciados claros y precisos de los resultados en salud que se esperan obtener. Esto es un ejemplo de:",
+      "opts": [
+        "A. Análisis situacional",
+        "B. Análisis estratégicos",
+        "C. Objetivos estratégicos",
+        "D. Manual de operaciones"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Objetivos estratégicos"
+      }
+    },
+    {
+      "n": 29,
+      "stem": "En el siglo XX en los registros civiles; se retiró la categoría “raza” para visibilizar a los indígenas dentro del sistema de salud y otras prestaciones del estado. Al no incluirse la pertenencia ...... en los registros de los servicios de salud, se torna imposible distinguir dentro de los agregados epidemiológicos, el estado de salud de la población indígena.",
+      "opts": [
+        "A. étnica",
+        "B. cultural",
+        "C. identidad",
+        "D. religiosa"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "étnica"
+      }
+    },
+    {
+      "n": 30,
+      "stem": "¿Qué deber de la función pública está cumpliendo el servidor público que no adopta represalia de ningún tipo o ejerce coacción alguna contra otros servidores públicos u otras personas?",
+      "opts": [
+        "A. Ejercicio adecuado del cargo",
+        "B. Responsabilidad",
+        "C. Discreción",
+        "D. Transparencia"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Ejercicio adecuado del cargo"
+      }
+    },
+    {
+      "n": 31,
+      "stem": "Mujer de 18 meses presenta desde hace 4 días alza térmica, rinitis, inyección conjuntival y exantema. Antecedentes: parto eutócico, sin cobertura vacunal, hija de migrantes. Examen: FC: 100X', FR: 20X', T°: 37°C; Sa02: 98%. Exantema maculo-papular confluente en cara cuello, rinorrea y congestión ocular; cavidad oral: manchas de Koplik. Según su diagnóstico clínico más probable. ¿Cuál es la intervención prioritaria para evitar secuelas?",
+      "opts": [
+        "A. Antivirales",
+        "B. Inmunoglobulina humana",
+        "C. Vitamina A retinol",
+        "D. Vitamina B12"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Vitamina A retinol"
+      }
+    },
+    {
+      "n": 32,
+      "stem": "Varón adulto mayor, residente en Pucallpa, ingresa por emergencia al EESS, refiere que hace 3 días llegó a Lima; desde hace un día presenta malestar general, fiebre y hoy náuseas, vómitos y diarreas. El médico evalúa y solicita examen de laboratorio. ¿Cómo debe ser el llenado de la ficha clínico-epidemiológica?",
+      "opts": [
+        "A. Después de los resultados",
+        "B. En la segunda consulta",
+        "C. Inmediatamente",
+        "D. Cuando lo solicite la RIS"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Inmediatamente"
+      }
+    },
+    {
+      "n": 33,
+      "stem": "Madre acude con su niña de 4 años de edad, al servicio de urgencias del Centro de Salud Santa Rosa, por presentar los siguientes signos y síntomas: fiebre 39 °C, malestar general, irritabilidad, dolor, tumefacción y enrojecimiento en el hombro. A la evaluación del caso, madre manifiesta que su niña fue vacunada el día anterior con la vacuna DPT. De acuerdo a la clasificación de caso de ESAVI es un evento …",
+      "opts": [
+        "A. coincidente.",
+        "B. relacionado con error programático.",
+        "C. relacionado con la vacuna.",
+        "D. no concluyente."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "relacionado con la vacuna."
+      }
+    },
+    {
+      "n": 34,
+      "stem": "Es la probabilidad de producir efectos nocivos para el individuo, ocasionadas por animales o plantas en un desastre natural, desequilibrando el proceso salud-enfermedad. ¿A qué tipo de riesgo se refiere?",
+      "opts": [
+        "A. Epidémico",
+        "B. Ambiental",
+        "C. Biológico",
+        "D. Social"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Biológico"
+      }
+    },
+    {
+      "n": 35,
+      "stem": "En el informe de investigación, la parte que contiene de manera suscinta toda la información de la investigación realizada y tiene un límite de palabras, se denomina:",
+      "opts": [
+        "A. Introducción",
+        "B. Discusión",
+        "C. Conclusiones",
+        "D. Resumen"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Resumen"
+      }
+    },
+    {
+      "n": 36,
+      "stem": "¿Cómo se le denomina al modelo de atención centrado en la comunidad, que fomenta la promoción y protección de la salud mental, continuidad de cuidados de las personas, familias y colectividades con problemas psicosociales y/o trastornos mentales, con la participación protagónica de la propia comunidad?",
+      "opts": [
+        "A. Cuidado integral por curso de vida",
+        "B. Comunitario de salud mental",
+        "C. Tradicional territorial",
+        "D. Convencional de la salud mental"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Comunitario de salud mental"
+      }
+    },
+    {
+      "n": 37,
+      "stem": "Personal de salud, en visita a su sector, brinda consejería para evitar la presencia del vector, como el cuidado de recipientes de almacenamiento de agua (tapado y limpieza) y eliminación adecuada de criaderos del zancudo en casa. Esto forma parte de:",
+      "opts": [
+        "A. Medidas preventivas",
+        "B. Intervención epidemiológica",
+        "C. Detección de casos",
+        "D. Fumigación domiciliaria"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Medidas preventivas"
+      }
+    },
+    {
+      "n": 38,
+      "stem": "¿Cómo se le define a la situación en la que todas las personas puedan ejercer sus derechos, aprovechar sus habilidades y tomar ventaja de las oportunidades que se encuentran en su medio?",
+      "opts": [
+        "A. Inclusión social",
+        "B. Programa social",
+        "C. Identidad cultural",
+        "D. Salud intercultural"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Inclusión social"
+      }
+    },
+    {
+      "n": 39,
+      "stem": "Se necesita realizar un estudio descriptivo en la comunidad de Tornameza-Huarochirí, para conocer las características de la población que acude a nuestro establecimiento de salud. ¿Cuál de las siguientes investigaciones cumple las características de un estudio descriptivo?",
+      "opts": [
+        "A. Aspectos y características de las viviendas de la población estudio",
+        "B. Relación del tipo de vivienda con los ingresos mensuales por familia de la población estudio",
+        "C. Efectos de un temblor según el tipo de vivienda en la población estudio",
+        "D. Efectos del tipo de vivienda en la morbilidad familiar de la población estudio"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Aspectos y características de las viviendas de la población estudio"
+      }
+    },
+    {
+      "n": 40,
+      "stem": "El equipo multidisciplinario del EESS, desarrollan actividades de forma integral, continuada, permanente y interviniendo en la comunidad con un enfoque de promoción y prevención. ¿Qué estrategia están aplicando?",
+      "opts": [
+        "A. Atención primaria de salud",
+        "B. Programas de salud pública",
+        "C. Salud comunitaria",
+        "D. Medicina de familia y comunitaria"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Atención primaria de salud"
+      }
+    },
+    {
+      "n": 41,
+      "stem": "En un establecimiento de salud de la zona altoandina del sur del país, un médico serumista registra un incremento inusual de casos de diarreas mucosanguinolentas persistentes en pacientes menores de 5 años, en el sector cercano a un drenaje. ¿Cuál es el tipo de vigilancia a realizar?",
+      "opts": [
+        "A. Dirigida",
+        "B. Específica",
+        "C. Centinela",
+        "D. Selectiva"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Centinela"
+      }
+    },
+    {
+      "n": 42,
+      "stem": "Personal de salud realiza una visita domiciliaria de control y seguimiento a una familia de 8 integrantes, de los cuales 4 reciben tratamiento para TBC porque hicieron la enfermedad por factores predisponentes y desencadenantes; sin embargo los otros miembros a pesar de estar expuestos no tienen la enfermedad. ¿Cuál es el tipo de relación causal?",
+      "opts": [
+        "A. Necesaria y suficiente",
+        "B. Necesaria pero no suficiente",
+        "C. Causa suficiente y no necesaria",
+        "D. Causa no necesaria ni suficiente"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Necesaria pero no suficiente"
+      }
+    },
+    {
+      "n": 43,
+      "stem": "El profesional de la salud en el examen físico del niño, identifica fiebre >7 días sin causa conocida, adenopatías >2.5 cm, no dolorosas, sin signos de inflamación. La presencia de los siguientes signos hace sospechar de …",
+      "opts": [
+        "A. cáncer infantil.",
+        "B. tuberculosis infantil.",
+        "C. tumoración benigna.",
+        "D. fiebre reumática."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "cáncer infantil."
+      }
+    },
+    {
+      "n": 44,
+      "stem": "La investigación en salud se ha definido como la generación de conocimientos nuevos mediante la aplicación del ...... , a fin de identificar y hacer frente a los problemas de salud, de tal manera que no solo se limita al campo biomédico.",
+      "opts": [
+        "A. método científico",
+        "B. método estadístico",
+        "C. análisis epidemiológico",
+        "D. análisis poblacional"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "método científico"
+      }
+    },
+    {
+      "n": 45,
+      "stem": "El líder del equipo de salud de la localidad, decide fomentar el cuidado integral de salud por curso de vida (MCI) y coordina con el personal realizar visitas domiciliarias y ampliar horarios de atención en el establecimiento de salud; además de coordinar acciones para asegurar el cuidado de la salud según las necesidades de la población. ¿Qué atributos de la APS se están fortaleciendo?",
+      "opts": [
+        "A. Formación profesional y continuidad del cuidado",
+        "B. Primer contacto y accesibilidad",
+        "C. Coordinación e integralidad",
+        "D. Accesibilidad y continuidad del cuidado"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Accesibilidad y continuidad del cuidado"
+      }
+    },
+    {
+      "n": 46,
+      "stem": "Varón de 68 años acude al establecimiento, siendo atendido por el profesional de la salud capacitado, aplica la valoración clínica del adulto mayor corta: como la valoración funcional, mental, nutricional y sociofamiliar. ¿En qué categorías de establecimientos se brinda esta atención?",
+      "opts": [
+        "A. II-1 y II-2",
+        "B. III-1, III-2 y III-E",
+        "C. I-2, I-3 y I-4",
+        "D. ll-E"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "I-2, I-3 y I-4"
+      }
+    },
+    {
+      "n": 47,
+      "stem": "El plan multisectorial de lucha contra la anemia plantea la articulación ...... de intervenciones efectivas a cargo de los sectores de salud, educación, vivienda, agricultura, producción, cultura y transporte, en el marco de sus funciones y competencias.",
+      "opts": [
+        "A. institucional",
+        "B. intercultural",
+        "C. internacional",
+        "D. intersectorial"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "intersectorial"
+      }
+    },
+    {
+      "n": 48,
+      "stem": "¿Quién se encarga de elaborar el plan local de salud quien, además de establecer las metas sanitarias y sobre los determinantes de la salud, define también la asignación de recursos y la participación de los diferentes actores institucionales y sociales del ámbito territorial?",
+      "opts": [
+        "A. La autoridad local de salud",
+        "B. Promotor de salud",
+        "C. Coordinador de estrategia",
+        "D. Inspector en salud"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "La autoridad local de salud"
+      }
+    },
+    {
+      "n": 49,
+      "stem": "Con respecto al enfoque causal en salud la determinación de inferencias causales, derivado de los criterios de Hill. ¿Qué evalúan el riesgo relativo indirecto (OR) y el riesgo relativo (RR)?",
+      "opts": [
+        "A. Temporalidad",
+        "B. Fuerza de la asociación",
+        "C. Especificidad",
+        "D. Coherencia"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Fuerza de la asociación"
+      }
+    },
+    {
+      "n": 50,
+      "stem": "En cuanto a salud ocupacional, hablamos de riesgo profesional cuando existe la posibilidad de sufrir un accidente y/o enfermedad...",
+      "opts": [
+        "A. sin vínculo laboral vigente.",
+        "B. durante sus vacaciones.",
+        "C. durante una actividad cotidiana.",
+        "D. con vínculo laboral vigente."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "con vínculo laboral vigente."
+      }
+    },
+    {
+      "n": 51,
+      "stem": "En la jurisdicción de San José existe presencia de Aedes aegypti, con casos importados de dengue, sin casos autóctonos de dengue. ¿Cuál es el escenario?",
+      "opts": [
+        "A. III-brote",
+        "B. III-endémico",
+        "C. II",
+        "D. I"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "II"
+      }
+    },
+    {
+      "n": 52,
+      "stem": "La suplementación preventiva para anemia en adolescentes y mujeres en edad fértil se inicia cuando la hemoglobina es ≥ 12 g/dL, 2 veces por semana por un periodo de 3 meses, cada año. La dosis recomendada de hierro elemental + ácido fólico es …",
+      "opts": [
+        "A. 300 mg + 100 ug.",
+        "B. 120 mg + 400 ug.",
+        "C. 30 mg + 100 ug.",
+        "D. 60 mg + 400 ug."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "60 mg + 400 ug."
+      }
+    },
+    {
+      "n": 53,
+      "stem": "Si se brinda asesoría y apoyo a las personas de 18 años a más, que se encuentran en alto riesgo de contraer VIH, HSH, MT, TS o son parejas serodiscordantes, que no tienen VIH, no han tenido exposición de riesgo al VIH en las últimas 72 horas y que por decisión voluntaria acuden al C.S. ¿A qué actividad corresponde?",
+      "opts": [
+        "A. Pruebas de tamizaje para VIH",
+        "B. Accesos a preservativos y lubricantes",
+        "C. Profilaxis pre exposición (PrEP)",
+        "D. Pruebas de sífilis y hepatitis B y C"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Profilaxis pre exposición (PrEP)"
+      }
+    },
+    {
+      "n": 54,
+      "stem": "En un EESS un personal de salud ha denunciado a la dependencia superior la sobrecarga de trabajo, comunicaciones deficientes, programación de turnos poco equitativos que le ha provocado estrés laboral. ¿A qué factor de riesgo de seguridad y salud del trabajo se refiere?",
+      "opts": [
+        "A. Físico",
+        "B. Biológico",
+        "C. Ergonómico",
+        "D. Psicosocial"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Psicosocial"
+      }
+    },
+    {
+      "n": 55,
+      "stem": "Es muy importante que la consejería en lactancia materna se inicie desde el embarazo, por lo que las gestantes a partir de las …… semanas conocen la importancia y manejo de la lactancia materna y de esta forma incrementan su propia confianza y seguridad.",
+      "opts": [
+        "A. 20",
+        "B. 24",
+        "C. 28",
+        "D. 32"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "32"
+      }
+    },
+    {
+      "n": 56,
+      "stem": "Al proceso que exige sistematización del pensamiento; además es la manera ordenada de desarrollar el pensamiento reflexivo y de investigación, se le denomina:",
+      "opts": [
+        "A. Sistematización metodológica",
+        "B. Método científico",
+        "C. Investigación científica",
+        "D. Identificación del área problema"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Método científico"
+      }
+    },
+    {
+      "n": 57,
+      "stem": "Mujer de 66 años, viene al EESS en compañía de familiar, presentando de manera brusca, dificultad para hablar, miastenia, trastorno psicomotor, hemiparesia derecha, parálisis facial derecha, caída de la comisura labial. Es evaluada por médico de turno, quien indica su referencia inmediata. Familiar se opone y no acepta la referencia. Según la gravedad del caso. ¿Qué medida de urgencia debe tomar el médico?",
+      "opts": [
+        "A. Citarlo para el día siguiente",
+        "B. Explicar que no perderá su derecho de atención",
+        "C. Solicitar la intervención del ministerio público",
+        "D. Obligar a que acepte la referencia"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Solicitar la intervención del ministerio público"
+      }
+    },
+    {
+      "n": 58,
+      "stem": "A la capacidad de mantener a la organización productiva, eficiente y eficaz, a partir del uso adecuado de su recurso humano, teniendo como objetivo a las personas y sus relaciones en la organización. Se le denomina:",
+      "opts": [
+        "A. Gestión de compensación",
+        "B. Cultura organizacional",
+        "C. Clima organizacional saludable",
+        "D. Gestión de recursos humanos"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Gestión de recursos humanos"
+      }
+    },
+    {
+      "n": 59,
+      "stem": "En un establecimiento de salud llega un paciente lactante de 11 meses de edad cuya madre refiere vómitos y diarrea, a la evaluación por triaje no presenta signos de deshidratación, de acuerdo al listado de daños según prioridad de atención se considera:",
+      "opts": [
+        "A. Prioridad II: emergencia que debe ser atendido en un tiempo no mayor a 10 minutos desde su",
+        "B. Prioridad I: gravedad súbita extrema debe atenderse de inmediato",
+        "C. Prioridad V: no urgencia, debe sacar cita para ser atendido por consultorio externo",
+        "D. Prioridad III: urgencia que debe ser atendido en un tiempo no mayor a 30 minutos desde su"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Prioridad III: urgencia que debe ser atendido en un tiempo no mayor a 30 minutos desde su"
+      }
+    },
+    {
+      "n": 60,
+      "stem": "En el análisis de datos de una investigación, la ...... es uno de los tipos de medidas de tendencia central que informan el valor más representativo de la muestra, definida por el valor de la variable que se repite con más frecuencia.",
+      "opts": [
+        "A. varianza",
+        "B. moda",
+        "C. mediana",
+        "D. media"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "moda"
+      }
+    },
+    {
+      "n": 61,
+      "stem": "¿Cuál es la complicación tardía y fatal del Sarampión?",
+      "opts": [
+        "A. Panencefalitis esclerosante subaguda",
+        "B. Encefalitis aguda post infecciosa",
+        "C. Ceguera",
+        "D. Neumonía"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Panencefalitis esclerosante subaguda"
+      }
+    },
+    {
+      "n": 62,
+      "stem": "Se asigna nuevo jefe en un EESS del primer nivel de atención; al llegar percibe insatisfacción y quejas de los trabajadores sobre el ambiente de trabajo. Es por ello, que decide hacer gestión del ...... dividido en tres fases: planificación, intervención y evaluación; para promover un ambiente de trabajo agradable y así el logro de objetivos institucionales.",
+      "opts": [
+        "A. ambiente laboral",
+        "B. trabajo en equipo",
+        "C. desarrollo profesional",
+        "D. clima organizacional"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "clima organizacional"
+      }
+    },
+    {
+      "n": 63,
+      "stem": "En un EESS nivel I-2 se desea conocer la prevalencia de obesidad en niños menores de 10 años; por lo cual, necesitamos recopilar datos antropométricos, hábitos alimenticios, ejercicio físico, escolaridad y relación familiar con variables que sean medibles. ¿Qué tipo de investigación sería la más conveniente aplicar en esta población?",
+      "opts": [
+        "A. Descriptiva",
+        "B. Analítica",
+        "C. Pre experimental",
+        "D. Explicativa"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Descriptiva"
+      }
+    },
+    {
+      "n": 64,
+      "stem": "En el último decenio, se incrementó la autoatención de salud, porque los usuarios prefieren ocuparse más activamente de su propia salud y los pacientes que sufren determinados trastornos crónicos, se inclinan a utilizar preparaciones herbarias, acupuntura y terapias manuales tales como la quiropráctica. Este tipo de prácticas de refiere a …",
+      "opts": [
+        "A. tratamiento paliativo.",
+        "B. medicina tradicional y complementaria.",
+        "C. tratamiento oriental.",
+        "D. tratamiento alternativo."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "medicina tradicional y complementaria."
+      }
+    },
+    {
+      "n": 65,
+      "stem": "En un establecimiento de salud en Chiclayo se ha reportado incremento de casos de pacientes febriles y pacientes con lesiones eruptivas en piel, tanto en niños como en adolescentes, ambos en relación a la semana epidemiológica previa y en relación a la misma semana epidemiológica del año anterior. ¿Qué enfermedades debe priorizar para vigilancia epidemiológica?",
+      "opts": [
+        "A. Leishmaniasis y bartonelosis",
+        "B. Tifoidea y rubeola",
+        "C. Piodermitis e impétigo",
+        "D. Dengue y sarampión"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Dengue y sarampión"
+      }
+    },
+    {
+      "n": 66,
+      "stem": "En el CS se ha determinado un problema de investigación para lo cual se ha desarrollado un cuestionario estructurado para ser aplicado al estudio de niños con anemia para determinar la cantidad de casos y tipos de anemia. ¿Qué es el cuestionario estructurado?",
+      "opts": [
+        "A. Métodos de confiabilidad",
+        "B. Prueba de normalidad",
+        "C. Propiedades psicométricas",
+        "D. Instrumento de recolección de datos"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Instrumento de recolección de datos"
+      }
+    },
+    {
+      "n": 67,
+      "stem": "Persona a quien se le diagnostica TB con compromiso del parénquima pulmonar con o sin confirmación bacteriológica. Es definición de caso...",
+      "opts": [
+        "A. de TB pulmonar.",
+        "B. probable de TB.",
+        "C. índice.",
+        "D. compatible de TB."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "de TB pulmonar."
+      }
+    },
+    {
+      "n": 68,
+      "stem": "El jefe del EESS, realiza una sala situacional sobre dengue, desde el enfoque de EIS (Evaluación de Impacto en Salud), la cual la difunde y analiza con el comité multisectorial. ¿Cuál es el objetivo de esta actividad?",
+      "opts": [
+        "A. Sensibilizar y ejecutar propuestas políticas del MINSA",
+        "B. Promover y garantizar políticas públicas saludables",
+        "C. Decidir y aplicar las propuestas del personal de salud",
+        "D. Planificar y ejecutar propuestas del personal de salud"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Promover y garantizar políticas públicas saludables"
+      }
+    },
+    {
+      "n": 69,
+      "stem": "El consultorio de psicología necesita adquirir pruebas psicológicas para mejorar la atención de sus pacientes, para lo cual el jefe del establecimiento hace su requerimiento y sus términos de referencia. Según la normatividad vigente de contrataciones del estado. ¿Cómo se le denomina al responsable del establecimiento?",
+      "opts": [
+        "A. Área técnica",
+        "B. Órgano encargado de contrataciones",
+        "C. Área usuaria",
+        "D. Titular de la entidad"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Área usuaria"
+      }
+    },
+    {
+      "n": 70,
+      "stem": "El derecho del usuario en salud a contar con una segunda opinión médica. ¿A qué derecho corresponde?",
+      "opts": [
+        "A. Atención y recuperación en salud",
+        "B. Acceso a servicios de salud",
+        "C. Consentimiento informado",
+        "D. Acceso de información"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Acceso a servicios de salud"
+      }
+    },
+    {
+      "n": 71,
+      "stem": "Los medicamentos ...... son aquellos medicamentos y productos biológicos que cubren la mayor parte de la morbilidad en el país que han demostrado ser seguros, eficaces y costo-efectivos.",
+      "opts": [
+        "A. antibióticos",
+        "B. analgésicos",
+        "C. esenciales",
+        "D. antiinflamatorios"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "esenciales"
+      }
+    },
+    {
+      "n": 72,
+      "stem": "En el colegio Daniel Alcides Carrión junto con el equipo multidisciplinario del establecimiento de salud, trabajan en líneas básicas de acción, como promoción de estilos de vida, para mejorar la calidad de vida de los niños y los adolescentes. Esta practicas promueven escuelas …",
+      "opts": [
+        "A. saludables.",
+        "B. participativas.",
+        "C. comprometidas.",
+        "D. concertadas."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "saludables."
+      }
+    },
+    {
+      "n": 73,
+      "stem": "El personal profesional de la salud en el primer nivel de atención debe realizar consejería nutricional por cursos de vida, a fin de crear el hábito del autocuidado y empleo de prácticas saludables dirigidos a la familia; una de las recomendaciones que indica la OMS es: hacer lo posible porque las comidas se hagan en...",
+      "opts": [
+        "A. la escuela.",
+        "B. espacios abiertos.",
+        "C. su habitación.",
+        "D. familia."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "familia."
+      }
+    },
+    {
+      "n": 74,
+      "stem": "El empoderamiento de los pueblos indígenas adquiere vigencia contemporánea y una de sus exigencias es que se incorporen al sistema de salud con una atención médica acorde con sus patrones culturales. Frente a esta problemática el profesional de la salud deberá recibir formación básica en …",
+      "opts": [
+        "A. atención primaria.",
+        "B. salud pública.",
+        "C. interculturalidad.",
+        "D. salud comunitaria."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "interculturalidad."
+      }
+    },
+    {
+      "n": 75,
+      "stem": "En el informe final de investigación debe explicarse el objeto de estudio, a través de la definición y conceptualización de sus variables, incluyendo criterios de los investigadores que se debe asumir con una determinada posición de manera esquemática. Esta parte del informe corresponde a:",
+      "opts": [
+        "A. Resultados y discusión",
+        "B. Marco teórico y conceptual",
+        "C. Objetivos general y específicos",
+        "D. Materiales y métodos"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Marco teórico y conceptual"
+      }
+    },
+    {
+      "n": 76,
+      "stem": "En un EESS el equipo de farmacovigilancia identificó una RAM (reacción adversa al medicamento), para ello aplica el método de estudio más común, que se basa en la identificación de las sospechas de RAM por parte de los profesionales de la salud en su práctica diaria y el envío al organismo central. ¿Cuál es el método aplicado?",
+      "opts": [
+        "A. Sistema de farmacovigilancia intensiva",
+        "B. Estudios epidemiológicos de casos y control",
+        "C. Sistema de notificaciones espontáneas",
+        "D. Estudios centrados en el medicamento"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Sistema de notificaciones espontáneas"
+      }
+    },
+    {
+      "n": 77,
+      "stem": "Durante la pandemia del COVID-19, hubo escasez de mascarillas, test, recursos de UCI, equipos de protección personal para un determinado grupo ocupacional, exponiéndose otros profesionales a personas infectadas durante su labor, muchos de ellos llegándose a contagiar. Este conflicto de racionamiento de recursos. ¿A qué eje o principio de la ética de la salud pública pertenece?",
+      "opts": [
+        "A. Justicia",
+        "B. Humanitarismo",
+        "C. Deber de asistencia",
+        "D. Confidencialidad"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Justicia"
+      }
+    },
+    {
+      "n": 78,
+      "stem": "La SERUMS de Enfermería del C.S. Tomas, realiza el tamizaje de control de anemia a 10 niños del centro educativo del lugar, encontrando 03 niños de 5 a 11 años, con un dosaje según hemoglobinómetro de 11.5 g/dl, 11.7 g/dl y 11.9 g/dl. ¿Cuál es la indicación de hierro elemental, para la suplementación?",
+      "opts": [
+        "A. 300 mg en jarabe o tableta dos veces por semana por seis meses",
+        "B. 60 mg en jarabe o tableta de manera diaria por tres meses",
+        "C. 30 mg en jarabe de manera diaria por tres meses",
+        "D. 60 mg en tableta o jarabe dos veces al día por un mes"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "60 mg en jarabe o tableta de manera diaria por tres meses"
+      }
+    },
+    {
+      "n": 79,
+      "stem": "Primigesta 36 años; 29 semanas; acude a su primer control prenatal, deberá iniciar inmediatamente su esquema de vacunación para la inmunización pasiva contra la tos ferina. ¿Qué vacuna se indicaría?",
+      "opts": [
+        "A. Tdap",
+        "B. HVA",
+        "C. VRS",
+        "D. AMA"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Tdap"
+      }
+    },
+    {
+      "n": 80,
+      "stem": "Mujer de 55 años, nulípara, IMC 32, acude al establecimiento I-2 para tamizaje por examen clínico para cáncer de mama, nunca se ha realizado un chequeo. ¿Qué indica en este caso luego de la evaluación?",
+      "opts": [
+        "A. Referencia para mamografía",
+        "B. Referencia para resonancia",
+        "C. Dieta, ejercicio y autoexamen",
+        "D. Examen clínico en 2 años"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Referencia para mamografía"
+      }
+    },
+    {
+      "n": 81,
+      "stem": "Al llegar al establecimiento de salud el nuevo jefe observa que existen en el archivo historias clínicas muy antiguas y deterioradas. Por tanto, la primera acción, como procedimiento de gestión, es conservar por ...... años las historias clínicas en el archivo activo, considerando su última fecha de atención, el resto se trasladará al archivo pasivo.",
+      "opts": [
+        "A. 3",
+        "B. 15",
+        "C. 10",
+        "D. 5"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "5"
+      }
+    },
+    {
+      "n": 82,
+      "stem": "El EESS desarrolla acciones de evaluación y mejora continua de la calidad de atención a adolescentes. La población adolescente está satisfecha con la atención y cuidados recibidos. ¿A qué tipo de proceso de evaluación pertenece?",
+      "opts": [
+        "A. Atención de las necesidades de salud",
+        "B. Empoderamiento y seguridad del adolescente",
+        "C. Gestión del talento humano",
+        "D. Gestión de la calidad"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Gestión de la calidad"
+      }
+    },
+    {
+      "n": 83,
+      "stem": "La enfermera ingresa al turno y evidencia que su recipiente de punzocortantes está lleno, evidenciando riesgo de bioseguridad para todo el personal que labora en su unidad; por lo que solicita al personal técnico desechar y cambiar el recipiente por uno nuevo. Este aduce que no es necesario porque todavía falta llenar. Según las especificaciones para el cambio. ¿Cuál es el volumen máximo permitido?",
+      "opts": [
+        "A. Un tercio",
+        "B. Mitad",
+        "C. Lleno total",
+        "D. 3/4 partes"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "3/4 partes"
+      }
+    },
+    {
+      "n": 84,
+      "stem": "¿Cuál es el servicio de salud a distancia prestado por personal de la salud competente, a través de las TIC, para lograr que estos servicios y sus relacionados, sean accesibles y oportunos a la población?",
+      "opts": [
+        "A. Telesalud",
+        "B. Teletriaje",
+        "C. Telemonitoreo",
+        "D. Teleorientación"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Telesalud"
+      }
+    },
+    {
+      "n": 85,
+      "stem": "Al C.S. de Yauyos acude una gestante con diagnóstico de sífilis a la que le falta cuatro semanas para el parto. El tratamiento completo y adecuado para la prevención de sífilis congénita es con Penicilina G Benzatínica vía IM, debe administrarse una vez por semana, durante tres semanas consecutivas. ¿Cuál es la dosis recomendada?",
+      "opts": [
+        "A. 2.5 millones UI",
+        "B. 3.4 millones UI",
+        "C. 2.4 millones UI",
+        "D. 1.2 millones UI"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "2.4 millones UI"
+      }
+    },
+    {
+      "n": 86,
+      "stem": "Cuando el servidor público no ejerce presiones, amenazas o acoso sexual contra otros servidores públicos o subordinados que puedan afectar la dignidad de la persona o inducir a la realización de acciones dolosas. Este accionar corresponde a:",
+      "opts": [
+        "A. Un principio de respeto y equidad",
+        "B. Una prohibición ética",
+        "C. Un principio y deber",
+        "D. Una responsabilidad y deber"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Una prohibición ética"
+      }
+    },
+    {
+      "n": 87,
+      "stem": "La explicación de la plausibilidad de los hallazgos principales, la confrontación de los puntos fuertes y débiles frente a otros estudios, así como la descripción de las implicancias dentro de su contexto. ¿A qué sección estructural del artículo científico corresponde?",
+      "opts": [
+        "A. Discusión",
+        "B. Introducción",
+        "C. Resultados",
+        "D. Metodología"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Discusión"
+      }
+    },
+    {
+      "n": 88,
+      "stem": "Una estrategia para la prevención del dengue es utilizar medios alternativos de comunicación de la comunidad, para asegurar la cobertura a toda la población sin segregar a ningún sector, por ejemplo, haciendo ...... en peluquerías, ferias y medios de comunicación local, para así transmitir el mensaje con un lenguaje claro, concreto y entendible.",
+      "opts": [
+        "A. alianzas estratégicas",
+        "B. promoción de la salud",
+        "C. acuerdos intersectoriales",
+        "D. convenios públicos"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "alianzas estratégicas"
+      }
+    },
+    {
+      "n": 89,
+      "stem": "En el establecimiento de salud Las Flores laboran 20 personas, de los cuales 3 profesionales cuentan con estudios de diplomados y maestría en modelo de cuidado integral por curso de vida y un personal técnico es regidor del área de salud de la municipalidad distrital; por lo tanto, podemos señalar que se cuenta con …… y …… para la implementación y desarrollo del plan de salud local.",
+      "opts": [
+        "A. capacitación / organización",
+        "B. presupuesto / priorización",
+        "C. planificación / gestión",
+        "D. fortalezas / oportunidades"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "fortalezas / oportunidades"
+      }
+    },
+    {
+      "n": 90,
+      "stem": "En la consulta médica se atiende a un varón adulto, para descartar riesgo cardiovascular; por lo que de acuerdo a las recomendaciones de la Organización Mundial de la Salud se le recomienda realizar ...... minutos a más semanales de actividad física de intensidad moderada.",
+      "opts": [
+        "A. 150",
+        "B. 100",
+        "C. 60",
+        "D. 120"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "150"
+      }
+    },
+    {
+      "n": 91,
+      "stem": "En cuanto a los exámenes auxiliares en pacientes fallecidos con probable diagnóstico de dengue, la muestra para laboratorio se puede obtener de tejido del hígado, bazo y ganglios linfáticos antes de las ...... horas de fallecido.",
+      "opts": [
+        "A. 48",
+        "B. 36",
+        "C. 72",
+        "D. 24"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "24"
+      }
+    },
+    {
+      "n": 92,
+      "stem": "El incremento de la morbimortalidad por dengue ha generado intervenciones como el proyecto Wolbachia y la vacunación contra el dengue. Dentro de la transición epidemiológica estas actividades se corresponden con cambios en:",
+      "opts": [
+        "A. Cambios en la antigenicidad",
+        "B. Impacto de la investigación científica",
+        "C. Resistencia bacteriana",
+        "D. Factores de modernización"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Impacto de la investigación científica"
+      }
+    },
+    {
+      "n": 93,
+      "stem": "Teleinterconsulta es la consulta a distancia mediante el uso de las TIC, que realiza un personal de salud a un profesional de la salud, para la atención de una persona usuaria, pudiendo ésta estar o no ......; con fines de promoción, prevención, diagnóstico, tratamiento, recuperación, rehabilitación y cuidados paliativos según sea el caso.",
+      "opts": [
+        "A. disponible",
+        "B. de acuerdo",
+        "C. enfermo",
+        "D. presente"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "presente"
+      }
+    },
+    {
+      "n": 94,
+      "stem": "¿En qué documento de gestión se hacen los cambios en la programación de las metas físicas, incorporación o inactivación de actividades operativas por cambios en el entorno, cumplimiento de nuevas disposiciones emitidas por el ejecutivo o legislativo?",
+      "opts": [
+        "A. PSL",
+        "B. PEI",
+        "C. POI",
+        "D. ASIS"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "POI"
+      }
+    },
+    {
+      "n": 95,
+      "stem": "Usuaria de 24 años, acude a consulta psicológica indicando que nadie le cree, pero le han hecho brujería; un curandero le pasó el cuy negro por todo el cuerpo, se sintió mejor; pero nuevamente empezó a sentirse mal, fue con una curandera, quien le dice que el daño que tiene es muy grave. El psicólogo identifica indicadores de trastorno ansioso. ¿Qué acciones debe realizar para que la usuaria acepte el manejo en el establecimiento?",
+      "opts": [
+        "A. Reforzar el esquema cultural",
+        "B. Referencia a medicina",
+        "C. Referencia a psiquiatría",
+        "D. Reducir las barreras culturales"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Reducir las barreras culturales"
+      }
+    },
+    {
+      "n": 96,
+      "stem": "De acuerdo a la norma técnica para el cuidado integral del adolescente, el equipo multidisciplinario puede realizar el abordaje en la institución educativa y deberá continuar la atención en:",
+      "opts": [
+        "A. Los espacios comunitarios",
+        "B. El auditorio municipal",
+        "C. Los establecimientos de salud",
+        "D. El área de psicología de la I.E."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Los establecimientos de salud"
+      }
+    },
+    {
+      "n": 97,
+      "stem": "El médico jefe de un establecimiento de salud, aborda el tema de vigilancia epidemiológica, refiere que cada tipo de vigilancia tiene su propio proceso. Dada la alerta de sarampión su personal está buscando, notificando y registrando casos en visitas domiciliarias. ¿Qué tipo de vigilancia está aplicando?",
+      "opts": [
+        "A. Centinela",
+        "B. Especializada",
+        "C. Activa",
+        "D. Pasiva"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Activa"
+      }
+    },
+    {
+      "n": 98,
+      "stem": "El estado de salud de una jurisdicción se puede evaluar a través del cumplimiento de …… sanitarios de los diferentes componentes de cada uno de los cursos de vida.",
+      "opts": [
+        "A. paquetes",
+        "B. objetivos",
+        "C. indicadores",
+        "D. contextos"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "indicadores"
+      }
+    },
+    {
+      "n": 99,
+      "stem": "En el adolescente, el alcanzar el desarrollo físico, maduración mental, desarrollo emocional y desarrollo social, es un objetivo de:",
+      "opts": [
+        "A. Promoción de la salud",
+        "B. Rehabilitación en salud",
+        "C. Componente de salud",
+        "D. Cuidado integral por curso de vida"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Cuidado integral por curso de vida"
+      }
+    },
+    {
+      "n": 100,
+      "stem": "A la percepción colectiva de satisfacción de los/las servidores/as civiles sobre el ambiente de trabajo, se le denomina:",
+      "opts": [
+        "A. Clima organizacional",
+        "B. Cultura organizacional",
+        "C. Percepción compartida",
+        "D. Ambiente laboral agradable"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Clima organizacional"
+      }
+    }
+  ]
+};

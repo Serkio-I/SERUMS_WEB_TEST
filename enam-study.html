@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENAM Estudiar - IA Profesora</title>
+  <style>
+    :root {
+      --bg: #fdf6ec;
+      --bg-accent: #ffe4c5;
+      --primary: #c49c63;
+      --primary-dark: #a67c4e;
+      --text: #3d2a14;
+      --text-light: #6b5329;
+      --card: #ffffff;
+      --border: #e8d8c8;
+      --accent: #d2b48c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* Fondo sutil tipo bloque/Minecraft */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: 
+        linear-gradient(135deg, var(--bg-accent) 1px, transparent 1px),
+        linear-gradient(225deg, var(--bg-accent) 1px, transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 20px 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 24px;
+    }
+
+    /* Input area */
+    .input-wrapper {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 16px 16px 16px 52px;
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      font-size: 1rem;
+      color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(196, 156, 99, 0.15);
+    }
+
+    /* Icono dentro del input */
+    .input-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      fill: var(--primary);
+    }
+
+    button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 40px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    button:focus {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    /* Tarjeta de respuesta */
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      display: none;
+    }
+
+    .card.visible {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .card .fuente {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 0.75rem;
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    /* Estados */
+    .loading {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .loading::after {
+      content: "⟳ Explicando...";
+      display: block;
+      margin-top: 8px;
+      color: var(--primary-dark);
+      font-style: italic;
+    }
+
+    .no-questions {
+      text-align: center;
+      color: var(--text-light);
+      font-style: italic;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ENAM Estudiar</h1>
+    <span class="subtitle">Pregunta a la IA Profesora</span>
+
+    <div class="input-wrapper">
+      <svg class="input-icon" viewBox="0 0 24 24"><path d="M13.89 5.06L9.55 9.4l-3.34-3.35a.75.75 0 1 0-1.06 1.06l3.36 3.36a.75.75 0 0 0 0-1.06zM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14z"/></svg>
+      <input type="text" id="pregunta" placeholder="¿Qué dudas sobre encapsulación...?" autofocus>
+      <button id="btnPreguntar" aria-label="Preguntar"></button>
+    </div>
+
+    <div class="card" id="respuestaCard">
+      <h2><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#c49c63" d="M8 5v14l11-7L8 5zM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/></svg> La IA Profesora</h2>
+      <p id="respuestaTexto">Escribe tu pregunta arriba y la IA te explicará como un profesor.</p>
+      <div class="fuente" id="fuenteInfo">— Herramienta de estudio ENAM —</div>
+    </div>
+
+    <p class="no-questions" style="display:none;">No hay preguntas guardadas aún. ¡Sé la primera!</p>
+  </div>
+
+  <script>
+    // Configuración
+    const IA_CONFIG = {
+      nombre: "IA Profesora ENAM",
+      modelo: "claude-3-5-sonnet-20240620", // Para cuando conectes Claude
+      // Otras IA's disponibles (solo para desarrollo)
+      disponibles: {
+        claude: "claude-3-5-sonnet-20240620",
+        gpt4: "gpt-4-turbo-preview",
+        gemini: "gemini-1.5-flash"
+      }
+    };
+
+    // Elementos DOM
+    const input = document.getElementById("pregunta");
+    const btn = document.getElementById("btnPreguntar");
+    const card = document.getElementById("respuestaCard");
+    const respuestaTexto = document.getElementById("respuestaTexto");
+    const fuenteInfo = document.getElementById("fuenteInfo");
+
+    // Respuestas predefinidas para modo offline/prueba
+    const respuestas = {
+      encapsulacion: "En la medicina, la encapsulación se refiere a la formación de una cápsula alrededor de un cuerpo extraño, un tumor o un fármaco. En el examen ENAM, es clave entender: 1) Tumores encapsulados suelen ser más fáciles de resecar quirúrgicamente al tener límites definidos. 2) Las microcápsulas farmacológicas protegen el principio activo y liberan de forma controlada. 3) La capsula de un órgano (como el hígado o el riñón) es una capa de tejido conjuntivo que lo delimita. Si la cápsula está comprometida, hay riesgo de diseminación de células malignas.",
+
+      tumor: "Al hablar de tumores en ENAM, la encapsulación es un criterio histopatológico importante: - **Encapsulado**: límites claros, capsula de tejido conjuntivo delgada. Sugiere comportamiento benigno mayormente. - **No encapsulado**: crecimiento infiltrativo, límites borrosos. Asociado a malignidad. - **Puntería**: El informe patológico dirá 'tumor encapsulado' o 'sin cápsula'. Esto impacta en la decisión quirúrgica: con cápsula se puede hacer resección completa; sin cápsula, requiere márgenes más amplios o tratamiento adyuvante.",
+
+      fármaco: "Los fármacos encapsulados (liposomas, microcápsulas, nanogelos) son un tema frecuente en ENAM: 1) **Ventajas**: Protegen el fármaco de la degradación, reducen efectos secundarios al llegar selectivamente al blanco, permiten liberación sostenida. 2) **Indicaciones**: Quimioterapia encapsulada, fármacos para patologías crónicas. 3) **Mecanismo**: La membrana de la cápsula se difunde o se rompe liberando el fármaco. Es un área en crecimiento en la farmacología moderna."};
+
+    // Mostrar respuesta
+    async function mostrarRespuesta(tema, respuestaTextoReal) {
+      card.classList.add("visible");
+      respuestaTexto.innerHTML = respuestaTextoReal || "Procesando...";
+
+      // Simular tiempo de "profesor explicando"
+      setTimeout(() => {
+        fuenteInfo.textContent = `— ${IA_CONFIG.nombre} —`;
+      }, 500);
+    }
+
+    // Manejar pregunta
+    btn.addEventListener("click", async () => {
+      const texto = input.value.trim();
+      if (!texto) return;
+
+      // Marcar como loading
+      btn.classList.add("loading");
+      input.disabled = true;
+
+      // Determinar tema y generar respuesta
+      const bajo = texto.toLowerCase();
+
+      let respuestaFinal;
+      if (bajo.includes("encapsul") || bajo.includes("encaps")) {
+        respuestaFinal = respuestas.encapsulacion;
+      } else if (bajo.includes("tumor") || bajo.includes("cancer")) {
+        respuestaFinal = respuestas.tumor;
+      } else if (bajo.includes("fármaco") || bajo.includes("medicamento") || bajo.includes("droga")) {
+        respuestaFinal = respuestas.fármaco;
+      } else {
+        respuestaFinal = `Excelente pregunta sobre: "${texto}". En el contexto del examen ENAM, te explico los conceptos clave que todo médico debe saber. La idea es que entiendas la base fisiopatológica y los aspectos clínicos relevantes, no solo memorices. ¿Necesitas profundizar en algún aspecto específico?`;
+      }
+
+      await mostrarRespuesta(null, respuestaFinal);
+
+      // Limpiar input
+      input.value = "";
+      btn.classList.remove("loading");
+      input.disabled = false;
+      input.focus();
+    });
+
+    // Enter para enviar
+    input.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        btn.click();
+      }
+    });
+
+    // Enfoque inicial
+    window.addEventListener("load", () => input.focus());
+  </script>
+</body>
+</html>

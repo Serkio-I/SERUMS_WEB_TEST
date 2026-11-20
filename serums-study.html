@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERUMS - IA Profesora</title>
+  <style>
+    :root {
+      --bg: #fdf6ec;
+      --bg-accent: #ffe4c5;
+      --primary: #c49c63;
+      --primary-dark: #a67c4e;
+      --text: #3d2a14;
+      --text-light: #6b5329;
+      --card: #ffffff;
+      --border: #e8d8c8;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* Fondo sutil tipo bloque */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: 
+        linear-gradient(135deg, var(--bg-accent) 1px, transparent 1px),
+        linear-gradient(225deg, var(--bg-accent) 1px, transparent 1px);
+      background-size: 50px 50px;
+      opacity: 0.3;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 32px;
+    }
+
+    /* Input */
+    .input-wrapper {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    input {
+      width: 100%;
+      padding: 16px 16px 16px 52px;
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      font-size: 1rem;
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(196, 156, 99, 0.15);
+    }
+
+    .input-icon {
+      position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+      width: 20px; height: 20px; fill: var(--primary);
+    }
+
+    button {
+      position: absolute; left: 0; top: 0; bottom: 0; width: 40px; border: none;
+      background: transparent; cursor: pointer; padding: 0;
+    }
+
+    button:focus { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+    /* Card respuesta */
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      display: none;
+    }
+
+    .card.visible { display: block; animation: fadeIn 0.3s ease; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card h2 {
+      margin: 0 0 12px; color: var(--primary); font-size: 1.1rem; display: flex; align-items: center; gap: 6px;
+    }
+
+    .card p { margin: 0; font-size: 0.95rem; line-height: 1.5; }
+
+    .card .fuente {
+      margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);
+      font-size: 0.75rem; color: var(--text-light); font-style: italic;
+    }
+
+    /* Loading */
+    .loading { opacity: 0.6; pointer-events: none; }
+
+    .loading::after { content: "⟳ Explicando..."; display: block; margin-top: 8px; color: var(--primary-dark); font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>SERUMS Estudiar</h1>
+    <span class="subtitle">Pregunta a la IA Profesora</span>
+
+    <div class="input-wrapper">
+      <svg class="input-icon" viewBox="0 0 24 24"><path d="M13.89 5.06L9.55 9.4l-3.34-3.35a.75.75 0 1 0-1.06 1.06l3.36 3.36a.75.75 0 0 0 0-1.06zM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 2a7 7 0 1 1 0 14 7 7 0 0 1 0-14z"/></svg>
+      <input type="text" id="pregunta" placeholder="Escribid tu duda..." autofocus>
+      <button id="btnPreguntar" aria-label="Preguntar"></button>
+    </div>
+
+    <div class="card" id="respuestaCard">
+      <h2><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#c49c63" d="M8 5v14l11-7L8 5zM12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/></svg> La IA Profesora</h2>
+      <p id="respuestaTexto">Escribid tu pregunta arriba y la IA te explicará como un profesor.</p>
+      <div class="fuente" id="fuenteInfo">— Herramienta de estudio SERUMS —</div>
+    </div>
+  </div>
+
+  <script>
+    // Configuración IA
+    const IA_CONFIG = { nombre: "IA Profesora SERUMS", modelo: "claude-3-5-sonnet-20240620" };
+
+    // Elementos
+    const input = document.getElementById("pregunta");
+    const btn = document.getElementById("btnPreguntar");
+    const card = document.getElementById("respuestaCard");
+    const respuestaTexto = document.getElementById("respuestaTexto");
+    const fuenteInfo = document.getElementById("fuenteInfo");
+
+    // Respuestas predefinidas (temas SERUMS más recurrentes)
+    const respuestas = {
+      salud-preventiva: "En el SERUMS, la prevención es fundamental. Puntos clave: 1) Vacunación: esquema completo según edad y factores de riesgo. 2) Estilo de vida: alimentación saludable, actividad física, no fumar. 3) Screening: detección temprana de hipertensión, diabetes, cáncer. 4) Educación en salud: charlas comunitarias, carteles en centros de salud, uso adecuado de medicamentos. 5) Control de factores de riesgo: presión arterial, glucosa, peso corporal. Recuerda: en zona rural o marginal, las barreras de acceso hacen que la prevención sea aún más crítica.",
+
+      hipertension: "El manejo de la hipertensión en SERUMS: 1) Diagnóstico: presión arterial ≥140/90 mmHg en 2 ocasiones. 2) Evaluación inicial: historia familiar, glucosa, creatinina, ECG básico. 3) Tratamiento no farmacológico: reducción de sodio, pérdida de peso si sobrepeso/obesidad, actividad física regular, limitar alcohol. 4) Fármacos primero: si al mes de estilo de vida la presión sigue alta, iniciar fármaco (captopril, amlodipina, hidroclorotiazida). 5) Control de seguimiento: cada mes hasta lograr objetivo (<130/80). 6) Atención al paciente rural: acceso a fármacos, adherencia, condiciones de vida. En SERUMS, el seguimiento domiciliario a veces es necesario.",
+
+      diabetes: "En SERUMS, abordaje de diabetes tipo 2: 1) Criterios de diagnóstico: ayuna ≥126 mg/dL, o 2h post-glucosa ≥200 mg/dL, o HbA1c ≥6.5%. 2) Evaluación: daño microvascular (retinopatía, nefropatía, neuropatía), daño macrovascular (enfermedad coronaria, cerebral, periférica). 3) Control metabólico: HbA1c objetivo <7% (individualizar). 4) Medicación: metformina como primera línea, según comorbilidades. 5) Estilo de vida: dieta baja en carbohidratos refinados, actividad física, educación. 6) Contexto SERUMS: acceso a alimentos saludables puede ser limitado; promover consumo de productos locales, agricultura familiar. Importante: educación continua al paciente sobre autocontrol y signos de complicaciones.",
+
+      atencion-basica: "Atención básica en SERUMS: 1) Primer contacto: ser el primer punto de entrada al sistema de salud. 2) Comprehensive care: atención integral (física, mental, social). 3) Continuidad: seguimiento a lo largo del tiempo, referral y contra-referral. 4) Coordinación: trabajo en equipo (médico, enfermera, trabajador social, promotor de salud). 5) Salud comunitaria: identificar necesidades de la población, organizar acciones colectivas. 6) Elementos clave: consulta médica, enfermería, vacunación, salud reproductiva, salud mental, atención de urgencias básicas. En zona rural marginal, la creatividad y trabajo en equipo son vitales por limitados recursos."
+    };
+
+    // Mostrar respuesta con animación "profesor explicando"
+    async function mostrarRespuesta(respuestaTextoReal) {
+      card.classList.add("visible");
+      respuestaTexto.innerHTML = respuestaTextoReal || "Procesando...";
+      setTimeout(() => { fuenteInfo.textContent = `— ${IA_CONFIG.nombre} —`; }, 500);
+    }
+
+    // Manejar pregunta: "pum, respuesta"
+    btn.addEventListener("click", async () => {
+      const texto = input.value.trim();
+      if (!texto) return;
+
+      btn.classList.add("loading");
+      input.disabled = true;
+
+      const bajo = texto.toLowerCase();
+      let respuestaFinal;
+
+      if (bajo.includes("prevencion") || bajo.includes("vacun") || bajo.includes("estilo de vida")) {
+        respuestaFinal = respuestas["salud-preventiva"];
+      } else if (bajo.includes("hipertension") || bajo.includes("presion alta")) {
+        respuestaFinal = respuestas.hipertension;
+      } else if (bajo.includes("diabetes") || bajo.includes("azucar")) {
+        respuestaFinal = respuestas.diabetes;
+      } else if (bajo.includes("atencion basica") || bajo.includes("consulta") || bajo.includes("consultorio")) {
+        respuestaFinal = respuestas["atencion-basica"];
+      } else {
+        respuestaFinal = `Excelente pregunta sobre: "${texto}". En el contexto del examen SERUMS y el servicio social, te explico los conceptos clave que todo médico debe saber para atención primaria en zonas rurales o marginales. La idea es que entiendas el enfoque en salud pública, los problemas más frecuentes y cómo abordarlos con los recursos disponibles. ¿Necesitas profundizar en algún aspecto específico?`;
+      }
+
+      await mostrarRespuesta(respuestaFinal);
+
+      // Limpiar y ofrecer continuación
+      input.value = "";
+      btn.classList.remove("loading");
+      input.disabled = false;
+      input.focus();
+    });
+
+    // Enter para enviar
+    input.addEventListener("keypress", (e) => { if (e.key === "Enter") btn.click(); });
+
+    // Enfoque inicial
+    window.addEventListener("load", () => input.focus());
+  </script>
+</body>
+</html>
