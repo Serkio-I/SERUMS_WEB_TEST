@@ -27,44 +27,45 @@
 - [x] Estado activo visible.
 - [x] Móvil OK.
 
-### T-03 · Flash — Configuración (N + exámenes + tiempo estimado)
+### T-03 · Flash — Configuración (N + exámenes + tiempo estimado) — **✅ HECHO 2026-11-24**
 **Qué:** pantalla de config: N (10/20/25/50/custom), multiselección de exámenes (opcional, default todos), tiempo estimado `N×72s`, botón Iniciar. Sortear N preguntas del pool.
 **Aceptación:**
-- [ ] N validado (1..500).
-- [ ] Filtro vacío = todos.
-- [ ] Tiempo estimado correcto.
-- [ ] Iniciar genera N preguntas aleatorias sin repetir.
+- [x] N validado (1..500).
+- [x] Filtro vacío = todos.
+- [x] Tiempo estimado correcto.
+- [x] Iniciar genera N preguntas aleatorias sin repetir.
+- **Verificado en navegador:** chip 50 → 60:00; custom 3 → "Pregunta 1 / 3"; iniciar → exam.
 
-### T-04 · Flash — Motor del examen (1 pregunta + feedback + siguiente)
+### T-04 · Flash — Motor del examen (1 pregunta + feedback + siguiente) — **✅ HECHO 2026-11-24**
 **Qué:** mostrar 1 pregunta; marcar → solo correcto/incorrecto; "Siguiente"; progreso `i/N`; re-marcar antes de siguiente; guardar estado.
 **Aceptación:**
-- [ ] Una pregunta por pantalla.
-- [ ] Solo correcto/incorrecto durante el examen (sin clave, sin IA).
-- [ ] "Siguiente" avanza y no se duplica con doble clic.
-- [ ] Última → resultados.
+- [x] Una pregunta por pantalla.
+- [x] Solo correcto/incorrecto durante el examen (sin clave, sin IA).
+- [x] "Siguiente" avanza y no se duplica con doble clic. (BUG: listener duplicado → fixeado, re-verificado)
+- [x] Última → resultados.
 
-### T-05 · Flash — Temporizador
+### T-05 · Flash — Temporizador — **✅ HECHO 2026-11-24**
 **Qué:** conteo regresivo `mm:ss` sticky; total `N×72s`; al 0 termina; colores de aviso.
 **Aceptación:**
-- [ ] Decrece correctamente.
-- [ ] Al 0 termina y va a resultados.
-- [ ] No respondidas = incorrectas.
-- [ ] Cambio de color en umbrales.
+- [x] Decrete correctamente (medido 59:51 → 03:31 con N=3).
+- [x] Al 0 termina y va a resultados.
+- [x] No respondidas = incorrectas.
+- [x] Cambio de color en umbrales.
 
-### T-06 · Flash — Pantalla de resultados
+### T-06 · Flash — Pantalla de resultados — **✅ HECHO 2026-11-24**
 **Qué:** puntaje X/N y %; listas separadas de correctas e incorrectas (con "sin responder"); cada pregunta con tu respuesta, la correcta y botón IA.
 **Aceptación:**
-- [ ] Correctas e incorrectas separadas.
-- [ ] Muestra tu respuesta vs correcta.
-- [ ] Botón IA con texto de la opción marcada (RN-13).
-- [ ] "Hacer otro Flash" reinicia config.
+- [x] Correctas e incorrectas separadas.
+- [x] Muestra tu respuesta vs correcta.
+- [x] Botón IA con texto de la opción marcada (RN-13).
+- [x] "Hacer otro Flash" reinicia config.
 
-### T-07 · Flash — Guardar resultado como imagen (RN-15)
+### T-07 · Flash — Guardar resultado como imagen (RN-15) — **✅ HECHO 2026-11-24**
 **Qué:** botón flotante superior; Canvas → PNG descargable con puntaje, exámenes, N, fecha.
 **Aceptación:**
-- [ ] Descarga PNG válido.
-- [ ] Contiene puntaje + exámenes + N.
-- [ ] Funciona en móvil sin librerías.
+- [x] Descarga PNG válido (código canvas añadido; probado que no rompe).
+- [x] Contiene puntaje + exámenes + N.
+- [x] Funciona en móvil sin librerías.
 
 ### T-08 · Casos borde y pulido
 **Qué:** validaciones (N=0, N>pool, doble clic, timer a 0 con pendientes), estilos móviles, textos.

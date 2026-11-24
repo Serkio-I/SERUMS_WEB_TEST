@@ -52,7 +52,7 @@ Ver `01_ARQUITECTURA_Y_DATOS.md` §"Agregar preguntas" y `PLAN_MANANA.md` en la 
 | Botón "Adentrarse con IA" | ✅ Implementado (deep-link corregido, RN-13) |
 | Persistencia de marcas (`localStorage`) | ✅ Implementado |
 | "Desmarcar" | ✅ Implementado |
-| Modo Flash (N preguntas + timer) | 🟡 En progreso (T-02 hecho: selector de modo) |
+| Modo Flash (N preguntas + timer) | 🟡 En progreso (T-02, T-03, T-04, T-05, T-06, T-07 hechos en 2026-11-24) |
 | Resultados separados correctas/incorrectas | 🟡 Planificado |
 | Guardar resultado como imagen | 🟡 Planificado |
 | Arreglo del texto a la IA (opción marcada) | ✅ Hecho (T-01, RN-13) |

@@ -88,12 +88,42 @@
     .mode-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
     .mode-btn:active { transform: scale(0.99); }
     .view-flash { padding: 8px 0; }
-    .flash-placeholder {
-      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
-      padding: 28px 20px; text-align: center;
-    }
-    .flash-placeholder h2 { color: var(--primary-dark); margin-bottom: 8px; }
-    .flash-placeholder p { color: var(--text-light); font-size: 0.9rem; }
+    .flash-phase { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px 16px; }
+    .flash-phase h2 { color: var(--primary-dark); margin-bottom: 12px; font-size: 1.25rem; }
+    .flash-field { margin-bottom: 18px; }
+    .flash-label { font-weight: 700; font-size: 0.9rem; color: var(--text); margin-bottom: 8px; }
+    .flash-q-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .q-chip { min-width: 48px; text-align: center; padding: 10px 14px; font-size: 0.95rem; }
+    .flash-custom-n { width: 100%; margin-top: 8px; padding: 10px; border: 1px solid var(--border); border-radius: 10px; font-size: 1rem; }
+    .flash-exam-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+    .flash-time { font-size: 0.9rem; color: var(--text-light); margin-bottom: 16px; }
+    .flash-time b { color: var(--text); }
+    .flash-start { display: block; width: 100%; padding: 14px; border-radius: 12px; background: var(--primary); color: #fff; border: none; font-size: 1rem; font-weight: 700; cursor: pointer; }
+    .flash-start:active { transform: scale(0.99); }
+    .flash-note { margin-top: 10px; font-size: 0.75rem; color: var(--text-light); text-align: center; }
+    .flash-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .flash-counter { font-weight: 700; color: var(--primary-dark); font-size: 0.95rem; }
+    .flash-timer { font-weight: 700; font-size: 1.05rem; color: var(--text); font-variant-numeric: tabular-nums; }
+    .flash-timer.low { color: #c62828; }
+    .flash-progress { height: 6px; background: var(--bg-accent); border-radius: 999px; overflow: hidden; margin-bottom: 14px; }
+    .flash-progress-bar { height: 100%; background: var(--primary); width: 0%; }
+    .flash-q { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+    .flash-q .q-text { font-size: 0.92rem; margin: 8px 0 12px; line-height: 1.45; }
+    .flash-next { display: block; width: 100%; margin-top: 14px; padding: 12px; border-radius: 10px; background: var(--primary); color: #fff; border: none; font-weight: 700; font-size: 0.9rem; cursor: pointer; }
+    .flash-next:disabled { opacity: 0.4; }
+    .flash-exit { display: block; width: 100%; margin-top: 8px; padding: 10px; border-radius: 10px; background: transparent; border: 1px solid var(--border); color: var(--text-light); font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+    .flash-done { text-align: center; padding: 12px 0; }
+    .flash-done .score { font-size: 2rem; font-weight: 800; color: var(--primary-dark); margin: 10px 0; }
+    .flash-actions { display: flex; gap: 8px; margin-top: 16px; }
+    .flash-actions .flash-start { width: auto; flex: 1; }
+    .flash-list { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+    .flash-list-item { border: 1px solid var(--border); border-radius: 12px; padding: 12px; background: var(--bg); }
+    .flash-list-item.bad { border-left: 3px solid #c62828; }
+    .flash-list-item.ok { border-left: 3px solid var(--correct); }
+    .flash-list-item .q-text { font-size: 0.88rem; margin: 6px 0 8px; line-height: 1.4; }
+    .flash-list-item .ans { margin-top: 8px; font-size: 0.8rem; }
+    .flash-list-item .ans b { color: var(--correct); }
+    .chip.selected { background: var(--primary); color: #fff; border-color: var(--primary); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -126,9 +156,51 @@
     </section>
 
     <section id="viewFlash" class="view-flash" hidden>
-      <div class="flash-placeholder">
+      <div id="flashPhaseConfig" class="flash-phase">
         <h2>Modo Flash</h2>
-        <p>Práctica rápida contra reloj. La configuración llega en el siguiente paso.</p>
+        <div class="flash-field">
+          <div class="flash-label">Cantidad de preguntas</div>
+          <div class="flash-q-row">
+            <button type="button" class="chip q-chip" data-n="10">10</button>
+            <button type="button" class="chip q-chip" data-n="20">20</button>
+            <button type="button" class="chip q-chip" data-n="25">25</button>
+            <button type="button" class="chip q-chip" data-n="50">50</button>
+          </div>
+          <input type="number" id="flashCustomN" class="flash-custom-n" min="1" max="500" placeholder="Otra cantidad" inputmode="numeric">
+        </div>
+        <div class="flash-field">
+          <div class="flash-label">Exámenes</div>
+          <div id="flashExamList" class="flash-exam-list"></div>
+          <button type="button" id="flashExamAll" class="chip">Todos</button>
+        </div>
+        <div class="flash-time">Tiempo total: <b id="flashTime">24:00</b> &nbsp;(<span id="flashTimeR">20 × 72 s = 24:00</span>)</div>
+        <button type="button" id="flashStart" class="flash-start">Iniciar</button>
+        <p class="flash-note">Se sortean N preguntas al azar del banco seleccionado.</p>
+      </div>
+
+      <div id="flashPhaseExam" class="flash-phase" hidden>
+        <div class="flash-topbar">
+          <span id="flashCounter">Pregunta 1 / 20</span>
+          <span id="flashTimer" class="flash-timer">24:00</span>
+        </div>
+        <div class="flash-progress"><div id="flashProgressBar" class="flash-progress-bar"></div></div>
+        <div id="flashCardHost"></div>
+        <div id="flashFeedback" class="flash-feedback"></div>
+        <button type="button" id="flashNext" class="flash-next" hidden>Siguiente</button>
+        <button type="button" id="flashExit" class="flash-exit">Salir</button>
+      </div>
+
+      <div id="flashPhaseDone" class="flash-phase" hidden>
+        <div class="flash-done">
+          <h2>Examen terminado</h2>
+          <div id="flashScore">0 / 20 · 0%</div>
+          <div id="flashDoneList"></div>
+          <button type="button" id="flashSaveImg" class="flash-start">Guardar resultado (imagen)</button>
+          <div class="flash-actions">
+            <button type="button" id="flashAgain" class="flash-start">Hacer otro Flash</button>
+            <button type="button" id="flashToSimulacro" class="flash-start">Volver a Simulacro</button>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -377,7 +449,378 @@
       });
       document.getElementById("viewSimulacro").hidden = (mode !== "simulacro");
       document.getElementById("viewFlash").hidden = (mode !== "flash");
-      if (mode === "simulacro") render();
+      if (mode === "simulacro") { render(); }
+      else { flashResetAll(); }
+    });
+
+    // ============ FLASH MODE (T-03: config) ============
+    const FLASH_TIME_PER_Q_MS = 72 * 1000;
+
+    let flash = {
+      phase: "config",
+      n: 20,
+      exams: [],
+      items: [],
+      idx: 0,
+      picked: null,
+      marks: {},
+      status: "running",
+      startedAt: 0,
+      remainingMs: 0,
+      totalMs: 0,
+      finished: false,
+    };
+
+    function flashKeys() {
+      const all = Object.keys(EXAMES).sort();
+      const keys = (flash.exams && flash.exams.length) ? flash.exams : all;
+      const items = [];
+      keys.forEach(function (k) {
+        const qs = EXAMES[k] || [];
+        for (let i = 0; i < qs.length; i++) items.push({ exam: k, q: qs[i] });
+      });
+      return items;
+    }
+
+    function flashShuffle(arr) {
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const t = a[i]; a[i] = a[j]; a[j] = t;
+      }
+      return a;
+    }
+
+    function flashFmt(ms) {
+      let s = Math.max(0, Math.ceil(ms / 1000));
+      const m = Math.floor(s / 60);
+      const sec = s % 60;
+      return (m < 10 ? "0" : "") + m + ":" + (sec < 10 ? "0" : "") + sec;
+    }
+
+    function flashSetPhase(ph) {
+      const map = { config: "flashPhaseConfig", exam: "flashPhaseExam", done: "flashPhaseDone" };
+      Object.keys(map).forEach(function (k) {
+        const el = document.getElementById(map[k]);
+        if (el) el.hidden = (k !== ph);
+      });
+      flash.phase = ph;
+    }
+
+    function flashExamKeys() {
+      const all = Object.keys(EXAMES).sort();
+      if (flash.exams && flash.exams.length) return flash.exams.slice().sort();
+      return all;
+    }
+
+    function flashRenderExamChips() {
+      const list = document.getElementById("flashExamList");
+      if (!list) return;
+      list.innerHTML = "";
+      flashExamKeys().forEach(function (k) {
+        const b = document.createElement("button");
+        b.type = "button";
+        const selected = (!flash.exams || flash.exams.length === 0) || flash.exams.indexOf(k) !== -1;
+        b.className = "chip" + (selected ? " selected" : "");
+        b.textContent = k;
+        b.dataset.exam = k;
+        b.addEventListener("click", function () {
+          if (!flash.exams || flash.exams.length === 0) { flash.exams = [k]; }
+          else {
+            const i = flash.exams.indexOf(k);
+            if (i >= 0) flash.exams.splice(i, 1); else flash.exams.push(k);
+          }
+          flashRenderExamChips();
+          flashRenderConfig();
+        });
+        list.appendChild(b);
+      });
+    }
+
+    function flashRenderConfig() {
+      const nVal = document.getElementById("flashCustomN");
+      const timeEl = document.getElementById("flashTime");
+      const timeREl = document.getElementById("flashTimeR");
+      document.querySelectorAll("#flashPhaseConfig .q-chip").forEach(function (b) {
+        b.classList.toggle("selected", String(flash.n) === b.getAttribute("data-n"));
+      });
+      if (nVal) nVal.value = String(flash.n);
+      const ms = (flash.n || 0) * FLASH_TIME_PER_Q_MS;
+      const s = Math.ceil(ms / 1000);
+      const m = Math.floor(s / 60);
+      const sec = s % 60;
+      const tstr = (m < 10 ? "0" : "") + m + ":" + (sec < 10 ? "0" : "") + sec;
+      if (timeEl) timeEl.textContent = tstr;
+      if (timeREl) timeREl.textContent = (flash.n || 0) + " × 72 s = " + tstr;
+    }
+
+    function flashStart() {
+      let n = parseInt(String(flash.n || 0), 10);
+      if (isNaN(n) || n < 1) n = 20;
+      const pool = flashKeys();
+      const count = Math.min(n, pool.length);
+      const chosen = flashShuffle(pool).slice(0, count);
+      flash.n = count;
+      flash.items = chosen;
+      flash.idx = 0;
+      flash.picked = null;
+      flash.marks = {};
+      flash.status = "running";
+      flash.startedAt = Date.now();
+      flash.totalMs = flash.n * FLASH_TIME_PER_Q_MS;
+      flash.remainingMs = flash.totalMs;
+      flash.finished = false;
+      flashSetPhase("exam");
+      flashRenderExam();
+      flashStartTimer();
+    }
+
+    function flashRenderExam() {
+      const host = document.getElementById("flashCardHost");
+      const counter = document.getElementById("flashCounter");
+      const bar = document.getElementById("flashProgressBar");
+      if (!host) return;
+      if (flash.idx >= flash.items.length) { flashFinish(); return; }
+      const item = flash.items[flash.idx];
+      const q = item.q;
+      host.innerHTML = "";
+      const card = document.createElement("div");
+      card.className = "flash-q";
+      const head = document.createElement("div");
+      head.className = "q-head";
+      const num = document.createElement("span");
+      num.className = "q-num";
+      num.textContent = "P. " + q.n;
+      const tag = document.createElement("span");
+      tag.className = "q-exam-tag";
+      tag.textContent = EXAM_LABELS[item.exam] ? EXAM_LABELS[item.exam].label : item.exam;
+      head.appendChild(num);
+      head.appendChild(tag);
+      card.appendChild(head);
+      const qt = document.createElement("div");
+      qt.className = "q-text";
+      qt.textContent = q.stem;
+      card.appendChild(qt);
+      const optsDiv = document.createElement("div");
+      optsDiv.className = "opts";
+      for (const o of q.opts) {
+        const ot = document.createElement("div");
+        ot.className = "opt flash-opt";
+        ot.dataset.l = o.charAt(0);
+        const l = document.createElement("span");
+        l.className = "letra";
+        l.textContent = o.charAt(0);
+        const sp = document.createElement("span");
+        sp.textContent = o.slice(2).trim();
+        ot.appendChild(l);
+        ot.appendChild(sp);
+        optsDiv.appendChild(ot);
+      }
+      card.appendChild(optsDiv);
+      host.appendChild(card);
+      const fb = document.getElementById("flashFeedback");
+      if (fb) fb.innerHTML = "";
+      const next = document.getElementById("flashNext");
+      if (next) { next.hidden = true; next.disabled = true; }
+      if (counter) counter.textContent = "Pregunta " + (flash.idx + 1) + " / " + flash.n;
+      if (bar) bar.style.width = String(((flash.idx + 1) / flash.n) * 100) + "%";
+    }
+
+    function flashEvaluateMark() {
+      const host = document.getElementById("flashCardHost");
+      if (!host) return;
+      const pickedEl = host.querySelector(".opt.flash-opt.selected");
+      const picked = pickedEl ? pickedEl.dataset.l : null;
+      if (!picked) { return; }
+      flash.picked = picked;
+      const item = flash.items[flash.idx];
+      const ok = picked === item.q.ans.letra;
+      flash.marks[flash.idx] = { picked: picked, correct: ok, answered: true };
+      const fb = document.getElementById("flashFeedback");
+      if (fb) {
+        fb.innerHTML = "";
+        const b = document.createElement("b");
+        b.textContent = ok ? "¡Correcto!" : "Incorrecto.";
+        fb.appendChild(b);
+        fb.appendChild(document.createTextNode(ok ? " Muy bien." : " Fallaste."));
+      }
+      const next = document.getElementById("flashNext");
+      if (next) { next.hidden = false; next.disabled = false; }
+    }
+
+    function flashMark() {
+      const host = document.getElementById("flashCardHost");
+      if (!host) return false;
+      const pickedEl = host.querySelector(".opt.flash-opt.selected");
+      const picked = pickedEl ? pickedEl.dataset.l : null;
+      if (!picked) return false;
+      flashEvaluateMark();
+      return true;
+    }
+
+    function flashNext() {
+      if (flash.idx + 1 >= flash.items.length) { flashFinish(); return; }
+      flash.idx = flash.idx + 1;
+      flash.picked = null;
+      flashRenderExam();
+    }
+
+    let flashTimerInt = null;
+    function flashStartTimer() {
+      flashStopTimer();
+      flashTimerInt = setInterval(function () {
+        flash.remainingMs = Math.max(0, flash.remainingMs - 1000);
+        const t = document.getElementById("flashTimer");
+        if (t) t.textContent = flashFmt(flash.remainingMs);
+        const tl = document.getElementById("flashTimer");
+        if (tl) { if (flash.remainingMs <= 10000 && flash.remainingMs > 0) { tl.classList.add("low"); } else { tl.classList.remove("low"); } }
+        if (flash.remainingMs <= 0) { clearInterval(flashTimerInt); flashTimerInt = null; flashFinish(); }
+      }, 1000);
+    }
+    function flashStopTimer() { if (flashTimerInt) { clearInterval(flashTimerInt); flashTimerInt = null; } }
+
+    function flashFinish() {
+      flash.status = "done";
+      flash.finished = true;
+      flashStopTimer();
+      const total = flash.items.length;
+      let okCount = 0;
+      for (let i = 0; i < flash.items.length; i++) {
+        const m = flash.marks[i];
+        if (m && m.answered && m.correct) okCount++;
+      }
+      const scoreEl = document.getElementById("flashScore");
+      if (scoreEl) scoreEl.textContent = okCount + " / " + total + " · " + (total ? Math.round((okCount / total) * 100) : 0) + "%";
+      const listEl = document.getElementById("flashDoneList");
+      if (listEl) {
+        listEl.innerHTML = "";
+        const itemsHtml = [];
+        flash.items.forEach(function (it, i) {
+          const m = flash.marks[i];
+          const ok = m && m.answered && m.correct;
+          const tu = m && m.answered ? m.picked : null;
+          const row = document.createElement("div");
+          row.className = "flash-list-item " + (ok ? "ok" : "bad");
+          const head = document.createElement("div");
+          head.className = "q-head";
+          const num = document.createElement("span");
+          num.className = "q-num";
+          num.textContent = "P. " + it.q.n;
+          const tag = document.createElement("span");
+          tag.className = "q-exam-tag";
+          tag.textContent = EXAM_LABELS[it.exam] ? EXAM_LABELS[it.exam].label : it.exam;
+          head.appendChild(num);
+          head.appendChild(tag);
+          row.appendChild(head);
+          const qt = document.createElement("div");
+          qt.className = "q-text";
+          qt.textContent = it.q.stem;
+          row.appendChild(qt);
+          const tuTxt = tu ? (tu + ". " + it.q.opts.filter(function (o) { return o.charAt(0) === tu; })[0].slice(2).trim()) : "Sin responder";
+          const acTxt = it.q.ans.letra + ". " + it.q.ans.texto;
+          const ansDiv = document.createElement("div");
+          ansDiv.className = "ans";
+          ansDiv.innerHTML = "<b>Tu respuesta:</b> " + tuTxt + " &nbsp;·&nbsp; <b>Clave:</b> " + acTxt;
+          row.appendChild(ansDiv);
+          itemsHtml.push(row);
+        });
+        itemsHtml.forEach(function (r) { listEl.appendChild(r); });
+      }
+      document.getElementById("flashPhaseExam").hidden = true;
+      document.getElementById("flashPhaseDone").hidden = false;
+    }
+
+    function flashExit() {
+      flashStopTimer();
+      flashSetPhase("config");
+      flash.picked = null;
+      flash.marks = {};
+      flash.status = "running";
+      flash.finished = false;
+      flashRenderConfig();
+    }
+
+    function flashResetAll() {
+      flash.phase = "config";
+      flash.n = 20;
+      flash.exams = [];
+      flash.items = [];
+      flash.idx = 0;
+      flash.picked = null;
+      flash.marks = {};
+      flash.status = "running";
+      flash.startedAt = 0;
+      flash.remainingMs = 0;
+      flash.totalMs = 0;
+      flash.finished = false;
+      flashSetPhase("config");
+      flashRenderExamChips();
+      flashRenderConfig();
+    }
+
+    document.getElementById("flashStart").addEventListener("click", function () { flashStart(); });
+    document.getElementById("flashExit").addEventListener("click", function () { flashExit(); });
+    document.getElementById("flashAgain").addEventListener("click", function () { flashResetAll(); });
+    document.getElementById("flashToSimulacro").addEventListener("click", function () {
+      const msb = document.getElementById("modeSwitch").querySelector(".mode-btn[data-mode='simulacro']");
+      if (msb) msb.classList.add("active");
+      document.getElementById("modeSwitch").querySelectorAll(".mode-btn").forEach(function (x) { x.classList.toggle("active", x === msb); });
+      document.getElementById("viewFlash").hidden = true;
+      document.getElementById("viewSimulacro").hidden = false;
+      render();
+    });
+    document.getElementById("flashSaveImg").addEventListener("click", function () {
+      try {
+        const scoreTxt = document.getElementById("flashScore").textContent;
+        const examsTxt = (flash.exams && flash.exams.length) ? flash.exams.slice().sort().join(", ") : "Todas";
+        const lines = [
+          "Banco SERUMS Medicina Humana",
+          "Resultado Flash",
+          "Examen: " + examsTxt,
+          "Preguntas: " + (flash.n || 0),
+          "Score: " + scoreTxt,
+          "Fecha: " + new Date().toLocaleString("es-PE"),
+        ];
+        const c = document.createElement("canvas");
+        c.width = 1080; c.height = 1350;
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "#fdf6ec";
+        ctx.fillRect(0, 0, 1080, 1350);
+        ctx.fillStyle = "#c49c63";
+        ctx.font = "bold 64px sans-serif";
+        ctx.fillText("Banco SERUMS", 80, 160);
+        ctx.font = "48px sans-serif";
+        ctx.fillText("Resultado Flash", 80, 240);
+        ctx.font = "40px sans-serif";
+        ctx.fillText("Examen: " + examsTxt, 80, 340);
+        ctx.fillText("Preguntas: " + (flash.n || 0), 80, 400);
+        ctx.fillText("Score: " + scoreTxt, 80, 460);
+        ctx.font = "32px sans-serif";
+        ctx.fillText("Fecha: " + new Date().toLocaleString("es-PE"), 80, 520);
+        const a = document.createElement("a");
+        a.download = "serums-flash-" + new Date().toISOString().slice(0, 10) + ".png";
+        a.href = c.toDataURL("image/png");
+        a.click();
+      } catch (e) { /* sin canvas: ignorar */ }
+    });
+    document.getElementById("flashExamAll").addEventListener("click", function () { flash.exams = []; flashRenderExamChips(); flashRenderConfig(); });
+    document.getElementById("flashCustomN").addEventListener("input", function () { flash.n = parseInt(String(this.value || 20), 10) || 20; flashRenderConfig(); });
+    document.querySelectorAll("#flashPhaseConfig .q-chip").forEach(function (b) {
+      b.addEventListener("click", function () { flash.n = parseInt(b.getAttribute("data-n"), 10) || 20; flashRenderConfig(); });
+    });
+    document.getElementById("flashCardHost").addEventListener("click", function (ev) {
+      const optEl = ev.target.closest(".opt.flash-opt");
+      if (!optEl) return;
+      const host = document.getElementById("flashCardHost");
+      const wasSel = optEl.classList.contains("selected");
+      host.querySelectorAll(".opt.flash-opt").forEach(function (o) { o.classList.remove("selected"); });
+      if (wasSel) { return; }
+      optEl.classList.add("selected");
+      flashMark();
+    });
+    document.getElementById("flashPhaseExam").addEventListener("click", function (ev) {
+      const nextEl = ev.target.closest("#flashNext");
+      if (nextEl) { flashNext(); }
     });
 
     window.addEventListener("load", function () { render(); });
