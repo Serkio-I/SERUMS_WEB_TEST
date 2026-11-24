@@ -1,4 +1,4 @@
-// Banco SERUMS Medicina Humana 2025-2026 - preguntas y claves oficiales (MINSA)
+// Banco SERUMS Medicina Humana - preguntas y claves
 const EXAMES = {
   "2025-I": [
     {
@@ -5605,6 +5605,2408 @@ const EXAMES = {
       "ans": {
         "letra": "A",
         "texto": "Clima organizacional"
+      }
+    }
+  ],
+  "2024-II-I": [
+    {
+      "n": 1,
+      "stem": "¿Cómo se denomina al caso nuevo de diabetes que fue diagnosticado en el establecimiento de salud, durante la atención a un adulto mayor?",
+      "opts": [
+        "A. Prevalente",
+        "B. Confirmado",
+        "C. Incidente",
+        "D. Sospechoso"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Incidente"
+      },
+      "meta": {
+        "explicacion": "Un caso nuevo aparecido en un periodo es un caso incidente; la prevalencia mide los existentes, nuevos y antiguos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 2,
+      "stem": "El respeto que merece el paciente exige, hoy más que nunca, que los profesionales de la salud en general y los médicos en particular adquieran la suficiente habilidad comunicativa para que los pacientes realmente comprendan, por lo que la asertividad en la comunicación inicia con...",
+      "opts": [
+        "A. saber escuchar.",
+        "B. valorar lo justo y lo injusto.",
+        "C. discernir entre lo bueno y lo malo.",
+        "D. diferenciar lo correcto de lo incorrecto."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "saber escuchar."
+      },
+      "meta": {
+        "explicacion": "La asertividad parte de la escucha activa: sin escuchar al paciente no hay manera de adaptar el mensaje para que lo comprenda.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 3,
+      "stem": "Durante el inventario del año 2023, de la farmacia de un establecimiento de salud, se encontraron productos farmacéuticos, dispositivos médicos y productos sanitarios vencidos. Estos deben permanecer almacenados para su respectiva baja y destrucción final en el almacén:",
+      "opts": [
+        "A. Del SISMED",
+        "B. De la farmacia",
+        "C. Central",
+        "D. De servicios generales"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Central"
+      },
+      "meta": {
+        "explicacion": "Los vencidos salen del area de dispensacion y se guardan identificados en el almacen central, en zona de baja, hasta su destruccion.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 4,
+      "stem": "En los cuidados individuales por curso de vida adulto mayor; en el entorno comunitario contempla:",
+      "opts": [
+        "A. La prevención de las caídas entre otros",
+        "B. Control de presión arterial",
+        "C. El control glicemia",
+        "D. Control de colesterol en sangre"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "La prevención de las caídas entre otros"
+      },
+      "meta": {
+        "explicacion": "En el entorno comunitario del adulto mayor las acciones son de promocion y prevencion, como prevenir caidas; los controles de PA, glicemia o colesterol son del entorno del establecimiento.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 5,
+      "stem": "Según el perímetro abdominal para la edad. ¿Qué valor determina riesgo alto para tener enfermedades cardiovasculares y metabólicas en adolescentes?",
+      "opts": [
+        "A. Circunferencia abdominal ≥75 cm",
+        "B. Percentil ≥75 y <90",
+        "C. Percentil ≥90",
+        "D. Circunferencia abdominal >80 cm"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Percentil ≥75 y <90"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 6,
+      "stem": "Dentro de sus intervenciones a realizar en su establecimiento de salud, prioriza el programa articulado nutricional (PAN). ¿Cuál es el objetivo del programa?",
+      "opts": [
+        "A. Reducción de la desnutrición crónica en menores de 5 años",
+        "B. Reducción de desnutrición y anemia en niños",
+        "C. Disminución la desnutrición aguda en menores de 3 años",
+        "D. Disminución de la malnutrición en menores de un año"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Reducción de la desnutrición crónica en menores de 5 años"
+      },
+      "meta": {
+        "explicacion": "El PAN es un programa presupuestal cuyo resultado esperado es reducir la desnutricion cronica infantil en menores de 5 anios.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 7,
+      "stem": "¿Cuál de los siguientes enunciados es un indicador de estructura en la vigilancia epidemiológica en adolescentes?",
+      "opts": [
+        "A. % de adolescentes con consejería en salud nutricional",
+        "B. % de regiones que cuentan con un documento de análisis de situación de salud regional de adolescentes",
+        "C. % de adolescentes con consejería en salud sexual y reproductiva",
+        "D. % de atenciones preventivas en adolescentes con SIS"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "% de regiones que cuentan con un documento de análisis de situación de salud regional de adolescentes"
+      },
+      "meta": {
+        "explicacion": "Los indicadores de estructura miden recursos y documentos disponibles; contar con un ASIS regional de adolescentes es estructura, las coberturas de consejeria son proceso.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 8,
+      "stem": "Niño de 6 meses de edad, traido a su control de crecimiento y desarrollo al centro de salud de Paracas donde usted labora. Examen peso: 8 Kg. Hb: 10.8 g/dl. De acuerdo a la norma técnica de anemia 2024. ¿Cuál es la dosis de suplementación en mg indicada?",
+      "opts": [
+        "A. 24",
+        "B. 16",
+        "C. 32",
+        "D. 40"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "16"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 9,
+      "stem": "Si se debe tomar decisiones con la media. ¿Cuál es la medida de dispersión asociada?",
+      "opts": [
+        "A. Desviación estándar",
+        "B. Rango intercuartílico",
+        "C. Varianza",
+        "D. Curtosis"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Desviación estándar"
+      },
+      "meta": {
+        "explicacion": "La media se acompania siempre de la desviacion estandar, que esta en las mismas unidades; la mediana se acompania del rango intercuartilico.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 10,
+      "stem": "El modelo Bismark como modelo de salud se caracteriza por tener enfoque en...",
+      "opts": [
+        "A. protección laboral y familiar.",
+        "B. la comunidad.",
+        "C. grupos especiales.",
+        "D. acceso según recurso."
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "protección laboral y familiar."
+      },
+      "meta": {
+        "explicacion": "El modelo Bismarck es de seguridad social financiada por cotizaciones del trabajo, con cobertura al trabajador y su familia.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 11,
+      "stem": "¿Cuáles son factores de riesgo de enfermedad hipertensiva no modificables?",
+      "opts": [
+        "A. Tabaquismo, sedentarismo",
+        "B. Consumo excesivo de sal",
+        "C. Sexo masculino, edad ≥55 años 2",
+        "D. Persona adulta ≥ 30 Kg/m"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Sexo masculino, edad ≥55 años 2"
+      },
+      "meta": {
+        "explicacion": "No modificables son los que no se pueden cambiar: edad, sexo, raza y herencia; tabaco, sal, sedentarismo y obesidad si se modifican.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 12,
+      "stem": "Al conjunto al que se le quiere medir la distribución de variables en toda investigación se le conoce como:",
+      "opts": [
+        "A. Parámetro",
+        "B. Muestra",
+        "C. Población",
+        "D. Variable"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Población"
+      },
+      "meta": {
+        "explicacion": "La poblacion es el conjunto total sobre el que se quiere medir y generalizar; la muestra es solo el subgrupo del que se recogen los datos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 13,
+      "stem": "¿Qué institución conduce el Centro Nacional de Farmacovigilancia y Tecnovigilancia?",
+      "opts": [
+        "A. CDC",
+        "B. INS",
+        "C. CENARES",
+        "D. DIGEMID"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "DIGEMID"
+      },
+      "meta": {
+        "explicacion": "DIGEMID conduce el Centro Nacional de Farmacovigilancia y Tecnovigilancia, donde se notifican sospechas de RAM e incidentes con dispositivos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 14,
+      "stem": "Confirma o refuta los datos preliminares, solidifica las conclusiones y asienta las bases para la generalización científica o estadística de los resultados a la población de interés:",
+      "opts": [
+        "A. El adecuado análisis de datos",
+        "B. Muestra adecuada y representativa",
+        "C. Definición clara y precisa del objetivo",
+        "D. Comparabilidad a lo largo del estudio"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "El adecuado análisis de datos"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 15,
+      "stem": "¿Qué profesional debe tener la custodia de oxígeno medicinal en un establecimiento de salud?",
+      "opts": [
+        "A. Enfermera",
+        "B. Químico farmacéutico",
+        "C. Técnico de farmacia",
+        "D. Médico"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Químico farmacéutico"
+      },
+      "meta": {
+        "explicacion": "El oxigeno medicinal es un producto farmaceutico, por lo que su custodia y control corresponde al quimico farmaceutico.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 16,
+      "stem": "La determinación de la valoración nutricional antropométrica durante la gestación debe realizarse en base a tres indicadores. ¿Cuál es el primer indicador que se debe aplicar?",
+      "opts": [
+        "A. Índice de masa corporal pre gestacional",
+        "B. Ganancia de peso en el primer trimestre",
+        "C. Índice de masa corporal durante la adolescencia",
+        "D. Altura uterina según edad gestacional"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Índice de masa corporal pre gestacional"
+      },
+      "meta": {
+        "explicacion": "La valoracion antropometrica de la gestante empieza clasificando el IMC pregestacional, que define cuanta ganancia de peso se le va a exigir despues.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 17,
+      "stem": "¿Cuál es una de las causales de exclusión de proveedores adjudicatarios?",
+      "opts": [
+        "A. Cuando su empresa no cuente con RUC vigente",
+        "B. Cuando el consorcio no esté registrado",
+        "C. Cuando sea persona natural",
+        "D. Cuando este impedido de contratar con el estado"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Cuando este impedido de contratar con el estado"
+      },
+      "meta": {
+        "explicacion": "Estar impedido de contratar con el Estado excluye al adjudicatario; los otros supuestos son subsanables o no son causal.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 18,
+      "stem": "Después de haber utilizado benzodiacepinas por varios meses y retirar el fármaco de forma abrupta, se desarrolla rápidamente ansiedad, taquicardia, pesadillas, náuseas, insomnio entre otros síntomas. ¿Qué tipo de reacción adversa se ha presentado?",
+      "opts": [
+        "A. RAM tipo E",
+        "B. RAM tipo B",
+        "C. RAM tipo A",
+        "D. RAM tipo C"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "RAM tipo E"
+      },
+      "meta": {
+        "explicacion": "El sindrome de abstinencia al suspender bruscamente un farmaco es la RAM tipo E, de fin de uso (end of use).",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 19,
+      "stem": "El responsable del establecimiento de salud, han identificado que tienen una gran población de mujeres en edad fértil procedentes de Venezuela. Con el fin de promover un mejor proceso de integración como sociedad de acogida y al uso de servicios de sanitarios, planifica capacitar a su personal. ¿Cuál sería el tema principal de la capacitación?",
+      "opts": [
+        "A. Charla de drogas y violencia",
+        "B. Empatía y buenas prácticas en salud",
+        "C. Respeto al usuario",
+        "D. Etnocentrismo y relativismo cultural"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Etnocentrismo y relativismo cultural"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 20,
+      "stem": "Se desea investigar los efectos de los macrólidos en bronquiolitis aguda; ¿Qué tipo de estudio sería el adecuado?",
+      "opts": [
+        "A. Descriptivo longitudinal",
+        "B. Analítico observacional",
+        "C. Analítico experimental",
+        "D. Descriptivo transversal"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Analítico experimental"
+      },
+      "meta": {
+        "explicacion": "Evaluar el efecto de un farmaco exige que el investigador asigne la intervencion: es un estudio analitico experimental (ensayo clinico).",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 21,
+      "stem": "El jefe de logística de un establecimiento de salud realizará la compra de un dispositivo médico para la entidad. ¿Cuántas cotizaciones en su estudio de mercado como mínimo debe contar?",
+      "opts": [
+        "A. 8",
+        "B. 3",
+        "C. 5",
+        "D. 1"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "3"
+      },
+      "meta": {
+        "explicacion": "El estudio de mercado para una contratacion requiere como minimo tres cotizaciones o fuentes para sustentar el valor estimado.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 22,
+      "stem": "En toda medición o instrumento de recolección de datos; el grado en el que un instrumento produce resultados consistentes y coherentes. ¿A qué requisito esencial corresponde?",
+      "opts": [
+        "A. Confiabilidad",
+        "B. Validez",
+        "C. Honestidad",
+        "D. Objetividad"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Confiabilidad"
+      },
+      "meta": {
+        "explicacion": "La consistencia de los resultados al repetir la medicion es confiabilidad; la validez es medir lo que realmente se pretende medir.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 23,
+      "stem": "El médico SERUMS del puesto de salud, organiza un taller para autoexamen de mama con las mujeres del comedor popular de su distrito; allí explica la técnica del autoexamen y factores de riesgo para cáncer de mama. ¿Qué fomenta esta intervención?",
+      "opts": [
+        "A. Rehabilitación",
+        "B. Tratamiento",
+        "C. Autocuidado",
+        "D. Diagnóstico"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Autocuidado"
+      },
+      "meta": {
+        "explicacion": "Ensenar a la mujer a examinarse y reconocer sus factores de riesgo la vuelve responsable de vigilar su propia salud: eso es autocuidado.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 24,
+      "stem": "¿Cuáles son los estudios prospectivos de mayor calidad de evidencia, donde el investigador controla el factor de estudio?",
+      "opts": [
+        "A. Experimentales",
+        "B. Cohortes",
+        "C. Analíticos",
+        "D. Descriptivos"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Experimentales"
+      },
+      "meta": {
+        "explicacion": "Solo en los estudios experimentales el investigador controla y asigna el factor de estudio, lo que les da el nivel de evidencia mas alto.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 25,
+      "stem": "En un establecimiento de salud, se decide la contratación de recursos humanos. Por lo que se requiere definir adecuadamente el perfil del cargo. ¿Cuál es el documento de gestión que va a guiar los elementos de contratación?",
+      "opts": [
+        "A. POI",
+        "B. MAPRO",
+        "C. CAP",
+        "D. MOF"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "MOF"
+      },
+      "meta": {
+        "explicacion": "El MOF describe funciones, requisitos y perfil de cada cargo, por eso es el que guia la contratacion; el CAP solo lista las plazas.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 26,
+      "stem": "Dentro del plan anual de calidad de salud en el establecimiento de salud está programada la apertura del buzón de sugerencias para saber la opinión de los usuarios con el objetivo de realizar los planes de mejora. ¿Cuál es la frecuencia de apertura del buzón de sugerencias?",
+      "opts": [
+        "A. Anual",
+        "B. Trimestral",
+        "C. Mensual",
+        "D. Semestral"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Mensual"
+      },
+      "meta": {
+        "explicacion": "La apertura del buzon de sugerencias es mensual, para que las quejas alimenten los planes de mejora dentro del mismo periodo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 27,
+      "stem": "El hospital nacional docente de Lima, para optimizar la gestión de sus procesos administrativos, docentes, clínicos y de investigación requiere que se realice la programación en el Plan Operativo Institucional multianual, las actividades operativas y de Inversiones necesarias para implementar las Acciones Estratégicas Institucionales (AEI), definidas en el Plan Estratégico Institucional (PEI). ¿Cuál es el período de vigencia en años como máximo, del POI multianual?",
+      "opts": [
+        "A. 2",
+        "B. 10",
+        "C. 5",
+        "D. 3"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "3"
+      },
+      "meta": {
+        "explicacion": "El POI Multianual de CEPLAN se formula para un horizonte maximo de tres anios; el PEI es el de mediano plazo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 28,
+      "stem": "Según la normatividad vigente, sobre manejo de residuos sólidos. Los medicamentos vencidos. ¿Cómo qué tipo de residuo se clasifica?",
+      "opts": [
+        "A. Especiales",
+        "B. Comunes",
+        "C. Biocontaminados",
+        "D. Punzocortantes"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Especiales"
+      },
+      "meta": {
+        "explicacion": "Los medicamentos vencidos son residuos especiales (clase C) por su riesgo quimico, no biocontaminados.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 29,
+      "stem": "La leche de los primeros días se llama ...... y brinda protección a la mucosa intestinal del recién nacido, con inmunoglobulina A secretoria, impidiendo la colonización de gérmenes.",
+      "opts": [
+        "A. leche madura",
+        "B. leche sucedánea",
+        "C. calostro",
+        "D. leche de transición"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "calostro"
+      },
+      "meta": {
+        "explicacion": "El calostro es la leche de los primeros dias, rica en IgA secretora, que recubre la mucosa intestinal e impide la colonizacion bacteriana.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 30,
+      "stem": "En relación al abastecimiento de productos farmacéuticos, dispositivos médicos y productos sanitarios, para que se considere como un adecuado abastecimiento. ¿Cuántos meses de stock disponible debe tener?",
+      "opts": [
+        "A. 3",
+        "B. 12",
+        "C. 8",
+        "D. 6"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "6"
+      },
+      "meta": {
+        "explicacion": "El abastecimiento se considera normal o adecuado cuando el stock disponible cubre alrededor de seis meses de consumo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 31,
+      "stem": "El establecimiento de salud asignado para realizar su SERUMS, pertenece a un área geográfica con presencia de casos autóctonos de dengue, que se limita a una unidad geográfica en un determinado tiempo. ¿Indique a qué tipo de escenario epidemiológico pertenece?",
+      "opts": [
+        "A. Escenario IV - endémico",
+        "B. Escenario III - brote",
+        "C. Escenario I",
+        "D. Escenario II - Epidémico"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Escenario III - brote"
+      },
+      "meta": {
+        "explicacion": "Casos autoctonos limitados a una unidad geografica y a un tiempo definido corresponden al escenario III (brote); el IV es transmision sostenida endemica.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 32,
+      "stem": "Las farmacias de los establecimientos de salud del MINSA a nivel nacional. ¿Qué sistema de información deben manejar para remitir información de consumo integrado de productos farmacéuticos, dispositivos médicos y productos sanitarios?",
+      "opts": [
+        "A. Galeno",
+        "B. Farmax",
+        "C. Sisgalen",
+        "D. SISMED"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "SISMED"
+      },
+      "meta": {
+        "explicacion": "El SISMED es el sistema de informacion con el que las farmacias del MINSA reportan consumo y stock de productos farmaceuticos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 33,
+      "stem": "Dentro de los modelos de salud. ¿Qué característica está relacionada con el modelo comunitario?",
+      "opts": [
+        "A. Diferencia la población con y sin recursos",
+        "B. Es centralizado",
+        "C. Tiene un monopolio estatal",
+        "D. Prioriza la protección laboral"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Es centralizado"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 34,
+      "stem": "Se desea estimar la prevalencia de la neumonía adquirida en la comunidad en la población pediátrica de 2 a 5 años en las escuelas de su jurisdicción. Para controlar el sesgo de selección. ¿Qué tipo de muestreo se debe realizar?",
+      "opts": [
+        "A. Estratificado",
+        "B. Aleatorio simple",
+        "C. No probabilístico",
+        "D. Por conglomerados"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Aleatorio simple"
+      },
+      "meta": {
+        "explicacion": "Para estimar prevalencia sin sesgo de seleccion cada nino debe tener la misma probabilidad de entrar: eso lo garantiza el muestreo aleatorio simple.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 35,
+      "stem": "Es el subgrupo del universo del cual se recolectan los datos y que debe ser representativo de éste:",
+      "opts": [
+        "A. Población",
+        "B. Parámetro",
+        "C. Variable",
+        "D. Muestra"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Muestra"
+      },
+      "meta": {
+        "explicacion": "La muestra es el subgrupo del universo del que se recolectan los datos y debe representarlo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 36,
+      "stem": "Para conocer y saber cuáles son las funciones, objetivos y la necesidad de contar con determinado puesto, es necesario identificar el propósito del puesto con las preguntas siguientes:",
+      "opts": [
+        "A. ¿Qué formación?, ¿Dónde?, ¿Para qué?, ¿De acuerdo a qué perfil?",
+        "B. ¿Qué sabe?, ¿Dónde?, ¿Para cuándo?, ¿De acuerdo con qué?",
+        "C. ¿Qué habilidades?, ¿Dónde?, ¿Para qué?, ¿De acuerdo con qué?",
+        "D. ¿Qué hace?, ¿Dónde?, ¿Para qué?, ¿De acuerdo con qué?"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "¿Qué hace?, ¿Dónde?, ¿Para qué?, ¿De acuerdo con qué?"
+      },
+      "meta": {
+        "explicacion": "El proposito del puesto se define respondiendo que hace, donde lo hace, para que lo hace y de acuerdo con que norma o estandar.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 37,
+      "stem": "Puérpera con diagnóstico confirmatorio de sífilis; tratamiento incompleto; al recién nacido se considera neonato con sífilis congénita. ¿Cuál es la acción a seguir?",
+      "opts": [
+        "A. Tratamiento alternativo",
+        "B. Derivar a establecimiento resolutivo",
+        "C. Tratamiento farmacológico inmediato",
+        "D. Evaluación diagnostica confirmatoria"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Derivar a establecimiento resolutivo"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 38,
+      "stem": "En la actividad de entrega de producto e información, dentro del proceso de dispensación farmacéutica de medicamentos de primera línea para la tuberculosis. ¿Cuál es una reacción adversa que debería de advertirse al paciente?",
+      "opts": [
+        "A. Nefrotoxicidad por rifampicina",
+        "B. Trombocitopenia por linezolid",
+        "C. Neuritis óptica por pirazinamida",
+        "D. Neuritis periférica por isoniazida"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Neuritis periférica por isoniazida"
+      },
+      "meta": {
+        "explicacion": "La isoniazida produce neuritis periferica por deficit de piridoxina, por eso se advierte y se suplementa vitamina B6.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 39,
+      "stem": "Durante la evaluación realizada de indicadores de gestión de medicamentos esenciales. ¿Cuál debe ser el valor de disponibilidad óptimo esperado que debe obtener la farmacia?",
+      "opts": [
+        "A. 75% a 80%",
+        "B. 90% a 100%",
+        "C. 80% a 85%",
+        "D. 85% a 89%"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "90% a 100%"
+      },
+      "meta": {
+        "explicacion": "El indicador de disponibilidad de medicamentos esenciales se considera optimo entre 90 y 100 por ciento.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 40,
+      "stem": "Paciente de 30 años procedente de zona infestada por Aedes aegypti, presenta hace 5 días fiebre y dolor muscular, además se agrega dolor abdominal y plaquetas: 80,000/dl. ¿Cuál es el diagnóstico?",
+      "opts": [
+        "A. Dengue con signos de alarma",
+        "B. Dengue grave",
+        "C. Dengue",
+        "D. Dengue sin signos de alarma"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Dengue con signos de alarma"
+      },
+      "meta": {
+        "explicacion": "El dolor abdominal intenso y la plaquetopenia al quinto dia, en la fase critica, son signos de alarma; grave exigiria shock, sangrado severo o falla organica.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 41,
+      "stem": "El jefe de un establecimiento de salud, revisa conjuntamente con su equipo de gestión los resultados de la encuesta de satisfacción del usuario e identifican que el problema principal es el tiempo de demora en la atención. Por lo tanto, evalúan la brecha de recursos humanos para hacer el requerimiento para tal fin. ¿Qué documento de gestión es necesario para evaluar la brecha?",
+      "opts": [
+        "A. MOF - CAP",
+        "B. CAP – POI",
+        "C. ROF – CAP",
+        "D. PEI- MAPRO"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "ROF – CAP"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 42,
+      "stem": "Qué herramienta le permite poner en marcha las estrategias institucionales, detalla metas anuales de todos los objetivos y entregables y se precisan todas las actividades o tareas necesarias para alcanzar los productos a entregar, establece los recursos, plazos, costos por actividad, estándares de calidad, logística, planes de contingencia frente a los riesgos y finalmente indicadores que servirán para evaluar la gestión y determinar si se han alcanzado o no los indicadores de resultado e impacto establecidos.",
+      "opts": [
+        "A. Plan Anual Institucional",
+        "B. Plan Estratégico Institucional",
+        "C. Plan Operativo Institucional",
+        "D. Plan de Gestión Institucional"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Plan Operativo Institucional"
+      },
+      "meta": {
+        "explicacion": "El POI aterriza el PEI en metas anuales, actividades, plazos, costos e indicadores de gestion.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 43,
+      "stem": "Según la norma técnica de salud para la acreditación de establecimientos de salud y servicios médicos de apoyo, las fases de acreditación son:",
+      "opts": [
+        "A. Evaluación y evaluación interna",
+        "B. Análisis situacional y evaluación interna",
+        "C. Autoanálisis y evaluación anual",
+        "D. Autoevaluación y evaluación externa"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Autoevaluación y evaluación externa"
+      },
+      "meta": {
+        "explicacion": "La acreditacion tiene dos fases: autoevaluacion por el propio establecimiento y evaluacion externa por evaluadores acreditados.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 44,
+      "stem": "Las creencias que presenta una comunidad determinándolo como válido y propio en su desarrollo cultural no presentando participación en la comunidad ni en el sistema de salud. ¿Qué tipo de problema intercultural presenta?",
+      "opts": [
+        "A. Aculturación",
+        "B. Conflicto intercultural",
+        "C. Bioética",
+        "D. Desarrollo social"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Conflicto intercultural"
+      },
+      "meta": {
+        "explicacion": "Cuando el sistema de salud y la comunidad sostienen validaciones distintas y no hay participacion ni dialogo entre ambos, se configura un conflicto intercultural.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 45,
+      "stem": "En el caso de tratamientos especiales, nuevas modalidades de atención, práctica de procedimiento o intervenciones que puedan afectar psíquica o físicamente al paciente; y la participación del paciente en actividades de docencia, debe realizarse y registrarse con el formato de...",
+      "opts": [
+        "A. autorización de atención.",
+        "B. solicitud de atención.",
+        "C. consentimiento informado.",
+        "D. permiso del paciente."
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "consentimiento informado."
+      },
+      "meta": {
+        "explicacion": "Todo procedimiento que pueda afectar al paciente y toda participacion en docencia requieren consentimiento informado escrito y registrado en la historia.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 46,
+      "stem": "Una investigación es un proceso sistemático, organizado y objetivo, destinado a responder a una pregunta. El término sistemático significa que se aplica...",
+      "opts": [
+        "A. el método epidemiológico.",
+        "B. el método científico.",
+        "C. el método clínico.",
+        "D. el método hipotético."
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "el método científico."
+      },
+      "meta": {
+        "explicacion": "Sistematico alude a seguir los pasos ordenados del metodo cientifico; el metodo clinico o epidemiologico son aplicaciones suyas.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 47,
+      "stem": "Para recomendar la puesta en marcha de un programa de prevención secundaria respecto a un problema de salud determinado. ¿Cuál es uno de los tres grupos principales de factores a tener en cuenta?",
+      "opts": [
+        "A. Relativos al problema de salud",
+        "B. Relacionados al contexto",
+        "C. Enfocados en tratamiento",
+        "D. Enfocados en rehabilitación"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Relativos al problema de salud"
+      },
+      "meta": {
+        "explicacion": "Antes de montar un tamizaje se evaluan tres grupos de factores: los del problema de salud, los de la prueba y los del tratamiento disponible.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 48,
+      "stem": "Mujer de 75 años con diagnóstico de insuficiencia cardiaca y diabetes mellitus 2, recibiendo el siguiente tratamiento farmacológico: losartán 50 mg c/24 h, espironolactona 25 mg c/24 h, bisoprolol 5 mg c/24 h, metformina 850 mg c/24 h. Resultados de control de laboratorio: Na: 140 mEq/L, K: 6.3 mEq/L, glucosa: 90 mg/dL. ¿Cuáles son los fármacos responsables del problema electrolítico?",
+      "opts": [
+        "A. Losartán - espironolactona",
+        "B. Bisoprolol - espironolactona",
+        "C. Metformina - espironolactona",
+        "D. Losartán - metformina"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Losartán - espironolactona"
+      },
+      "meta": {
+        "explicacion": "La hiperkalemia surge de sumar un ARA II con un ahorrador de potasio; bisoprolol y metformina no explican el K de 6.3.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 49,
+      "stem": "Paciente, quechua hablante de 44 años aún fértil, madre de 6 hijos, con enfermedad de hipertensión arterial, se niega a utilizar métodos anticonceptivos. ¿Qué acción debe tomar con respecto a este caso?",
+      "opts": [
+        "A. Llamar a su pareja para que decida por ella",
+        "B. Persuadirla a que utilice anticonceptivos",
+        "C. Respetar su decisión",
+        "D. Solicitar evaluación psicológica"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Respetar su decisión"
+      },
+      "meta": {
+        "explicacion": "La autonomia obliga a respetar la decision informada de la paciente; involucrar a la pareja o psiquiatrizar la negativa la vulnera.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 50,
+      "stem": "Paciente varón de 35 años que trabaja habitualmente en el sector agrícola, acude junto a su familiar al centro de salud donde realiza su SERUMS, manifestando desorientación, mareos, bradicardia, dificultad respiratoria y relajación de esfínteres. El familiar manifiesta que el paciente estaba manipulando plaguicidas y parte de este se derramó en gran parte de su vestimenta. ¿Cuál es el tratamiento de primera línea?",
+      "opts": [
+        "A. Atropina",
+        "B. Flumazenil",
+        "C. Adrenalina",
+        "D. Naloxona"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Atropina"
+      },
+      "meta": {
+        "explicacion": "El cuadro colinergico por organofosforados (bradicardia, broncorrea, relajacion de esfinteres) se trata con atropina, ademas de descontaminar retirando la ropa.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 51,
+      "stem": "Toda medición o instrumento de recolección de datos debe reunir tres requisitos esenciales:",
+      "opts": [
+        "A. Confidencial, válido y objetivo",
+        "B. Imparcial, equitativo y honesto",
+        "C. Privado, secreto y reservado",
+        "D. Seguro, reservado y protegido"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Confidencial, válido y objetivo"
+      },
+      "meta": {
+        "explicacion": "Todo instrumento debe ser confiable, valido y objetivo; las demas alternativas listan atributos de confidencialidad, no requisitos de medicion.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 52,
+      "stem": "Joven de 24 años, G2P1011, acude por presentar secreción vaginal líquida, grisácea, pegajosa, abundante y con mal olor; no uso de MAC. AMEU hace un año. Examen: FC: 72 X’; FR: 17 X’; T°: 36.5 °C; PA: 110/60 mmHg. Especuloscopía: hallazgos congruentes con los descritos. Prueba de aminas con KOH presente (a pescado). ¿Cuál es el diagnóstico?",
+      "opts": [
+        "A. Uretritis",
+        "B. Vaginosis bacteriana",
+        "C. Tricomoniasis",
+        "D. Candidiasis"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Vaginosis bacteriana"
+      },
+      "meta": {
+        "explicacion": "Flujo grisaceo, homogeneo, maloliente y prueba de aminas positiva definen vaginosis bacteriana; la tricomoniasis da flujo espumoso amarillo-verdoso y la candidiasis grumoso sin olor.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 53,
+      "stem": "Un estudio de investigación, que no se realiza sobre datos primarios, sino que utiliza los datos recogidos previamente en otros estudios. ¿A qué tipo de estudio hace referencia?",
+      "opts": [
+        "A. Cohortes",
+        "B. Analítico",
+        "C. Descriptivo",
+        "D. Revisión sistemática"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Revisión sistemática"
+      },
+      "meta": {
+        "explicacion": "Trabajar sobre datos ya publicados por otros estudios, sin recoger datos primarios, corresponde a la revision sistematica (investigacion secundaria).",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 54,
+      "stem": "En una comunidad se desea evaluar la incidencia de una determinada enfermedad. ¿Cuál de las medidas de efecto se debe aplicar?",
+      "opts": [
+        "A. Riesgo absoluto",
+        "B. Odds Ratio",
+        "C. Riesgo relativo",
+        "D. Número de pacientes necesario a tratar (NNT)"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Riesgo absoluto"
+      },
+      "meta": {
+        "explicacion": "La incidencia por si sola es una medida de frecuencia absoluta: el riesgo absoluto; OR, RR y NNT comparan grupos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 55,
+      "stem": "Paciente que acude a su establecimiento de salud, con una glicemia en ayudas de 201 mg/dl, baja de peso, polidipsia y polifagia; el médico diagnostica diabetes mellitus tipo 2, indicando glimepirida. ¿A qué familia de drogas antidiabéticas pertenece?",
+      "opts": [
+        "A. Glitazonas",
+        "B. Glifozinas",
+        "C. Sulfonilureas",
+        "D. Metformina"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Sulfonilureas"
+      },
+      "meta": {
+        "explicacion": "La glimepirida es una sulfonilurea de segunda generacion: estimula la secrecion de insulina y por eso puede causar hipoglicemia.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 56,
+      "stem": "La definición de caso de enfermedad diarreica persistente, es la que se presenta con un cuadro diarreico que inicia con una diarrea aguda infecciosa, pero se prolonga por ...... días o más.",
+      "opts": [
+        "A. 14",
+        "B. 21",
+        "C. 10",
+        "D. 07"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "14"
+      },
+      "meta": {
+        "explicacion": "La diarrea persistente es la que empieza como diarrea aguda infecciosa y se prolonga catorce dias o mas.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 57,
+      "stem": "¿Es un instrumento que facilita el enfoque sistémico familiar en atención a la persona y proporciona una visión rápida e integrada de los problemas biomédicos y psicosociales, además de establecer las relaciones familiares?",
+      "opts": [
+        "A. Tipología familiar",
+        "B. Círculo familiar",
+        "C. Apgar familiar",
+        "D. Genograma"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Genograma"
+      },
+      "meta": {
+        "explicacion": "El genograma grafica en un solo esquema la estructura familiar, los vinculos y los problemas biomedicos y psicosociales de varias generaciones.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 58,
+      "stem": "¿Cuál de los siguientes fármacos atraviesa la barrera placentaria y tiene riesgo de alcanzar concentraciones elevadas en el feto?",
+      "opts": [
+        "A. Amoxicilina",
+        "B. Diazepam",
+        "C. Omeprazol",
+        "D. Fluconazol"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Diazepam"
+      },
+      "meta": {
+        "explicacion": "El diazepam es muy liposoluble, cruza facilmente la placenta y se acumula en el feto; por eso se evita en el embarazo y cerca del parto.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 59,
+      "stem": "¿Cuál es el criterio epidemiológico de causalidad, que define que la coherencia interna de la asociación depende de la existencia de una relación unidireccional de la curva de dosis-respuesta entre el factor y la enfermedad?",
+      "opts": [
+        "A. Ausencia de distorsiones metodológicas",
+        "B. Gradiente biológico",
+        "C. Consistencia de los resultados",
+        "D. Evidencia experimental"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Gradiente biológico"
+      },
+      "meta": {
+        "explicacion": "El gradiente biologico es el criterio dosis-respuesta: a mayor exposicion, mayor efecto, en una sola direccion.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 60,
+      "stem": "Gestante de 25 años G1P000; EG: 40 semanas por FUR, en período expulsivo hace 2 horas. Examen: FC: 84 X’; FR: 22X’; T°: 36.6 °C; PA: 100/60 mmHg. Examen: AU: 36 cm. Feto: LCD. FCF: 132 X’. MF: ++/++. TV: D:10 cm; I: 100%; AP: -2; M: rotas (LM Fluido); VPPF: OIIA. A la reevaluación: FC: 112 X’; FR: 25 X’; T°: 36.6 °C; PA: 80/50 mmHg. Las contracciones uterinas han cesado y se palpan partes fetales fácilmente. FCF: 86 X’. ¿Cuál es el diagnóstico más probable?",
+      "opts": [
+        "A. Parto obstruido",
+        "B. Muerte fetal",
+        "C. Trabajo de parto disfuncional",
+        "D. Ruptura uterina"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Ruptura uterina"
+      },
+      "meta": {
+        "explicacion": "El cese brusco de las contracciones con shock materno, partes fetales facilmente palpables y bradicardia fetal, tras dos horas de expulsivo, define rotura uterina.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 61,
+      "stem": "De los factores relativos a las pruebas; el que se relaciona con la operatividad de las pruebas es la…",
+      "opts": [
+        "A. sensibilidad.",
+        "B. susceptibilidad.",
+        "C. validez.",
+        "D. aceptabilidad."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "aceptabilidad."
+      },
+      "meta": {
+        "explicacion": "La aceptabilidad es el factor operativo de una prueba: si la poblacion no la tolera no se aplica, por buena que sea su sensibilidad o validez.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 62,
+      "stem": "Herramienta de gestión para los cuidados integrales en la RIS, que define las condiciones necesarias para asegurar la integralidad y longitudinalidad, de las personas, familias y comunidades en diferentes escenarios. ¿A qué corresponde?",
+      "opts": [
+        "A. Modelo de cuidado integral",
+        "B. Vías de cuidados integrales de salud",
+        "C. Equipo multidisciplinario de salud",
+        "D. Modelo de atención integral"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Vías de cuidados integrales de salud"
+      },
+      "meta": {
+        "explicacion": "Las vias de cuidados integrales de salud (VICI) son la herramienta de la RIS que asegura integralidad y longitudinalidad en los distintos escenarios.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 63,
+      "stem": "El equipo de gestión de la calidad de un establecimiento de salud, desea hacer un plan de mejora continua de los servicios del establecimiento. Para tal fin, indica a los jefes de cada servicio realizar un diagnóstico situacional de su área como línea de base; teniendo en cuenta aspectos de análisis de intorno, entorno. ¿Qué herramienta utilizaría Ud. para realizar el diagnóstico situacional?",
+      "opts": [
+        "A. Matriz de la problematización",
+        "B. FODA",
+        "C. Matriz de causa efecto",
+        "D. Árbol de problemas"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "FODA"
+      },
+      "meta": {
+        "explicacion": "El FODA es la herramienta que cruza el analisis interno (fortalezas y debilidades) con el externo (oportunidades y amenazas) para una linea de base.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 64,
+      "stem": "La pre diabetes se puede identificar a través de la glicemia en ayunas con un valor entre ...... mg/dl.",
+      "opts": [
+        "A. 130-200",
+        "B. 60 - 80",
+        "C. 200 - 250",
+        "D. 100-125"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "100-125"
+      },
+      "meta": {
+        "explicacion": "La glucosa alterada en ayunas, o prediabetes, va de 100 a 125 mg/dL; desde 126 ya es diabetes.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 65,
+      "stem": "El director de la DIRIS descubre que un personal CAS contratado como técnico asistencial y estudiante de una carrera universitaria de salud, viene realizando actividades de un profesional; al ser descubierto indica que dichas funciones fueron otorgadas por su jefe inmediato superior. ¿A quién se debe sancionar?",
+      "opts": [
+        "A. Al responsable de recursos humanos",
+        "B. Al responsable de la DIRIS",
+        "C. Al jefe del establecimiento de salud",
+        "D. Al jefe inmediato"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Al jefe inmediato"
+      },
+      "meta": {
+        "explicacion": "Responde quien dio la orden fuera de su competencia: el jefe inmediato que asigno funciones de profesional a un tecnico.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 66,
+      "stem": "¿Cuál es la etapa donde el curso de la enfermedad va desde el influjo de los factores causales hasta las primeras manifestaciones clínicas inespecíficas?",
+      "opts": [
+        "A. Subclínica",
+        "B. Prepatogénica",
+        "C. Prodrómica",
+        "D. Clínica"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Subclínica"
+      },
+      "meta": {
+        "explicacion": "El periodo subclinico va desde que actuan los factores causales hasta que aparecen los primeros sintomas inespecificos; lo prepatogenico es previo a la interaccion.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 67,
+      "stem": "¿Cuántos macroprocesos se evalúan para la acreditación de un establecimiento del primer nivel de atención I-4?",
+      "opts": [
+        "A. 18",
+        "B. 28",
+        "C. 22",
+        "D. 20"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "22"
+      },
+      "meta": {
+        "explicacion": "La acreditacion de un establecimiento I-4 evalua veintidos macroprocesos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 68,
+      "stem": "Para determinar la magnitud de la faringoamigdalitis aguda en la población pediátrica de su localidad utilizando los criterios de Centor. ¿Qué tipo de estudio usaría?",
+      "opts": [
+        "A. Analítico experimentale",
+        "B. Descriptivo transversal",
+        "C. Analítico observacional",
+        "D. Descriptivo longitudinal"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Descriptivo transversal"
+      },
+      "meta": {
+        "explicacion": "Medir magnitud o frecuencia en un momento dado es un estudio descriptivo transversal; no hay comparacion de grupos ni seguimiento.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 69,
+      "stem": "Adulto mayor acude a un establecimiento de salud I-1, se le capta para realizar su cuidado integral. ¿Qué tipo de valoración clínica del adulto mayor (VACAM) le corresponde?",
+      "opts": [
+        "A. Integral",
+        "B. Breve",
+        "C. Completa",
+        "D. Corta"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Breve"
+      },
+      "meta": {
+        "explicacion": "En un I-1 no hay medico, asi que corresponde la VACAM breve, aplicable por personal de salud no medico; la completa se hace en categorias mayores.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 70,
+      "stem": "En la relación clínica médico-paciente de acuerdo a la ética. ¿Cuál es el principio que rige?",
+      "opts": [
+        "A. Jurisprudencia",
+        "B. Justicia",
+        "C. Autonomía",
+        "D. No-maleficencia"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "No-maleficencia"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 71,
+      "stem": "¿Cuál es el criterio que determina: \"el grado en el que un programa de salud puesto en práctica logra lo que se pretende conseguir en una población determinada\"?",
+      "opts": [
+        "A. Eficiencia",
+        "B. Efectividad",
+        "C. Eficacia",
+        "D. Factibilidad"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Efectividad"
+      },
+      "meta": {
+        "explicacion": "La efectividad es el logro en condiciones reales sobre una poblacion; la eficacia es en condiciones ideales y la eficiencia incorpora el costo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 72,
+      "stem": "Dentro de la ración de alimentos del PCA-PANTBC. ¿Cuál es el porcentaje de los requerimientos nutricionales calórico- proteicos al mes?",
+      "opts": [
+        "A. 50",
+        "B. 60",
+        "C. 40",
+        "D. 30"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "50"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 73,
+      "stem": "Las dimensiones del clima organizacional son las características susceptibles de ser medidas en una organización y que influyen en el comportamiento de los individuos. Una de las más importantes dimensiones se refiere al nivel de colaboración que se observa entre los empleados en el ejercicio de su trabajo y en los apoyos materiales y humanos que éstos reciben de su organización. ¿Cuál es esa dimensión?",
+      "opts": [
+        "A. Conflicto y cooperación",
+        "B. Comunicación",
+        "C. Estructura",
+        "D. Confort"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Conflicto y cooperación"
+      },
+      "meta": {
+        "explicacion": "La dimension conflicto y cooperacion mide el nivel de colaboracion entre trabajadores y el apoyo material y humano que reciben de la organizacion.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 74,
+      "stem": "El responsable de capacitación del establecimiento de salud solicita el plan de capacitación a cada servicio. Para ello el encargado del servicio de medicina se reúne con su personal, para realizar el análisis FODA y necesidades de capacitación. ¿Qué componente pertenece al análisis interno?",
+      "opts": [
+        "A. Oportunidades",
+        "B. Competencias",
+        "C. Fortaleza",
+        "D. Amenazas"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Fortaleza"
+      },
+      "meta": {
+        "explicacion": "Fortalezas y debilidades son el analisis interno; oportunidades y amenazas pertenecen al entorno.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 75,
+      "stem": "Gestante que acude a un establecimiento de salud, procedente de una comunidad de la costa norte, presenta fiebre alta, cefalea, dolor retro ocular, mialgias; después de la evaluación realiza su diagnóstico de dengue. ¿A qué grupo pertenecería para iniciar tratamiento?",
+      "opts": [
+        "A. C",
+        "B. A",
+        "C. B2",
+        "D. B1"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "B1"
+      },
+      "meta": {
+        "explicacion": "La gestacion es una condicion coexistente de riesgo, asi que sin signos de alarma la paciente entra al grupo B1 y se maneja con observacion en establecimiento.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 76,
+      "stem": "En el SERUMS, el profesional de salud al ingresar al establecimiento de salud. ¿Qué es lo primero que debe realizar para poder desarrollar el Plan Operativo Institucional?",
+      "opts": [
+        "A. Análisis poblacional",
+        "B. Recoger el informe anterior",
+        "C. Presentarse con el director",
+        "D. Análisis situacional"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Análisis situacional"
+      },
+      "meta": {
+        "explicacion": "El POI se construye sobre el analisis situacional de salud del ambito asignado: primero se conoce el territorio y sus problemas, luego se programa.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 77,
+      "stem": "Estudiando la prevalencia de anemia en 2020 en la población de Huancavelica encontramos que mantienen patrones culturales asociados a ingestas deficientes y aunadas a costumbres alimentarias de la región. ¿Qué aspecto de la interculturalidad vienen desarrollando?",
+      "opts": [
+        "A. Derechos humanos",
+        "B. Medicina holística",
+        "C. Bioética",
+        "D. Etnocentrismo"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Etnocentrismo"
+      },
+      "meta": {
+        "explicacion": "Juzgar y mantener los patrones alimentarios propios como los unicos validos, sin dialogo con otra cultura, es etnocentrismo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 78,
+      "stem": "¿Cuál de las siguientes acciones forma parte de una prevención específica?",
+      "opts": [
+        "A. Propicia la actividad física en la comunidad",
+        "B. Incrementa la cobertura en el programa de inmunización",
+        "C. Sensibiliza a la población la no ingesta de alcohol",
+        "D. Promueve el uso de condón"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Incrementa la cobertura en el programa de inmunización"
+      },
+      "meta": {
+        "explicacion": "La prevencion especifica actua contra una enfermedad concreta, como la vacunacion; las demas son promocion de la salud, inespecificas.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 79,
+      "stem": "Luego del proceso de evaluación SERUMS, se le asigna laborar en un establecimiento de salud I-2, con una población asignada de 2550 personas. De acuerdo a normativa vigente. ¿Con qué personal de salud debe contar el establecimiento?",
+      "opts": [
+        "A. Médico, enfermera, biólogo, agentes comunitarios",
+        "B. Médico, enfermera, obstetra y técnico de enfermería",
+        "C. Enfermera, obstetra y técnico de enfermería",
+        "D. Médico, enfermera y auxiliar de enfermería"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Médico, enfermera, obstetra y técnico de enfermería"
+      },
+      "meta": {
+        "explicacion": "Un I-2 con poblacion asignada de ese tamanio debe contar con medico, enfermera, obstetra y tecnico de enfermeria.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 80,
+      "stem": "Cuando nos referimos a toda acción o actividad que realizan los otros profesionales de la salud para la promoción, prevención, recuperación y rehabilitación de la salud, según corresponda, que se brinda al paciente, familia y comunidad, hablamos de:",
+      "opts": [
+        "A. Auditoría",
+        "B. Atención de salud",
+        "C. Acto de salud",
+        "D. Acto médico"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Acto de salud"
+      },
+      "meta": {
+        "explicacion": "El acto medico es exclusivo del medico; lo que realizan los demas profesionales de la salud en promocion, prevencion, recuperacion y rehabilitacion es el acto de salud.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 81,
+      "stem": "¿Cuál es el recurso que utiliza el investigador para registrar información o datos sobre las variables estudiadas?",
+      "opts": [
+        "A. Aparatos y equipos",
+        "B. Instrumento de medición",
+        "C. Medida de estabilidad",
+        "D. Recolección de datos"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Instrumento de medición"
+      },
+      "meta": {
+        "explicacion": "El instrumento de medicion es el recurso con el que el investigador registra los datos de las variables (ficha, cuestionario, escala).",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 82,
+      "stem": "Gestante llega al centro materno infantil, aproximadamente a las 11 pm, durante el proceso de la atención del parto, el bebé cae al balde de desecho provocándole luxación de la clavícula. El equipo de guardia inmediatamente procede a realizar la atención correspondiente, siendo derivado a un establecimiento de mayor capacidad resolutiva. El jefe del establecimiento solicita una auditoría. ¿Qué comité de auditoría se activará para este caso?",
+      "opts": [
+        "A. Comité de Auditoría en Salud",
+        "B. Consejo de Auditoría profesional",
+        "C. Comité de Auditoria Médica",
+        "D. Consejo de Auditoría Médica"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Comité de Auditoría en Salud"
+      },
+      "meta": {
+        "explicacion": "El evento adverso comprometio a todo el equipo de guardia y no solo al medico, por lo que se activa el Comite de Auditoria en Salud.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 83,
+      "stem": "Mujer de 20 años procedente de Chosica, presenta fiebre hace 7 días, cefalea, dolor muscular; ingresa a emergencia por dolor abdominal. Examen: PA: 70/50 mmHg, Sat O2: 89%, FC: 102 X', FR: 27 X'; afebril, luce deshidratada y decaída. AR: MV pasa en ACP; CV: RC taquicárdicos de buena intensidad; abdomen: RHA presentes, hígado de 15 cm de span hepático; SNC: somnolienta. ¿Cuál es su diagnóstico probable?",
+      "opts": [
+        "A. Dengue sin signos de alarma",
+        "B. Dengue con signos de alarma",
+        "C. Dengue grave",
+        "D. Dengue"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Dengue grave"
+      },
+      "meta": {
+        "explicacion": "Hipotension, hipoxemia y compromiso del sensorio al septimo dia indican shock por extravasacion: dengue grave, no solo signos de alarma.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 84,
+      "stem": "¿Cuál es la ciencia que nos proporciona la metodología apropiada para investigar y contextualizar los problemas y situaciones de salud?",
+      "opts": [
+        "A. Estadística",
+        "B. Epistemología",
+        "C. Epidemiología",
+        "D. Ética"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Epidemiología"
+      },
+      "meta": {
+        "explicacion": "La epidemiologia aporta el metodo para investigar la distribucion, los determinantes y el contexto de los problemas de salud en poblaciones.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 85,
+      "stem": "En una visita domiciliaria se encuentra que en la familia Zegarra, el padre de 42 años es diabético de 10 años de evolución; el hijo mayor de 16 años tiene IMC: 27, glicemia en ayunas de 130 mg/dl; madre de 34 años tiene IMC: 23. El médico recomienda dieta hipocalórica e hipograsa. Esta medida está en nivel de prevención:",
+      "opts": [
+        "A. Cuaternaria",
+        "B. Secundaria",
+        "C. Primaria",
+        "D. Terciaria"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Primaria"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 86,
+      "stem": "Paciente de 20 años, HSH, presenta fiebre y rash hace una semana. Antecedente de secreción uretral amarillenta hace 2 semanas, le diagnosticaron descarga uretral y no tomó el tratamiento; luego tuvo RS. Examen: PA: 120/70 mmHg, FC: 90 X', T°: 38.5 °C; rash en el cuerpo; AR: MV pasa en ACP; CV: RC regulares y rítmicos; hígado: 13 cm de span hepático. ¿Cuál es el diagnóstico más probable?",
+      "opts": [
+        "A. Sífilis secundaria",
+        "B. Meningococemia",
+        "C. Gonococemia",
+        "D. VIH aguda"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Gonococemia"
+      },
+      "meta": {
+        "explicacion": "",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 87,
+      "stem": "Acuden a la emergencia médica, de un hospital de alta complejidad, dos pacientes provenientes de la selva peruana, ambos afiliados al Seguro Integral de Salud; uno de ellos viene con su respectiva referencia y el otro no. ¿Qué le corresponde hacer al médico tratante de la emergencia?",
+      "opts": [
+        "A. Derivar al paciente que no tiene referencia a su jurisdicción",
+        "B. Deriva a la asistenta social para que evalue el caso",
+        "C. Atender a los dos pacientes por igual",
+        "D. Atender solo al que cuenta con la respectiva referencia del SIS"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Atender a los dos pacientes por igual"
+      },
+      "meta": {
+        "explicacion": "La emergencia se atiende siempre y sin condicionamientos administrativos: la referencia no puede exigirse como requisito para atender.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 88,
+      "stem": "En una reunión de la Microred Pinchollo, se hace una evaluación de cumplimiento de indicadores FED; donde para el indicador \"porcentaje de niñas y niños de 12 a 18 meses, con diagnóstico de anemia entre los 6 y 11 meses, que se han recuperado\", del centro de salud de Agua Dura no se registra ningún niño con anemia como recuperado. ¿Dónde está el problema?",
+      "opts": [
+        "A. Incorrecto registro de niños en los hospitales",
+        "B. Registro incorrecto de CVN",
+        "C. Error en el registro de HIS",
+        "D. Perdida del DNI del niño"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Error en el registro de HIS"
+      },
+      "meta": {
+        "explicacion": "El indicador FED se construye con lo registrado en el HIS; si ningun nino figura como recuperado, la atencion se dio pero el registro del control de hemoglobina esta mal hecho.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 89,
+      "stem": "¿Cuál es un ámbito que se debe considerar, en un foco ampliado del modelo integral de atención, encargada de las actividades de diagnóstico precoz y tratamiento oportuno?",
+      "opts": [
+        "A. Consulta ambulatoria",
+        "B. Urgencias y observación",
+        "C. Medicina en domicilio y comunidad",
+        "D. Hospitalizaciones"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Consulta ambulatoria"
+      },
+      "meta": {
+        "explicacion": "El diagnostico precoz y el tratamiento oportuno se ejecutan en la consulta ambulatoria, que es el ambito de captacion del foco ampliado.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 90,
+      "stem": "Una paciente con dengue acude a UVICLIN del centro de salud de su comunidad, se le clasifica en el grupo B2 de acuerdo a normativa vigente, el tratamiento con solución salina normal al 0.9% indicado es de ...... ml/Kg de peso en una hora.",
+      "opts": [
+        "A. 20",
+        "B. 15",
+        "C. 10",
+        "D. 5"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "10"
+      },
+      "meta": {
+        "explicacion": "El grupo B2 recibe carga de cloruro de sodio al 0.9 por ciento a 10 ml/kg en una hora, reevaluando al termino para decidir si se repite.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 91,
+      "stem": "Paciente de 20 años procedente de Camporedondo - Amazonas, presenta fiebre, ictericia y decaimiento hace 10 días acude a emergencia por escalofríos. Examen: PA: 100/70 mmHg, FC: 90 X’, Sat O2: 96% T°: 37,8 °C; AR: MV pasa en ACP; hígado: 15 cm de span. Laboratorio: formas cocobacilares de Bartonella. ¿Cuál es su diagnóstico?",
+      "opts": [
+        "A. Dengue",
+        "B. Enfermedad de carrión",
+        "C. Leptospirosis",
+        "D. Malaria Vivax"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Enfermedad de carrión"
+      },
+      "meta": {
+        "explicacion": "Fiebre, ictericia, anemia y hepatomegalia en zona endemica de Amazonas con cocobacilos de Bartonella en frotis definen enfermedad de Carrion en fase aguda.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 92,
+      "stem": "Mujer de 30 años que, al día siguiente de recibir la vacuna contra la neumonía, refiere fiebre, cefalea y mialgias; dos días después presenta vómitos y diarrea. Sin evidencia de mejora, consulta en un centro de salud y se decide su internamiento. ¿Qué tipo de ESAVI es?",
+      "opts": [
+        "A. Grave",
+        "B. No grave",
+        "C. Leve",
+        "D. Moderado"
+      ],
+      "ans": {
+        "letra": "A",
+        "texto": "Grave"
+      },
+      "meta": {
+        "explicacion": "Un ESAVI que obliga a hospitalizar se clasifica como grave, con independencia de que despues se descarte relacion causal con la vacuna.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 93,
+      "stem": "¿Cuál de los siguientes enunciados está implicado en la gobernanza en salud pública?",
+      "opts": [
+        "A. Formación de todo tipo de capital",
+        "B. Transparencia sin rendición de cuentas",
+        "C. Visión estratégica y ética de la salud",
+        "D. Responsabilidad de los actores institucionales exclusivamente"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Visión estratégica y ética de la salud"
+      },
+      "meta": {
+        "explicacion": "La gobernanza supone conduccion con vision estrategica y etica, participacion de multiples actores y rendicion de cuentas.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 94,
+      "stem": "¿Cuál es la gestión del proceso que permite a las entidades socializar y facilitar la interrelación y adaptación de manera planificada de las personas que ingresan a un puesto de la entidad, de forma que se le brinde la información relacionada al funcionamiento general del estado, a su institución, a sus normas internas y a su puesto?",
+      "opts": [
+        "A. Capacitación",
+        "B. Reunión",
+        "C. Inducción",
+        "D. Taller"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Inducción"
+      },
+      "meta": {
+        "explicacion": "La induccion es el proceso planificado con que la entidad integra al servidor que ingresa, informandole del Estado, la institucion y su puesto.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 95,
+      "stem": "Nos reportan casos de tos ferina en una comunidad de la selva hace 3 días, es el primer caso que es captado por el servicio de salud. ¿A qué tipo de caso corresponde?",
+      "opts": [
+        "A. Sospechoso",
+        "B. Índice",
+        "C. Primario",
+        "D. Secundario"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "Índice"
+      },
+      "meta": {
+        "explicacion": "El caso indice es el primero que detecta el servicio de salud y desencadena la investigacion; el primario es el que introdujo la infeccion, que puede no ser el mismo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 96,
+      "stem": "¿Cómo se define cuando los pacientes reciben la medicación adecuada a sus necesidades clínicas, en las dosis correspondientes a sus requisitos individuales, durante un período de tiempo adecuado y al menor costo posible para ellos y para la comunidad?",
+      "opts": [
+        "A. Estudios clínicos",
+        "B. Seguimiento farmacoterapéutico",
+        "C. Uso racional de medicamentos",
+        "D. Atención farmacéutica"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Uso racional de medicamentos"
+      },
+      "meta": {
+        "explicacion": "Esa es la definicion de la OMS de uso racional de medicamentos: farmaco adecuado, dosis individual, tiempo suficiente y al menor costo.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 97,
+      "stem": "En bioestadística, las observaciones cuantitativas que brindan datos discretos corresponden a ...",
+      "opts": [
+        "A. valor que se puede dividir en fracciones entre dos puntos cualquiera.",
+        "B. un número infinito de fracciones entre dos puntos de la escala.",
+        "C. valor que se puede dividir en infinitos valores entre dos puntos cualquiera.",
+        "D. valores individuales que sólo aceptan números enteros."
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "valores individuales que sólo aceptan números enteros."
+      },
+      "meta": {
+        "explicacion": "Los datos discretos son contables y solo admiten numeros enteros; poder fraccionar entre dos puntos define a los continuos.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 98,
+      "stem": "Cuando el evento definitivamente no está relacionado a la vacuna y se identifica una etiología o patología que explica de manera razonable el cuadro clínico (enfermedad producida por otra etiología). ¿A qué tipo de ESAVI corresponde?",
+      "opts": [
+        "A. Inmunización",
+        "B. Evento no concluyente",
+        "C. Evento coincidente",
+        "D. RAM"
+      ],
+      "ans": {
+        "letra": "C",
+        "texto": "Evento coincidente"
+      },
+      "meta": {
+        "explicacion": "Cuando otra etiologia explica razonablemente el cuadro, el ESAVI se clasifica como evento coincidente: ocurre tras la vacuna pero no por ella.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 99,
+      "stem": "En consulta a paciente adolescente el médico realiza la evaluación antropométrica; al tomar pliegues cutáneos y perímetros, no realiza consentimiento informado. ¿Qué principio ético está vulnerando?",
+      "opts": [
+        "A. Beneficencia",
+        "B. Justicia",
+        "C. No maleficencia",
+        "D. Autonomía"
+      ],
+      "ans": {
+        "letra": "D",
+        "texto": "Autonomía"
+      },
+      "meta": {
+        "explicacion": "Tomar pliegues y perimetros sin informar ni pedir permiso al adolescente desconoce su derecho a decidir sobre su cuerpo: se vulnera la autonomia.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
+      }
+    },
+    {
+      "n": 100,
+      "stem": "¿Cuál es la cantidad de consumo de sodio recomendado por la Organización Mundial de la Salud (OMS) y la Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO)?",
+      "opts": [
+        "A. 8 mg/día",
+        "B. <5 g/día",
+        "C. >7 g/día",
+        "D. 6 g/día"
+      ],
+      "ans": {
+        "letra": "B",
+        "texto": "<5 g/día"
+      },
+      "meta": {
+        "explicacion": "La OMS y la FAO recomiendan menos de 5 gramos de sal al dia, equivalentes a menos de 2 gramos de sodio.",
+        "origen": "oficial",
+        "fuente": "MINSA - SERUMS 2024-II Medicina I",
+        "anio": 2024,
+        "verificado": "2026-11-24",
+        "url": "https://examprazol.com/examenes-pasados/serums-2024-ii-medicina-i/rendir",
+        "status": "verificada",
+        "added": "2026-11-24"
       }
     }
   ]

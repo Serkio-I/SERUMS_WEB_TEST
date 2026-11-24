@@ -1,2 +1,14 @@
 .playwright-mcp/
 node_modules/
+
+# Backups locales y artefactos de prueba
+*.bak-*.js
+*.bak-*.json
+_preview_*.png
+tools/_prueba_*.json
+tools/_import_*.json
+tools/_gen_*.json
+
+# PDFs oficiales pesados (re-descargables) y texto intermedio extraído
+normas/*.pdf
+normas/*.txt

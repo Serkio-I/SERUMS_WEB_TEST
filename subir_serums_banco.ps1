@@ -12,7 +12,7 @@
 param(
     [string]$Token = $env:GITHUB_TOKEN,
     [string]$Repo = "serums-banco",
-    [string]$Description = "Banco de preguntas SERUMS Medicina Humana - 400 preguntas (MINSA, 2025-2026)"
+    [string]$Description = "Banco de preguntas SERUMS Medicina Humana - 500 preguntas (MINSA, 2024-2026)"
 )
 
 $ErrorActionPreference = "Stop"
@@ -43,7 +43,7 @@ try {
     Write-Host "[WARN] Repo ya existe o error al crearlo: $($_.Exception.Message) - continuando"
 }
 
-$expected = @("serums_banco.html", "serums_banco_data.js", "README.md", "NOTES.md", ".gitignore")
+$expected = @("index.html", "serums_banco_data.js", "NOTES.md", ".gitignore")
 foreach ($f in $expected) {
     if (-not (Test-Path $f)) { Write-Host "[WARN] Falta archivo: $f"; exit 1 }
 }
@@ -56,7 +56,7 @@ if (-not (Test-Path ".git")) {
 $dirty = (git status --porcelain | Out-String).Trim()
 if ($dirty) {
     git add -A
-    git commit -q -m "Banco SERUMS Medicina Humana 2025-2026 - 400 preguntas (MINSA)"
+    git commit -q -m "Banco SERUMS Medicina Humana 2024-2026 - 500 preguntas (MINSA)"
     Write-Host "[OK] Commit listo"
 } else {
     Write-Host "[INFO] Nada que commitear"

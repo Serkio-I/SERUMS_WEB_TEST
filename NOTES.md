@@ -1,58 +1,65 @@
-# Banco SERUMS Medicina Humana 2025-2026 — Estado del proyecto
+# Banco SERUMS Medicina Humana — Estado del proyecto
 
 Ubicación: `C:\Users\sambrosio_hnc\MOCKUP`
 
-## Estado final de la app (serums_banco.html + serums_banco_data.js)
+> Plan de mañana (paso a paso): ver **`PLAN_MANANA.md`**.
+> Ficha de anemia coteada: **`normas/FICHA_ANEMIA_213-2024.md`**.
 
-- **400 preguntas únicas** (Tipo A): 2025-I: 100, 2025-II: 100, 2026-I: 100, 2026-II: 100.
-- Flujo: marcar opción → evaluación instantánea (¡Correcto!/Incorrecto, slide-in NDP) → respuesta correcta oculta hasta evaluar → botón deep → ChatGPT (contexto + pregunta + respuesta; si fallaste, muestra la que marcaste).
-- Botón **"Desmarcar"**: pestaña de un examen → borra solo las marcas de ese examen; "Todas" → borra todas las marcas. Marcas persisten en `localStorage` (key `serums_marks`) — sobreviven a recargar/cerrar el navegador.
-- "Desmarcar" solo quita marcas, **no borra las preguntas** del banco.
-- Validación realizada: `node --check` ✅, Playwright (navegador): 400 cards renderizadas, flujo marcar→evaluar→deep ✅, Desmarcar verificado (examen solo / Todas) ✅, persistencia de marcas verificada (recarga mantiene la marca) ✅.
+## Estado actual (2026-11-24)
 
-## Archivos finales
+- **500 preguntas** integradas y verificadas en `index.html`.
+  - 2024-II · Medicina I: 100 (NUEVO — oficial, clave MINSA)
+  - 2025-I: 100 · 2025-II: 100 · 2026-I: 100 · 2026-II: 100
+- **6 pestañas** en la app: Todas + 5 exámenes (orden cronológico).
+- Registro anti-solape: `banco_registro.json` (500 huellas, 0 duplicados).
+- Última verificación: `node --check` OK · Playwright: 500 tarjetas, pestaña 2024-II-I = 100, marcar→evaluar→IA OK, persistencia `localStorage` OK, "Desmarcar" OK.
 
-- `serums_banco.html` — app principal (banco, flujo, persistencia).
-- `serums_banco_data.js` — datos (`EXAMES`, 400 preguntas).
-- `serums-study.html` — página de IA Profesora (opcional, no es el banco).
-- `Banco_SERUMS_Medicina_2025-2026.pdf` — PDF oficial (referencia, MINSA).
-- `fuentes_oficiales/` — PDFs de claves oficiales (referencia).
-- `README.md` — descripción corta del proyecto.
-- `NOTES.md` — este archivo (estado para próximos tajos).
-- `subir_serums_banco.ps1` — script automatizado para subir a GitHub.
-- `.gitignore` — ignora `.playwright-mcp/` (archivos de prueba de Playwright).
+## Arquitectura
 
-## Datos verificados (2026-11-20)
+| Archivo | Rol |
+|---|---|
+| `serums_banco_data.js` | Fuente única de datos (`EXAMES`). |
+| `index.html` | App móvil (datos embebidos, autocontenida). |
+| `tools/registro.py` | `build`/`stats`/`check`/`import`. Dedupe por `sha1(norm(stem))`. |
+| `tools/sync_index.py` | Re-embebe datos y regenera pestañas/etiquetas en `index.html`. **Correr tras cada import.** |
+| `tools/parse_examprazol.py` | Extrae exámenes oficiales de examprazol (`/rendir`). |
+| `banco_registro.json` | Huellas SHA-1 de todo lo barrido. |
+| `normas/` | PDFs oficiales + fichas coteadas. |
+| `PLAN_MANANA.md` | Siguiente paso detallado. |
 
-- 400 preguntas parseadas del PDF oficial de MINSA (gob.pe): preguntas + opciones + clave de respuesta por examen.
-- Errores de transcripción corregidos; encoding UTF-8 del PDF verificado.
-- Cada examen: 100 preguntas (ns 1-100, sin duplicados), 4 opciones cada una, clave de respuesta presente.
+## Flujo para sumar un examen oficial
 
-## Cómo subir a GitHub (pendiente)
+```powershell
+cd C:\Users\sambrosio_hnc\MOCKUP
+python tools/parse_examprazol.py "<url /rendir>" "tools/_prueba_X.json" "<EXAM_KEY>" "<fuente>" <anio>
+# revisar 100 / opts=4 / letra válida; generar _import_X.json con exam=EXAM_KEY
+python tools/registro.py import tools/_import_X.json
+python tools/sync_index.py
+python tools/registro.py check
+```
 
-- Necesito un **PAT clásico** (Classic PAT) con scope `repo`: https://github.com/settings/tokens
-- Ejecutar: `.\subir_serums_banco.ps1 -Token "<el token>"` (el script descubre tu usuario de GitHub desde el token)
-- Luego activar **GitHub Pages**: Settings → Pages → Branch: `main` → Save → URL: `https://<usuario>.github.io/serums-banco/`
-- Probar desde el celular.
+## Qué se hizo el 2026-11-24
 
-## Script automatizado: subir_serums_banco.ps1
-
-- Crea el repo vía API (`private = $false`, i.e. **público**).
-- Inicializa git (`init -b main`), commitea los archivos, pone el remote `origin` y hace `git push`.
-- Validado sintácticamente: sin token imprime el mensaje "Necesitás un token..." y sale 1.
-
-## Credenciales actuales
-
-- git: user.name "Serkio Italo", user.email "ambrosio.italo@pucp.edu.pe". No hay token de GitHub configurado.
-- `gh` CLI no está instalado; se usa el CLI de git.
+1. Parser de examprazol corregido (regex de número/letra con punto). 100/100 preguntas de 2024-II-I, 4 opciones, 89 con explicación.
+2. Confirmado que 2025-I tipo A y B son el mismo examen (100/100 coinciden) → no aportan.
+3. Importado **2024-II · Medicina I completo (100)** como examen oficial. Banco 400 → 500.
+4. Creado `tools/sync_index.py` (sincronización reproducible app↔datos). Elimina el desfase manual.
+5. Descargadas las normas para generar: NTS 246-2026 (inmunizaciones, **escaneada**, requiere OCR) y NTS 213-2024 (anemia, con texto). Ficha de anemia extraída y coteada.
+6. App validada en navegador real (Playwright) con las 500 preguntas.
 
 ## Historia breve
 
-- El banco quedó en 229 preguntas tras la carga inicial del PDF; luego se completó a 400 parseando las preguntas faltantes (2025-II y 2026-II) desde el PDF oficial (Python/pdfplumber).
-- Reset/Desmarcar está implementado; marcas en localStorage implementadas y verificadas.
+- Banco nació del PDF oficial (229) → completado a 400 parseando 2025-II y 2026-II.
+- 2026-11-24: +100 (2024-II-I) → 500.
 
-## Próximos pasos
+## Documentación (2026-11-24)
 
-1. Dar el token (Classic PAT, scope `repo`) → ejecutar `subir_serums_banco.ps1` → pusheo a GitHub.
-2. Activar GitHub Pages (Settings → Pages → main).
-3. Probar desde el celular: `https://<usuario>.github.io/serums-banco/serums_banco.html`.
+- `docs/00_INDICE.md` … `docs/05_TAREAS_Y_CHANGELOG.md`: arquitectura, modelo de datos, **reglas de negocio (RN-xx)**, especificación de **Modo Simulacro y Modo Flash**, guía de traspaso a otra IA y cola de tareas (T-xx).
+- **T-01** (fix deep-link IA: incluir texto de la opción marcada) ✅ hecho y verificado en navegador.
+
+## Pendientes
+
+1. Implementar **Modo Flash** (T-02…T-08) según `docs/03_ESPEC_MODOS.md`.
+2. Importar 2024-II · Medicina II (100 oficiales) → 600.
+3. Generar 25 desde anemia (ficha lista). Inmunizaciones: OCR pendiente.
+4. Deploy: activar GitHub Pages.
